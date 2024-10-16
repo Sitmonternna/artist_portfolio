@@ -1,0 +1,129 @@
+
+
+:root{
+    --light: #FEDB9B; 
+    --pale: #FFECC8;
+
+    --h1: #FCAC23;
+    --h2: #E97D01;
+    --h3: #EC7B4A;
+    --description: #D49B4B;
+    --accomplish: #E97D01;
+    --tag: #E97D01;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./media/font/montserrat/Montserrat-Regular.ttf) format("TrueType");
+}
+
+@font-face {
+    font-family: caveat;
+    src: url(./media/font/caveat/Caveat-Regular.ttf) format("TrueType");
+}
+
+/*font reuse*/
+h1{
+    font-family: "caveat";
+    font-size: 100px;
+    font-weight: 900;
+    color: var(--h1);
+}
+
+h4{
+    font-family: "caveat";
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--h3);
+}
+
+body{
+    background-color: var(--light);
+}
+
+.nav{
+    width: 100vw;
+    height: 15vh;
+    border: blue solid 2px;
+    position: relative;
+}
+
+/*about*/
+.about{
+    background-image: url(./media/about/bck_cloud.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 45vh;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border: red solid 2px;
+    
+}
+/*caracter*/
+
+.caracter{
+    position: relative;
+    left: 58%;
+   
+}
+
+.caracter img{
+    transform: scale(0.8);
+    display: flex;
+    right: 100%;
+}
+
+.caracter p{
+    font-family: "montserrat";
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--description);
+    line-height: 1.5em;
+
+    width: 14vw;
+    position: relative;
+    top: -54vh;
+    left: 3vw;
+}
+/*Info*/
+.info{
+    transform: translateX(24vw) translateY(-48vh);
+}
+
+/*tag*/
+div.tag{
+    margin-top: 1vh;
+    transform: translateX(1vw);
+}
+div.tag p{
+    display: inline;
+    top: -200vh;
+    font-family: "montserrat";
+    font-weight: 700;
+    color: var(--tag);
+    text-align: center;
+    background-color: var(--h1);
+    padding: 0.5%;
+    width: 12vw;
+    height: auto;
+    border-radius: 100px;
+    border: solid var(--tag) 4px;
+    margin-right: 1%;
+}
+
+div.tag p:nth-child(1){
+    width: 22vw;
+}
+
+div.tag p:nth-child(3){
+    width: 18vw;
+}
+    
+.projects{
+    background-color: var(--pale);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    border: 10px solid blue;
+}
