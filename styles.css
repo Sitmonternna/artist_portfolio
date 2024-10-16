@@ -50,7 +50,7 @@ body{
 
 /*about*/
 .about{
-    background-image: url(./media/about/bck_cloud.svg);
+    background-image: url(./media/img/about/bck_cloud.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 45vh;
