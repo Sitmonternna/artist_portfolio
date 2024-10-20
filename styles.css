@@ -1,129 +1,128 @@
 
 
 :root{
-    --light: #FEDB9B; 
-    --pale: #FFECC8;
+    --lightBeige: #FEF0E7; 
+    --sunshine: #F8C459;
+    --blush:#FF9894;
+    --pinkishBrown: #B2605D;
+    --cloudyBlue: #AAC8CA;
+    --greyAsparagus: #38585A;
+    --hawaiianTan: #AB4D05;
 
-    --h1: #FCAC23;
-    --h2: #E97D01;
-    --h3: #EC7B4A;
-    --description: #D49B4B;
-    --accomplish: #E97D01;
-    --tag: #E97D01;
+    
 }
 
 @font-face {
-    font-family: montserrat;
-    src: url(./media/font/montserrat/Montserrat-Regular.ttf) format("TrueType");
-}
-
-@font-face {
-    font-family: caveat;
-    src: url(./media/font/caveat/Caveat-Regular.ttf) format("TrueType");
-}
-
-/*font reuse*/
-h1{
-    font-family: "caveat";
-    font-size: 100px;
-    font-weight: 900;
-    color: var(--h1);
-}
-
-h4{
-    font-family: "caveat";
-    font-size: 60px;
-    font-weight: 900;
-    color: var(--h3);
+    font-family: KiwiMaru;
+    src: url(./media/font/Kiwi_Maru/KiwiMaru-Medium.ttf) format("TrueType");
 }
 
 body{
-    background-color: var(--light);
+    background-color: var(--lightBeige);
 }
-
+/*navbar*/
 .nav{
-    width: 100vw;
-    height: 15vh;
-    border: blue solid 2px;
     position: relative;
+    width: 100%;
+    height: 7vh;
+    /*border: blue solid 2px;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-/*about*/
-.about{
-    background-image: url(./media/img/about/bck_cloud.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 45vh;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    border: red solid 2px;
+.logo {
+    display: flex;
+    align-self: flex-start;
+}
+
+.menu{
+    margin-inline: auto auto;
+    font-family: KiwiMaru;
+    font-weight: 800;
+}
+
+.nav a{
+    text-decoration: none;
+    color: var(--blush);
+    font-size: 200%;
+    margin-right: 1vw;
     
 }
-/*caracter*/
 
-.caracter{
+/*presentation*/
+.presentation{
+    border: #AB4D05 2px solid;
     position: relative;
-    left: 58%;
+    height: 93vh;
+}
+
+/*passion_love*/
+.passion_love{
+    border: #FF9894 2px solid;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--cloudyBlue);
+   /* background-image: url(./media/img/memo_1/bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    background-position: center center;
+
+}
+
+.triple_arrow{
+    display: flex;
+    transform: scale(1.5);
+    margin-inline: auto auto;
+    margin-top: 2%;
+    z-index: 1;
+}
+
+.half_moon{
+    display: flex;
+    transform: scale(1.5);
+    margin-inline: auto auto;
+    margin-top: -3.5%;
+    z-index: 2;
+}
+
+.passion_love .contenu{
+    display: flex;
+    margin-inline: auto auto;
+    margin-top: 15%;
+    transform: scale(1.5);
+}
+
+/*projects*/
+.projects{
+    border: #FF9894 2px solid;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--sunshine);
    
 }
-
-.caracter img{
-    transform: scale(0.8);
+.projects .title{
     display: flex;
-    right: 100%;
+    margin-top: 15%;
+    justify-content: center;
+}
+/*about*/
+.about{
+    display: none;
+background-image: url(./media/img/about_me/bg.svg);
 }
 
-.caracter p{
-    font-family: "montserrat";
-    font-weight: bold;
-    font-size: 1.5em;
-    color: var(--description);
-    line-height: 1.5em;
-
-    width: 14vw;
-    position: relative;
-    top: -54vh;
-    left: 3vw;
-}
-/*Info*/
-.info{
-    transform: translateX(24vw) translateY(-48vh);
+/*intro*/
+.introduction{
+    display: none;
 }
 
-/*tag*/
-div.tag{
-    margin-top: 1vh;
-    transform: translateX(1vw);
-}
-div.tag p{
-    display: inline;
-    top: -200vh;
-    font-family: "montserrat";
-    font-weight: 700;
-    color: var(--tag);
-    text-align: center;
-    background-color: var(--h1);
-    padding: 0.5%;
-    width: 12vw;
-    height: auto;
-    border-radius: 100px;
-    border: solid var(--tag) 4px;
-    margin-right: 1%;
-}
+/*creativity*/
 
-div.tag p:nth-child(1){
-    width: 22vw;
-}
 
-div.tag p:nth-child(3){
-    width: 18vw;
-}
+/*skills*/
     
-.projects{
-    background-color: var(--pale);
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    border: 10px solid blue;
-}
+
