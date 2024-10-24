@@ -56,11 +56,11 @@ body {
   align-items: center;
   justify-items: center;
   /*
-      @keyframes up_down {
-          0% { margin-top: 0;}
-          50% { margin-top: 3%;}
-          100% { margin-top: 0;}
-      }*/
+  @keyframes up_down {
+      0% { margin-top: 0;}
+      50% { margin-top: 3%;}
+      100% { margin-top: 0;}
+  }*/
 }
 .presentation .name {
   flex-direction: column;
@@ -130,8 +130,28 @@ body {
   height: 100vh;
   background-image: url(./media/img/about_me/bg.svg);
 }
+.about .pic_section {
+  margin-inline: auto auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.about .my_face {
+  grid-area: 1/1/2/2;
+}
 .about .introduction {
-  display: flex;
+  grid-area: 1/2/2/3;
+}
+.about .introduction {
+  width: 80%;
+}
+.about .my_face {
+  width: 50%;
+  border-radius: 3.5%;
 }
 
 /*creativity*/
@@ -243,10 +263,63 @@ body {
   background-position: center;
   background-size: cover;
 }
+.contact .contenue {
+  margin-top: 10%;
+  align-items: center;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.contact .text {
+  grid-area: 2/2/6/3;
+}
+.contact .linkedin {
+  grid-area: 3/3/4/4;
+}
+.contact .gmail {
+  grid-area: 4/3/5/4;
+}
 
 .thank_you {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  /* .thank_you_text{
+      width: 75%;
+  }
+
+  .work_text{
+      width: 20%;
+  }
+
+  .avatar{
+      width: 25%;
+  }*/
+}
+.thank_you .contenue {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.thank_you .thank_you_text {
+  grid-area: 2/1/3/2;
+  justify-self: center;
+  align-self: center;
+}
+.thank_you .work_text {
+  grid-area: 3/1/4/2;
+  width: 40%;
+  justify-self: center;
+  align-self: center;
+}
+.thank_you .avatar {
+  grid-area: 2/2/4/3;
+  justify-self: center;
+  align-self: flex-start;
 }/*# sourceMappingURL=style.css.map */
