@@ -52,14 +52,26 @@ body {
   position: relative;
   height: 85vh;
   display: flex;
-}
-.presentation img {
-  display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  align-self: center;
+  align-items: center;
+  justify-items: center;
+  /*
+      @keyframes up_down {
+          0% { margin-top: 0;}
+          50% { margin-top: 3%;}
+          100% { margin-top: 0;}
+      }*/
+}
+.presentation .name {
+  flex-direction: column;
+  margin-block-start: auto;
+  margin-bottom: 4%;
   width: 70%;
+}
+.presentation .arrow {
+  flex-direction: column;
+  width: 3%;
+  margin-bottom: auto;
 }
 
 /*passion_love*/
