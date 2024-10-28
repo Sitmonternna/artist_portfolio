@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Sitmonternna Yi</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@latest/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -33,10 +34,26 @@
 
         <img class="title" src="./media/img/projects/title.svg" alt="title">
 
-        <div class="projet aurorae"></div>
-        <div class="projet texture"></div>
-        <div class="projet polaris"></div>
-        <div class="projet crystalize"></div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./media/img/projects/swiper/aurorae/aurorae_thumbnail.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./media/img/projects/swiper/cristalize/3d_thumnail.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./media/img/projects/swiper/hasu/thumnail_hasu.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./media/img/projects/swiper/polaris/polaris_thumnail.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
     </section>
 
     <section class="about">
@@ -129,6 +146,7 @@
         </div>
     </section>
 
+    <script src="https://unpkg.com/swiper@latest/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
