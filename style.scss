@@ -91,7 +91,7 @@ body {
 
 }
 
-/*passion_love*/
+/*passion_love
 .passion_love {
     display: flex;
     flex-direction: column;
@@ -121,7 +121,7 @@ body {
         align-self: center;
         margin-top: 12%;
     }
-}
+}*/
 
 /*projects*/
 .projects {
@@ -129,7 +129,7 @@ body {
     flex-direction: column;
     border: #FF9894 2px solid;
     position: relative;
-    height: 160vh;
+    height: 110vh;
     width: 100%;
     background-image: url(./media/img/background/project.svg);
     background-repeat: no-repeat;
@@ -137,11 +137,11 @@ body {
     background-size: cover;
 
     .title {
-        width: 35%;
+        width: 25%;
         margin-left: auto;
         margin-right: auto;
         align-self: flex-start;
-        margin-top: 14%;
+        margin-top: 5%;
     }
 
     .swiper {
@@ -167,7 +167,7 @@ body {
 .about {
     display: flex;
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-image: url(./media/img/background/a_prpos.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -303,14 +303,14 @@ body {
 .interest {
     display: flex;
     width: 100%;
-    height: 160vh;
+    height: 150vh;
     background-image: url(./media/img/background/interest_bk.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 
     .title {
-        width: 70%;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
         align-self: center;
@@ -321,7 +321,7 @@ body {
 .contact {
     background-image: url(./media/img/background/contact_bk.svg);
     width: 100%;
-    height: 140vh;
+    height: 100vh;
     margin-top: -1%;
     border: var(--blush) solid 2px;
     background-repeat: no-repeat;
