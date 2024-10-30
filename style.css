@@ -20,18 +20,18 @@ body {
 /*btn*/
 #scrollToTopBtn {
   position: fixed;
-  bottom: 20px; /* Distance from the bottom */
-  right: 20px; /* Distance from the right */
-  border: none;
-  border-radius: 5px;
+  bottom: 20px;
+  /* Distance from the bottom */
+  right: 20px;
+  /* Distance from the right */
   padding: 10px;
   cursor: pointer;
-  z-index: 1000; /* Ensure it appears above other content */
+  z-index: 1000;
+  /* Ensure it appears above other content */
 }
 
 /*presentation*/
 .presentation {
-  border: #AB4D05 2px solid;
   position: relative;
   height: 100vh;
   display: flex;
@@ -117,7 +117,6 @@ body {
 .projects {
   display: flex;
   flex-direction: column;
-  border: #FF9894 2px solid;
   position: relative;
   height: 110vh;
   width: 100%;
@@ -196,7 +195,6 @@ body {
 .about .my_face {
   grid-area: 1/1/5/2;
   width: 50%;
-  border-radius: 3.5%;
   justify-self: center;
   align-self: center;
 }
@@ -341,7 +339,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: 3px solid red;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -421,7 +418,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: 3px solid red;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -501,7 +497,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: 3px solid red;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -583,7 +578,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border: 3px solid red;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -676,8 +670,7 @@ body {
   display: grid;
   background-image: url(./media/img/background/contact_bk.svg);
   width: 100%;
-  height: 100vh;
-  border: var(--blush) solid 2px;
+  height: 130vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -687,7 +680,6 @@ body {
   align-self: center;
   width: 80%;
   margin-inline: auto auto;
-  border: #AB4D05 3px solid;
   align-items: center;
   justify-content: center;
   display: grid;
@@ -829,6 +821,33 @@ body {
   .skills p {
     font-size: 80%;
   }
+  .skills .application .ae {
+    width: 60%;
+  }
+  .skills .application .davinci {
+    width: 60%;
+  }
+  .skills .application .figma {
+    width: 60%;
+  }
+  .skills .application .illustrator {
+    width: 60%;
+  }
+  .skills .application .maya {
+    width: 60%;
+  }
+  .skills .application .photoshop {
+    width: 60%;
+  }
+  .skills .application .sass {
+    width: 60%;
+  }
+  .skills .application .unity {
+    width: 60%;
+  }
+  .skills .application .vs {
+    width: 60%;
+  }
   .interest {
     display: flex;
     margin-top: -20%;
@@ -877,5 +896,185 @@ body {
   }
   .thank_you .avatar {
     width: 80%;
+  }
+}
+@media only screen and (min-width: 335px) and (max-width: 768px) {
+  .nav .menu a {
+    font-size: 100%;
+  }
+}
+@media only screen and (max-width: 335px) {
+  .nav .menu a {
+    font-size: 80%;
+  }
+  .about p {
+    font-family: KiwiMaru;
+    font-size: 55%;
+    color: var(--lightBeige);
+  }
+  .about h3 {
+    font-size: 70%;
+  }
+  .about .contenue {
+    width: 80%;
+    height: 40%;
+  }
+  .about .titre {
+    grid-area: 1/2/2/3;
+    align-self: flex-end;
+  }
+  .about .main {
+    grid-area: 2/2/3/3;
+  }
+  .about .appelle {
+    grid-area: 3/2/4/3;
+    align-self: flex-start;
+    justify-self: flex-end;
+  }
+  .about .my_face {
+    align-self: flex-start;
+  }
+  .about .introduction {
+    grid-area: 1/2/2/3;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    height: 100%;
+    margin-bottom: 15%;
+    margin-top: 10%;
+  }
+  .skills .title {
+    width: 200%;
+  }
+  .skills .ordi {
+    width: 70%;
+  }
+  .skills .editing {
+    width: 70%;
+  }
+  .skills .vector {
+    width: 70%;
+  }
+  .skills .text_vector {
+    width: 70%;
+  }
+  .skills .text_editing {
+    width: 70%;
+  }
+  .skills .text_ordi {
+    width: 70%;
+  }
+  .skills .coding {
+    width: 70%;
+  }
+  .skills .modele {
+    width: 70%;
+  }
+  .skills .animation {
+    width: 70%;
+  }
+  .skills .text_animation {
+    width: 70%;
+  }
+  .skills .text_modele {
+    width: 70%;
+  }
+  .skills .text_coding {
+    width: 70%;
+  }
+  .skills p {
+    font-size: 80%;
+  }
+  .skills .application .ae {
+    width: 60%;
+  }
+  .skills .application .davinci {
+    width: 60%;
+  }
+  .skills .application .figma {
+    width: 60%;
+  }
+  .skills .application .illustrator {
+    width: 60%;
+  }
+  .skills .application .maya {
+    width: 60%;
+  }
+  .skills .application .photoshop {
+    width: 60%;
+  }
+  .skills .application .sass {
+    width: 60%;
+  }
+  .skills .application .unity {
+    width: 60%;
+  }
+  .skills .application .vs {
+    width: 60%;
+  }
+  .about .contenue {
+    height: 30%;
+  }
+  .about .contenue h3 {
+    font-size: 100%;
+  }
+  .about .contenue p {
+    font-size: 80%;
+  }
+  .polaris .contexte {
+    width: 80%;
+    font-size: 80%;
+  }
+  .polaris h3 {
+    width: 80%;
+    font-size: 80%;
+  }
+  .polaris .texte_descriptif {
+    width: 80%;
+    font-size: 80%;
+  }
+  .aurorae .contexte {
+    width: 80%;
+    font-size: 80%;
+  }
+  .aurorae h3 {
+    width: 80%;
+    font-size: 80%;
+  }
+  .aurorae .texte_descriptif {
+    width: 80%;
+    font-size: 80%;
+  }
+  .aurorae .mp4_aurorae {
+    height: 15%;
+  }
+  .chaos h2 {
+    align-self: flex-end;
+  }
+  .chaos .contexte {
+    width: 80%;
+    font-size: 80%;
+  }
+  .chaos h3 {
+    width: 80%;
+    font-size: 80%;
+  }
+  .chaos .texte_descriptif {
+    width: 80%;
+    font-size: 80%;
+  }
+  .crystalize .contexte {
+    width: 80%;
+    font-size: 80%;
+  }
+  .crystalize h3 {
+    width: 80%;
+    font-size: 80%;
+  }
+  .crystalize .texte_descriptif {
+    width: 80%;
+    font-size: 80%;
   }
 }/*# sourceMappingURL=style.css.map */

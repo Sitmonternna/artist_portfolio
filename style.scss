@@ -24,23 +24,21 @@ body {
 
 #scrollToTopBtn {
     position: fixed;
-    bottom: 20px; /* Distance from the bottom */
-    right: 20px; /* Distance from the right */
-    border: none;
-    border-radius: 5px;
+    bottom: 20px;
+    /* Distance from the bottom */
+    right: 20px;
+    /* Distance from the right */
+    // border: none;
+    //border-radius: 5px;
     padding: 10px;
     cursor: pointer;
-    z-index: 1000; /* Ensure it appears above other content */
+    z-index: 1000;
+    /* Ensure it appears above other content */
 }
-
-
-
-
-
 
 /*presentation*/
 .presentation {
-    border: #AB4D05 2px solid;
+    // border: #AB4D05 2px solid;
     position: relative;
     height: 100vh;
     display: flex;
@@ -138,7 +136,7 @@ body {
 .projects {
     display: flex;
     flex-direction: column;
-    border: #FF9894 2px solid;
+    //border: #FF9894 2px solid;
     position: relative;
     height: 110vh;
     width: 100%;
@@ -226,7 +224,7 @@ body {
     .my_face {
         grid-area: 1 / 1 / 5 / 2;
         width: 50%;
-        border-radius: 3.5%;
+        // border-radius: 3.5%;
         justify-self: center;
         align-self: center;
     }
@@ -406,7 +404,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 3px solid red;
+    //border: 3px solid red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -455,7 +453,7 @@ body {
         color: var(--lightBeige);
         align-self: center;
         justify-self: center;
-        
+
     }
 
     .role {
@@ -470,10 +468,12 @@ body {
         align-self: center;
         justify-self: center;
         grid-area: 4 / 1 / 5 / 2;
-        .maya{
+
+        .maya {
             width: 30%;
         }
-        .photoshop{
+
+        .photoshop {
             width: 30%;
         }
     }
@@ -494,7 +494,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 3px solid red;
+    //border: 3px solid red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -543,7 +543,7 @@ body {
         color: var(--lightBeige);
         align-self: center;
         justify-self: center;
-        
+
     }
 
     .role {
@@ -558,10 +558,12 @@ body {
         align-self: center;
         justify-self: center;
         grid-area: 4 / 1 / 5 / 2;
-        .maya{
+
+        .maya {
             width: 30%;
         }
-        .photoshop{
+
+        .photoshop {
             width: 30%;
         }
     }
@@ -573,7 +575,8 @@ body {
         width: 85%;
     }
 }
-.chaos{
+
+.chaos {
     display: grid;
     background-image: url(./projets/chaos/img/chaos_bk.svg);
     width: 100%;
@@ -581,13 +584,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 3px solid red;
+    //border: 3px solid red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    
+
 
     .contexte {
         font-family: KiwiMaru;
@@ -632,7 +635,7 @@ body {
         color: var(--lightBeige);
         align-self: center;
         justify-self: center;
-        
+
     }
 
     .role {
@@ -647,12 +650,13 @@ body {
         align-self: center;
         justify-self: center;
         grid-area: 4 / 1 / 5 / 2;
-       
-        .maya{
+
+        .maya {
             width: 30%;
-            
+
         }
-        .davinci{
+
+        .davinci {
             width: 30%;
         }
     }
@@ -666,7 +670,7 @@ body {
     }
 }
 
-.aurorae{
+.aurorae {
     display: grid;
     background-color: var(--sunshine);
     width: 100%;
@@ -674,13 +678,13 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    border: 3px solid red;
+    //  border: 3px solid red;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    
+
 
     .contexte {
         font-family: KiwiMaru;
@@ -725,7 +729,7 @@ body {
         color: var(--lightBeige);
         align-self: center;
         justify-self: center;
-        
+
     }
 
     .role {
@@ -740,8 +744,8 @@ body {
         align-self: center;
         justify-self: center;
         grid-area: 4 / 1 / 5 / 2;
-       
-        .davinci{
+
+        .davinci {
             width: 70%;
         }
     }
@@ -754,6 +758,7 @@ body {
         height: 45%;
     }
 }
+
 /*interest*/
 
 .interest {
@@ -764,7 +769,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-   
+
 
     .title {
         width: 50%;
@@ -779,8 +784,8 @@ body {
     display: grid;
     background-image: url(./media/img/background/contact_bk.svg);
     width: 100%;
-    height: 100vh;
-    border: var(--blush) solid 2px;
+    height: 130vh;
+    //border: var(--blush) solid 2px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -790,7 +795,7 @@ body {
         align-self: center;
         width: 80%;
         margin-inline: auto auto;
-        border: #AB4D05 3px solid;
+        //border: #AB4D05 3px solid;
         align-items: center;
         justify-content: center;
         display: grid;
@@ -976,6 +981,48 @@ body {
         p {
             font-size: 80%;
         }
+
+
+
+        .application {
+
+            .ae {
+                width: 60%;
+            }
+
+            .davinci {
+                width: 60%;
+            }
+
+            .figma {
+                width: 60%;
+            }
+
+            .illustrator {
+                width: 60%;
+            }
+
+            .maya {
+                width: 60%;
+            }
+
+            .photoshop {
+                width: 60%;
+            }
+
+            .sass {
+                width: 60%;
+            }
+
+            .unity {
+                width: 60%;
+            }
+
+            .vs {
+                width: 60%;
+            }
+        }
+
     }
 
     .interest {
@@ -1044,4 +1091,258 @@ body {
     }
 
 
+}
+
+@media only screen and (min-width: 335px) and (max-width: 768px) {
+    .nav {
+        .menu {
+            a {
+                font-size: 100%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 335px) {
+    .nav {
+        .menu {
+            a {
+                font-size: 80%;
+            }
+        }
+    }
+
+    .about {
+
+        p {
+            font-family: KiwiMaru;
+            font-size: 55%;
+            color: var(--lightBeige);
+        }
+
+        h3 {
+            font-size: 70%;
+        }
+
+        .contenue {
+            width: 80%;
+            height: 40%;
+        }
+
+        .titre {
+            grid-area: 1 / 2 / 2 / 3;
+            align-self: flex-end;
+        }
+
+        .main {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .appelle {
+            grid-area: 3 / 2 / 4 / 3;
+            align-self: flex-start;
+            justify-self: flex-end;
+        }
+
+        .my_face {
+            align-self: flex-start;
+        }
+
+        .introduction {
+            grid-area: 1 / 2 / 2 / 3;
+            width: 70%;
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px){
+    .skills {
+        height: 100%;
+        margin-bottom: 15%;
+        margin-top: 10%;
+
+        .title {
+            width: 200%;
+        }
+
+        .ordi {
+            width: 70%;
+        }
+
+        .editing {
+            width: 70%;
+        }
+
+        .vector {
+            width: 70%;
+        }
+
+        .text_vector {
+            width: 70%;
+        }
+
+        .text_editing {
+            width: 70%;
+        }
+
+        .text_ordi {
+            width: 70%;
+        }
+
+        .coding {
+            width: 70%;
+        }
+
+        .modele {
+            width: 70%;
+        }
+
+        .animation {
+            width: 70%;
+        }
+
+        .text_animation {
+            width: 70%;
+        }
+
+        .text_modele {
+            width: 70%;
+        }
+
+        .text_coding {
+            width: 70%;
+        }
+
+        p {
+            font-size: 80%;
+        }
+
+
+
+        .application {
+
+            .ae {
+                width: 60%;
+            }
+
+            .davinci {
+                width: 60%;
+            }
+
+            .figma {
+                width: 60%;
+            }
+
+            .illustrator {
+                width: 60%;
+            }
+
+            .maya {
+                width: 60%;
+            }
+
+            .photoshop {
+                width: 60%;
+            }
+
+            .sass {
+                width: 60%;
+            }
+
+            .unity {
+                width: 60%;
+            }
+
+            .vs {
+                width: 60%;
+            }
+        }
+
+    }
+    .about{
+        .contenue{
+            height: 30%;
+
+            h3{
+                font-size: 100%;
+            }
+
+            p{
+                font-size: 80%;
+            }
+        }
+    }
+
+    .polaris{
+        .contexte{
+            width: 80%;
+            font-size: 80%;
+        }
+        h3{
+            width: 80%;
+            font-size: 80%;
+        }
+        .texte_descriptif{
+            width: 80%;
+            font-size: 80%;
+        }
+        
+    }
+
+    .aurorae{
+        .contexte{
+            width: 80%;
+            font-size: 80%;
+        }
+        h3{
+            width: 80%;
+            font-size: 80%;
+        }
+        .texte_descriptif{
+            width: 80%;
+            font-size: 80%;
+        }
+        .mp4_aurorae{
+            height: 15%;
+        }
+        
+    }
+
+    .chaos{
+        h2{
+            align-self: flex-end;
+        }
+        .contexte{
+            width: 80%;
+            font-size: 80%;
+        }
+        h3{
+            width: 80%;
+            font-size: 80%;
+        }
+        .texte_descriptif{
+            width: 80%;
+            font-size: 80%;
+        }
+        
+    }
+
+    .crystalize{
+        .contexte{
+            width: 80%;
+            font-size: 80%;
+        }
+        h3{
+            width: 80%;
+            font-size: 80%;
+        }
+        .texte_descriptif{
+            width: 80%;
+            font-size: 80%;
+        }
+        
+    }
+    
 }
