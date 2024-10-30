@@ -1,5 +1,5 @@
 // Get the button
-const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+const scrollToTopBtn = document.getElementsByClassName('.go_up');
 
 // Scroll to top function
 scrollToTopBtn.onclick = function() {

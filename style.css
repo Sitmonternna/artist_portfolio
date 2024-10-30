@@ -18,16 +18,12 @@ body {
 }
 
 /*btn*/
-#scrollToTopBtn {
+.go_up {
   position: fixed;
-  bottom: 20px;
-  /* Distance from the bottom */
-  right: 20px;
-  /* Distance from the right */
-  padding: 10px;
+  bottom: 30px;
+  right: 30px;
   cursor: pointer;
   z-index: 1000;
-  /* Ensure it appears above other content */
 }
 
 /*presentation*/
@@ -38,12 +34,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-items: center;
-  /*
-  @keyframes up_down {
-      0% { margin-top: 0;}
-      50% { margin-top: 3%;}
-      100% { margin-top: 0;}
-  }*/
 }
 .presentation .nav {
   position: relative;
@@ -80,6 +70,18 @@ body {
   flex-direction: column;
   width: 3%;
   margin-bottom: auto;
+  animation: up_down 2s infinite ease-in-out;
+}
+@keyframes up_down {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 3%;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
 
 /*passion_love
@@ -411,7 +413,6 @@ body {
 }
 
 .polaris {
-  display: grid;
   background-image: url(./projets/polaris/polaris_bk.svg);
   width: 100%;
   height: 140vh;
@@ -419,55 +420,59 @@ body {
   background-position: center;
   background-size: cover;
   display: grid;
+  border: 3px solid red;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-.polaris .contexte {
+.polaris p.contexte {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 110%;
+  font-size: 2em;
   color: var(--lightBeige);
-  width: 40%;
+  width: 80%;
   grid-area: 2/1/3/2;
   align-self: center;
   justify-self: center;
+  margin: 0;
 }
-.polaris .texte_descriptif {
-  font-family: KiwiMaru;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 110%;
-  color: var(--lightBeige);
-  width: 40%;
-  align-self: center;
-  justify-self: center;
-}
-.polaris h2 {
-  align-self: center;
-  justify-self: center;
+.polaris h2.title {
+  align-self: flex-end;
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 250%;
+  font-size: 6em;
   color: var(--greyAsparagus);
   grid-area: 1/1/2/2;
+  margin-block: 0 0;
+  margin-left: 10%;
 }
-.polaris h3 {
+.polaris .role {
+  grid-area: 3/1/4/2;
+}
+.polaris .role h3 {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 110%;
+  font-size: 3em;
   color: var(--lightBeige);
   align-self: center;
-  justify-self: center;
+  justify-self: flex-start;
+  margin-block: 0 0;
+  margin-left: 10%;
 }
-.polaris .role {
-  align-self: center;
-  margin-inline: auto auto;
-  grid-area: 3/1/4/2;
+.polaris .role p.texte_descriptif {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2em;
+  color: var(--lightBeige);
+  width: 80%;
+  align-self: flex-start;
+  justify-self: center;
+  margin-block: 0 0;
 }
 .polaris .application {
   display: flex;
@@ -489,87 +494,101 @@ body {
   width: 85%;
 }
 
+/*
 .chaos {
-  display: grid;
-  background-image: url(./projets/chaos/img/chaos_bk.svg);
-  width: 100%;
-  height: 130vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-}
-.chaos .contexte {
-  font-family: KiwiMaru;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 110%;
-  color: var(--lightBeige);
-  width: 40%;
-  grid-area: 2/1/3/2;
-  align-self: center;
-  justify-self: center;
-}
-.chaos .texte_descriptif {
-  font-family: KiwiMaru;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 110%;
-  color: var(--lightBeige);
-  width: 40%;
-  align-self: center;
-  justify-self: center;
-}
-.chaos h2 {
-  align-self: center;
-  justify-self: center;
-  font-family: KiwiMaru;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 250%;
-  color: var(--hawaiianTan);
-  grid-area: 1/1/2/2;
-  margin-top: 10%;
-}
-.chaos h3 {
-  font-family: KiwiMaru;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 110%;
-  color: var(--lightBeige);
-  align-self: center;
-  justify-self: center;
-}
-.chaos .role {
-  align-self: center;
-  margin-inline: auto auto;
-  grid-area: 3/1/4/2;
-}
-.chaos .application {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  justify-self: center;
-  grid-area: 4/1/5/2;
-}
-.chaos .application .maya {
-  width: 30%;
-}
-.chaos .application .davinci {
-  width: 30%;
-}
-.chaos .mp4_chaos {
-  align-self: center;
-  justify-self: center;
-  grid-area: 1/2/5/3;
-  width: 85%;
-  height: 45%;
-}
+    display: grid;
+    background-image: url(./projets/chaos/img/chaos_bk.svg);
+    width: 100%;
+    height: 130vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    //border: 3px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 
+
+    .contexte {
+        font-family: KiwiMaru;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 110%;
+        color: var(--lightBeige);
+        width: 40%;
+        grid-area: 2 / 1 / 3 / 2;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .texte_descriptif {
+        font-family: KiwiMaru;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 110%;
+        color: var(--lightBeige);
+        width: 40%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    h2 {
+        align-self: center;
+        justify-self: center;
+        font-family: KiwiMaru;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 250%;
+        color: var(--hawaiianTan);
+        grid-area: 1 / 1 / 2 / 2;
+        margin-top: 10%;
+    }
+
+    h3 {
+        font-family: KiwiMaru;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 110%;
+        color: var(--lightBeige);
+        align-self: center;
+        justify-self: center;
+
+    }
+
+    .role {
+        align-self: center;
+        margin-inline: auto auto;
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .application {
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        justify-self: center;
+        grid-area: 4 / 1 / 5 / 2;
+
+        .maya {
+            width: 30%;
+
+        }
+
+        .davinci {
+            width: 30%;
+        }
+    }
+
+    .mp4_chaos {
+        align-self: center;
+        justify-self: center;
+        grid-area: 1 / 2 / 5 / 3;
+        width: 85%;
+        height: 45%;
+    }
+}
+*/
 .aurorae {
   display: grid;
   background-color: var(--sunshine);
@@ -606,29 +625,31 @@ body {
   justify-self: center;
 }
 .aurorae h2 {
-  align-self: center;
+  align-self: flex-end;
   justify-self: center;
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 250%;
+  font-size: 6em;
   color: var(--hawaiianTan);
   grid-area: 1/1/2/2;
-  margin-top: 10%;
+  margin: 0;
 }
 .aurorae h3 {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 110%;
+  font-size: 4em;
   color: var(--lightBeige);
   align-self: center;
   justify-self: center;
+  margin: 0;
 }
 .aurorae .role {
   align-self: center;
   margin-inline: auto auto;
   grid-area: 3/1/4/2;
+  margin: 0;
 }
 .aurorae .application {
   display: flex;
@@ -648,7 +669,6 @@ body {
   height: 45%;
 }
 
-/*interest*/
 .interest {
   display: flex;
   width: 100%;
@@ -739,342 +759,470 @@ body {
   width: 70%;
 }
 
+/*
 @media (max-width: 768px) {
-  .nav .logo {
-    width: 16%;
-  }
-  .nav a {
-    font-size: 100%;
-  }
-  .presentation {
-    height: 20vh;
-  }
-  .passion_love {
-    height: 20vh;
-  }
-  .projects {
-    height: 30vh;
-  }
-  .projects .title {
-    margin-top: 17%;
-  }
-  .about {
-    height: 35vh;
-    margin-left: 5%;
-  }
-  .about .my_face {
-    width: 60%;
-  }
-  .about .introduction {
-    width: 90%;
-  }
-  .creativity {
-    display: flex;
-    margin-top: -20%;
-    width: 100%;
-    height: 40vh;
-  }
-  .skills {
-    height: 100%;
-    margin-bottom: 15%;
-    margin-top: 10%;
-  }
-  .skills .title {
-    width: 200%;
-  }
-  .skills .ordi {
-    width: 70%;
-  }
-  .skills .editing {
-    width: 70%;
-  }
-  .skills .vector {
-    width: 70%;
-  }
-  .skills .text_vector {
-    width: 70%;
-  }
-  .skills .text_editing {
-    width: 70%;
-  }
-  .skills .text_ordi {
-    width: 70%;
-  }
-  .skills .coding {
-    width: 70%;
-  }
-  .skills .modele {
-    width: 70%;
-  }
-  .skills .animation {
-    width: 70%;
-  }
-  .skills .text_animation {
-    width: 70%;
-  }
-  .skills .text_modele {
-    width: 70%;
-  }
-  .skills .text_coding {
-    width: 70%;
-  }
-  .skills p {
-    font-size: 80%;
-  }
-  .skills .application .ae {
-    width: 60%;
-  }
-  .skills .application .davinci {
-    width: 60%;
-  }
-  .skills .application .figma {
-    width: 60%;
-  }
-  .skills .application .illustrator {
-    width: 60%;
-  }
-  .skills .application .maya {
-    width: 60%;
-  }
-  .skills .application .photoshop {
-    width: 60%;
-  }
-  .skills .application .sass {
-    width: 60%;
-  }
-  .skills .application .unity {
-    width: 60%;
-  }
-  .skills .application .vs {
-    width: 60%;
-  }
-  .interest {
-    display: flex;
-    margin-top: -20%;
-    width: 100%;
-    height: 30vh;
-  }
-  .contact {
-    display: flex;
-    height: 100%;
-  }
-  .contact .contenue {
-    margin-top: -3%;
-    align-self: center;
-    justify-content: center;
-  }
-  .contact .text {
-    width: 200%;
-  }
-  .contact .linkedin {
-    width: 40%;
-    justify-self: flex-end;
-  }
-  .contact .gmail {
-    width: 47%;
-    justify-self: flex-end;
-  }
-  .thank_you {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-  }
-  .thank_you .contenue {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .thank_you .thank_you_text {
-    width: 90%;
-  }
-  .thank_you .work_text {
-    width: 65%;
-    align-self: flex-start;
-  }
-  .thank_you .avatar {
-    width: 80%;
-  }
+    .nav {
+        .logo {
+            width: 16%;
+        }
+
+        a {
+            font-size: 100%
+        }
+    }
+
+    .presentation {
+        height: 20vh;
+    }
+
+    .passion_love {
+        height: 20vh;
+    }
+
+    .projects {
+        height: 30vh;
+
+        .title {
+            margin-top: 17%;
+        }
+    }
+
+    .about {
+        height: 35vh;
+        margin-left: 5%;
+
+        .my_face {
+            width: 60%;
+        }
+
+        .introduction {
+            width: 90%;
+        }
+
+    }
+
+    .creativity {
+        display: flex;
+        margin-top: -20%;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .skills {
+        height: 100%;
+        margin-bottom: 15%;
+        margin-top: 10%;
+
+        .title {
+            width: 200%;
+        }
+
+        .ordi {
+            width: 70%;
+        }
+
+        .editing {
+            width: 70%;
+        }
+
+        .vector {
+            width: 70%;
+        }
+
+        .text_vector {
+            width: 70%;
+        }
+
+        .text_editing {
+            width: 70%;
+        }
+
+        .text_ordi {
+            width: 70%;
+        }
+
+        .coding {
+            width: 70%;
+        }
+
+        .modele {
+            width: 70%;
+        }
+
+        .animation {
+            width: 70%;
+        }
+
+        .text_animation {
+            width: 70%;
+        }
+
+        .text_modele {
+            width: 70%;
+        }
+
+        .text_coding {
+            width: 70%;
+        }
+
+        p {
+            font-size: 80%;
+        }
+
+
+
+        .application {
+
+            .ae {
+                width: 60%;
+            }
+
+            .davinci {
+                width: 60%;
+            }
+
+            .figma {
+                width: 60%;
+            }
+
+            .illustrator {
+                width: 60%;
+            }
+
+            .maya {
+                width: 60%;
+            }
+
+            .photoshop {
+                width: 60%;
+            }
+
+            .sass {
+                width: 60%;
+            }
+
+            .unity {
+                width: 60%;
+            }
+
+            .vs {
+                width: 60%;
+            }
+        }
+
+    }
+
+    .interest {
+        display: flex;
+        margin-top: -20%;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .contact {
+        display: flex;
+        height: 100%;
+
+        .contenue {
+            margin-top: -3%;
+            align-self: center;
+            justify-content: center;
+        }
+
+        .text {
+            width: 200%;
+        }
+
+        .linkedin {
+            width: 40%;
+            justify-self: flex-end;
+        }
+
+        .gmail {
+            width: 47%;
+            justify-self: flex-end;
+        }
+    }
+
+    .thank_you {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        .contenue {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+
+        .thank_you_text {
+            width: 90%;
+        }
+
+        .work_text {
+
+            width: 65%;
+            align-self: flex-start;
+
+
+        }
+
+        .avatar {
+            width: 80%;
+        }
+
+
+    }
+
+
 }
+
 @media only screen and (min-width: 335px) and (max-width: 768px) {
-  .nav .menu a {
-    font-size: 100%;
-  }
+    .nav {
+        .menu {
+            a {
+                font-size: 100%;
+            }
+        }
+    }
+
 }
+
 @media only screen and (max-width: 335px) {
-  .nav .menu a {
-    font-size: 80%;
-  }
-  .about p {
-    font-family: KiwiMaru;
-    font-size: 55%;
-    color: var(--lightBeige);
-  }
-  .about h3 {
-    font-size: 70%;
-  }
-  .about .contenue {
-    width: 80%;
-    height: 40%;
-  }
-  .about .titre {
-    grid-area: 1/2/2/3;
-    align-self: flex-end;
-  }
-  .about .main {
-    grid-area: 2/2/3/3;
-  }
-  .about .appelle {
-    grid-area: 3/2/4/3;
-    align-self: flex-start;
-    justify-self: flex-end;
-  }
-  .about .my_face {
-    align-self: flex-start;
-  }
-  .about .introduction {
-    grid-area: 1/2/2/3;
-    width: 70%;
-  }
+    .nav {
+        .menu {
+            a {
+                font-size: 80%;
+            }
+        }
+    }
+
+    .about {
+
+        p {
+            font-family: KiwiMaru;
+            font-size: 55%;
+            color: var(--lightBeige);
+        }
+
+        h3 {
+            font-size: 70%;
+        }
+
+        .contenue {
+            width: 80%;
+            height: 40%;
+        }
+
+        .titre {
+            grid-area: 1 / 2 / 2 / 3;
+            align-self: flex-end;
+        }
+
+        .main {
+            grid-area: 2 / 2 / 3 / 3;
+        }
+
+        .appelle {
+            grid-area: 3 / 2 / 4 / 3;
+            align-self: flex-start;
+            justify-self: flex-end;
+        }
+
+        .my_face {
+            align-self: flex-start;
+        }
+
+        .introduction {
+            grid-area: 1 / 2 / 2 / 3;
+            width: 70%;
+        }
+
+    }
 }
+
 @media screen and (min-width: 768px) {
-  .skills {
-    height: 100%;
-    margin-bottom: 15%;
-    margin-top: 10%;
-  }
-  .skills .title {
-    width: 200%;
-  }
-  .skills .ordi {
-    width: 70%;
-  }
-  .skills .editing {
-    width: 70%;
-  }
-  .skills .vector {
-    width: 70%;
-  }
-  .skills .text_vector {
-    width: 70%;
-  }
-  .skills .text_editing {
-    width: 70%;
-  }
-  .skills .text_ordi {
-    width: 70%;
-  }
-  .skills .coding {
-    width: 70%;
-  }
-  .skills .modele {
-    width: 70%;
-  }
-  .skills .animation {
-    width: 70%;
-  }
-  .skills .text_animation {
-    width: 70%;
-  }
-  .skills .text_modele {
-    width: 70%;
-  }
-  .skills .text_coding {
-    width: 70%;
-  }
-  .skills p {
-    font-size: 80%;
-  }
-  .skills .application .ae {
-    width: 60%;
-  }
-  .skills .application .davinci {
-    width: 60%;
-  }
-  .skills .application .figma {
-    width: 60%;
-  }
-  .skills .application .illustrator {
-    width: 60%;
-  }
-  .skills .application .maya {
-    width: 60%;
-  }
-  .skills .application .photoshop {
-    width: 60%;
-  }
-  .skills .application .sass {
-    width: 60%;
-  }
-  .skills .application .unity {
-    width: 60%;
-  }
-  .skills .application .vs {
-    width: 60%;
-  }
-  .about .contenue {
-    height: 30%;
-  }
-  .about .contenue h3 {
-    font-size: 100%;
-  }
-  .about .contenue p {
-    font-size: 80%;
-  }
-  .polaris .contexte {
-    width: 80%;
-    font-size: 80%;
-  }
-  .polaris h3 {
-    width: 80%;
-    font-size: 80%;
-  }
-  .polaris .texte_descriptif {
-    width: 80%;
-    font-size: 80%;
-  }
-  .aurorae .contexte {
-    width: 80%;
-    font-size: 80%;
-  }
-  .aurorae h3 {
-    width: 80%;
-    font-size: 80%;
-  }
-  .aurorae .texte_descriptif {
-    width: 80%;
-    font-size: 80%;
-  }
-  .aurorae .mp4_aurorae {
-    height: 15%;
-  }
-  .chaos h2 {
-    align-self: flex-end;
-  }
-  .chaos .contexte {
-    width: 80%;
-    font-size: 80%;
-  }
-  .chaos h3 {
-    width: 80%;
-    font-size: 80%;
-  }
-  .chaos .texte_descriptif {
-    width: 80%;
-    font-size: 80%;
-  }
-  .crystalize .contexte {
-    width: 80%;
-    font-size: 80%;
-  }
-  .crystalize h3 {
-    width: 80%;
-    font-size: 80%;
-  }
-  .crystalize .texte_descriptif {
-    width: 80%;
-    font-size: 80%;
-  }
-}/*# sourceMappingURL=style.css.map */
+    .skills {
+        height: 100%;
+        margin-bottom: 15%;
+        margin-top: 10%;
+
+        .title {
+            width: 200%;
+            align-self: flex-start;
+        }
+
+        .ordi {
+            width: 40%;
+        }
+
+        .editing {
+            width: 40%;
+        }
+
+        .vector {
+            width: 40%;
+        }
+
+        .text_vector {
+            font-size: 3em;
+        }
+
+        .text_editing {
+            font-size: 3em;
+        }
+
+        .text_ordi {
+            font-size: 3em;
+        }
+
+        .coding {
+            width: 40%;
+        }
+
+        .modele {
+            width: 40%;
+        }
+
+        .animation {
+            width: 40%;
+        }
+
+        .text_animation {
+            font-size: 3em;
+        }
+
+        .text_modele {
+            font-size: 3em;
+        }
+
+        .text_coding {
+            font-size: 3em;
+        }
+
+        .application {
+
+            .ae {
+                width: 60%;
+            }
+
+            .davinci {
+                width: 60%;
+            }
+
+            .figma {
+                width: 60%;
+            }
+
+            .illustrator {
+                width: 60%;
+            }
+
+            .maya {
+                width: 60%;
+            }
+
+            .photoshop {
+                width: 60%;
+            }
+
+            .sass {
+                width: 60%;
+            }
+
+            .unity {
+                width: 60%;
+            }
+
+            .vs {
+                width: 60%;
+            }
+        }
+
+    }
+
+    .about {
+        .contenue {
+            height: 30%;
+
+            h3 {
+                font-size: 250%;
+            }
+
+            p {
+                font-size: 170%;
+            }
+        }
+    }
+
+
+    .aurorae {
+        .contexte {
+            width: 80%;
+            font-size: 80%;
+        }
+
+        h3 {
+            width: 80%;
+            font-size: 80%;
+        }
+
+        .texte_descriptif {
+            width: 80%;
+            font-size: 80%;
+        }
+
+        .mp4_aurorae {
+            height: 50%;
+        }
+
+    }
+
+    .chaos {
+        h2 {
+            align-self: flex-end;
+        }
+
+        .contexte {
+            width: 80%;
+            font-size: 80%;
+        }
+
+        h3 {
+            width: 80%;
+            font-size: 80%;
+        }
+
+        .texte_descriptif {
+            width: 80%;
+            font-size: 80%;
+        }
+
+        .mp4_chaos {
+            height: 40%;
+        }
+
+    }
+
+    .crystalize {
+        .contexte {
+            width: 80%;
+            font-size: 80%;
+        }
+
+        h3 {
+            width: 80%;
+            font-size: 80%;
+        }
+
+        .texte_descriptif {
+            width: 80%;
+            font-size: 80%;
+        }
+
+    }
+
+}*//*# sourceMappingURL=style.css.map */
