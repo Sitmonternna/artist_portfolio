@@ -49,7 +49,7 @@ body {
   position: relative;
   width: 100%;
   height: 7vh;
-  /*border: blue solid 2px;*/
+  /*none: blue solid 2px;*/
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -86,7 +86,7 @@ body {
 .passion_love {
     display: flex;
     flex-direction: column;
-    border: #FF9894 2px solid;
+    none: #FF9894 2px solid;
     position: relative;
     height: 100vh;
     width: 100%;
