@@ -1,13 +1,10 @@
-//accueil swiper project
-var swiper = new Swiper(".mySwiper", {
-    cssMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    mousewheel: true,
-    keyboard: true,
-  });
+// Get the button
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+// Scroll to top function
+scrollToTopBtn.onclick = function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scroll
+    });
+};

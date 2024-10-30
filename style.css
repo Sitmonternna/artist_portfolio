@@ -17,7 +17,18 @@ body {
   position: relative;
 }
 
-/*font*/
+/*btn*/
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
 /*presentation*/
 .presentation {
   border: #AB4D05 2px solid;
@@ -217,7 +228,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  margin-bottom: 4%;
+  margin-bottom: 20%;
 }
 .skills .contenue {
   display: grid;
@@ -276,7 +287,7 @@ body {
   color: var(--hawaiianTan);
 }
 .skills .application {
-  margin-top: 2%;
+  margin-top: 5%;
   width: 80%;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -322,12 +333,333 @@ body {
   justify-self: flex-end;
 }
 
+.crystalize {
+  display: grid;
+  background-image: url(./projets/crystalize/crystalize_bk.svg);
+  width: 100%;
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.crystalize .contexte {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  width: 40%;
+  grid-area: 2/1/3/2;
+  align-self: center;
+  justify-self: center;
+}
+.crystalize .texte_descriptif {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  width: 40%;
+  align-self: center;
+  justify-self: center;
+}
+.crystalize h2 {
+  align-self: center;
+  justify-self: center;
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 250%;
+  color: var(--greyAsparagus);
+  grid-area: 1/1/2/2;
+}
+.crystalize h3 {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  align-self: center;
+  justify-self: center;
+}
+.crystalize .role {
+  align-self: center;
+  margin-inline: auto auto;
+  grid-area: 3/1/4/2;
+}
+.crystalize .application {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-self: center;
+  grid-area: 4/1/5/2;
+}
+.crystalize .application .maya {
+  width: 30%;
+}
+.crystalize .application .photoshop {
+  width: 30%;
+}
+.crystalize .present {
+  align-self: center;
+  justify-self: center;
+  grid-area: 1/2/5/3;
+  width: 85%;
+}
+
+.polaris {
+  display: grid;
+  background-image: url(./projets/polaris/polaris_bk.svg);
+  width: 100%;
+  height: 140vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.polaris .contexte {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  width: 40%;
+  grid-area: 2/1/3/2;
+  align-self: center;
+  justify-self: center;
+}
+.polaris .texte_descriptif {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  width: 40%;
+  align-self: center;
+  justify-self: center;
+}
+.polaris h2 {
+  align-self: center;
+  justify-self: center;
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 250%;
+  color: var(--greyAsparagus);
+  grid-area: 1/1/2/2;
+}
+.polaris h3 {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  align-self: center;
+  justify-self: center;
+}
+.polaris .role {
+  align-self: center;
+  margin-inline: auto auto;
+  grid-area: 3/1/4/2;
+}
+.polaris .application {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-self: center;
+  grid-area: 4/1/5/2;
+}
+.polaris .application .maya {
+  width: 30%;
+}
+.polaris .application .photoshop {
+  width: 30%;
+}
+.polaris .present {
+  align-self: center;
+  justify-self: center;
+  grid-area: 1/2/5/3;
+  width: 85%;
+}
+
+.chaos {
+  display: grid;
+  background-image: url(./projets/chaos/img/chaos_bk.svg);
+  width: 100%;
+  height: 130vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.chaos .contexte {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  width: 40%;
+  grid-area: 2/1/3/2;
+  align-self: center;
+  justify-self: center;
+}
+.chaos .texte_descriptif {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  width: 40%;
+  align-self: center;
+  justify-self: center;
+}
+.chaos h2 {
+  align-self: center;
+  justify-self: center;
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 250%;
+  color: var(--hawaiianTan);
+  grid-area: 1/1/2/2;
+  margin-top: 10%;
+}
+.chaos h3 {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  align-self: center;
+  justify-self: center;
+}
+.chaos .role {
+  align-self: center;
+  margin-inline: auto auto;
+  grid-area: 3/1/4/2;
+}
+.chaos .application {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-self: center;
+  grid-area: 4/1/5/2;
+}
+.chaos .application .maya {
+  width: 30%;
+}
+.chaos .application .davinci {
+  width: 30%;
+}
+.chaos .mp4_chaos {
+  align-self: center;
+  justify-self: center;
+  grid-area: 1/2/5/3;
+  width: 85%;
+  height: 45%;
+}
+
+.aurorae {
+  display: grid;
+  background-color: var(--sunshine);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 3px solid red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.aurorae .contexte {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  width: 40%;
+  grid-area: 2/1/3/2;
+  align-self: center;
+  justify-self: center;
+}
+.aurorae .texte_descriptif {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  width: 40%;
+  align-self: center;
+  justify-self: center;
+}
+.aurorae h2 {
+  align-self: center;
+  justify-self: center;
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 250%;
+  color: var(--hawaiianTan);
+  grid-area: 1/1/2/2;
+  margin-top: 10%;
+}
+.aurorae h3 {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 110%;
+  color: var(--lightBeige);
+  align-self: center;
+  justify-self: center;
+}
+.aurorae .role {
+  align-self: center;
+  margin-inline: auto auto;
+  grid-area: 3/1/4/2;
+}
+.aurorae .application {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-self: center;
+  grid-area: 4/1/5/2;
+}
+.aurorae .application .davinci {
+  width: 70%;
+}
+.aurorae .mp4_aurorae {
+  align-self: center;
+  justify-self: center;
+  grid-area: 1/2/5/3;
+  width: 85%;
+  height: 45%;
+}
+
 /*interest*/
 .interest {
   display: flex;
   width: 100%;
-  height: 100vh;
-  background-image: url(./media/img/background/interest_bk.svg);
+  height: 135vh;
+  background-image: url(./media/img/interest/interest_bk.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
