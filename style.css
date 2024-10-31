@@ -199,9 +199,11 @@ body {
   top: 5%;
   left: 5%;
   color: white;
-  opacity: 0; /* Start as invisible */
+  opacity: 0;
+  /* Start as invisible */
   transition: opacity 0.3s ease;
-  z-index: 2; /* Above the overlay */
+  z-index: 2;
+  /* Above the overlay */
 }
 .projects .swiper-slide .hover-text h2 {
   font-family: kiwiMaru;
@@ -217,7 +219,8 @@ body {
   font-family: kiwiMaru;
 }
 .projects .swiper-slide:hover .hover-text {
-  opacity: 1; /* Become visible on hover */
+  opacity: 1;
+  /* Become visible on hover */
 }
 
 /*about*/
@@ -411,49 +414,101 @@ body {
   background-position: center;
   background-size: cover;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-.crystalize .contexte {
-  font-family: KiwiMaru;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 110%;
-  color: var(--lightBeige);
-  width: 40%;
-  grid-area: 2/1/3/2;
+.crystalize .carroussel {
   align-self: center;
   justify-self: center;
+  grid-area: 1/2/5/4;
+  width: 85%;
+  height: 70%;
+  background-color: var(--greyAsparagus);
 }
-.crystalize .texte_descriptif {
-  font-family: KiwiMaru;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 110%;
-  color: var(--lightBeige);
-  width: 40%;
-  align-self: center;
-  justify-self: center;
+.crystalize .carroussel .swiper-button-prev {
+  transform: scale(3);
+  left: 2%;
+}
+.crystalize .carroussel .swiper-button-next {
+  transform: scale(3);
+  right: 2%;
+}
+.crystalize .carroussel .swiper {
+  width: 100%;
+  height: 100%;
+}
+.crystalize .carroussel .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.crystalize .carroussel .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.crystalize .carroussel .swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.crystalize .carroussel .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+.crystalize .carroussel .mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+.crystalize .carroussel .mySwiper3 {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.crystalize .carroussel .mySwiper3 .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+.crystalize .carroussel .mySwiper3 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+.crystalize .carroussel .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .crystalize h2 {
-  align-self: center;
-  justify-self: center;
+  align-self: flex-end;
+  margin-bottom: 0;
+  justify-self: flex-start;
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 250%;
+  font-size: 6em;
   color: var(--greyAsparagus);
   grid-area: 1/1/2/2;
+  margin-left: 9%;
 }
-.crystalize h3 {
+.crystalize .contexte {
   font-family: KiwiMaru;
   text-transform: uppercase;
-  font-weight: 500;
-  font-size: 110%;
+  font-weight: 300;
+  font-size: 2em;
   color: var(--lightBeige);
-  align-self: center;
+  width: 80%;
+  grid-area: 2/1/3/2;
+  align-self: flex-end;
   justify-self: center;
 }
 .crystalize .role {
@@ -461,24 +516,44 @@ body {
   margin-inline: auto auto;
   grid-area: 3/1/4/2;
 }
+.crystalize .role h3 {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 3.5em;
+  color: var(--lightBeige);
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+  margin-bottom: 0;
+}
+.crystalize .role .texte_descriptif {
+  font-family: KiwiMaru;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2em;
+  color: var(--lightBeige);
+  width: 40%;
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+  margin-top: 0;
+}
 .crystalize .application {
   display: flex;
   flex-direction: row;
-  align-self: center;
-  justify-self: center;
   grid-area: 4/1/5/2;
 }
 .crystalize .application .maya {
-  width: 30%;
+  width: 13%;
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin-left: 9%;
 }
 .crystalize .application .photoshop {
-  width: 30%;
-}
-.crystalize .present {
-  align-self: center;
-  justify-self: center;
-  grid-area: 1/2/5/3;
-  width: 85%;
+  width: 13%;
+  align-self: flex-start;
+  margin-left: 4%;
 }
 
 .polaris {
