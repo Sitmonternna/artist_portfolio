@@ -11,8 +11,8 @@
 
 <body>
 
-    <button id="scrollToTopBtn">
-        <img class="go_up" src="./media/img/btn_up.svg" alt="">
+    <button id="scrollToTopBtn" onclick="goUpBtn()">
+        <img class="go_up" src="./media/img/btn_up.svg" alt="Scroll to Top">
     </button>
 
     <section class="presentation">
@@ -46,38 +46,88 @@
         </div>
 
     </section>
-    <!--
+
     <section class="projects">
 
         <img class="title" src="./media/img/projects/title.svg" alt="title">
 
-        <div class="swiper mySwiper">
+        <div #swiperRef="" class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="./media/img/projects/swiper/aurorae/aurorae_thumbnail.png" alt="">
+                    <img src="./media/img/projects/swiper/polaris/c_polaris_thumbnail.svg" alt="">
+                    <div class="hover-text">
+
+                        <h2>polaris</h2>
+                        <h4>Site web storytelling</h4>
+
+                    </div>
+                    <div class="plus">
+                        <a href="#polaris">
+                            <img class="eye_link" src="./media/img/projects/swiper/savoir_link.svg" alt="">
+                        </a>
+                    </div>
+
                 </div>
                 <div class="swiper-slide">
-                    <img src="./media/img/projects/swiper/cristalize/3d_thumnail.jpg" alt="">
+                    <img src="./media/img/projects/swiper/aurorae/c_aurorae.svg" alt="">
+                    <div class="hover-text">
+
+                        <h2>aurorae</h2>
+                        <h4>Court métrage intéractif</h4>
+
+                    </div>
+                    <div class="plus">
+                        <a href="#aurorae">
+                            <img class="eye_link" src="./media/img/projects/swiper/savoir_link.svg" alt="">
+                        </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="./media/img/projects/swiper/hasu/thumnail_hasu.png" alt="">
+                    <img src="./media/img/projects/swiper/chaos/c_chaos.svg" alt="">
+                    <div class="hover-text">
+
+                        <h2>chaos</h2>
+                        <h4>Animation 3d</h4>
+
+                    </div>
+                    <div class="plus">
+                        <a href="#chaos">
+                            <img class="eye_link" src="./media/img/projects/swiper/savoir_link.svg" alt="">
+                        </a>
+                    </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="./media/img/projects/swiper/polaris/polaris_thumnail.svg" alt="">
+                    <img src="./media/img/projects/swiper/cristalize/c_crystalize.svg" alt="">
+                    <div class="hover-text">
+
+                        <h2>crystalize</h2>
+                        <h4>Modélisation 3d</h4>
+
+                    </div>
+                    <div class="plus">
+                        <a href="#crystalize">
+                            <img class="eye_link" src="./media/img/projects/swiper/savoir_link.svg" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div>
+                <img class="swiper-button-next" src="./media/img/projects/swiper/btn_right.svg" alt="">
+            </div>
+            <div>
+                <img class="swiper-button-prev" src="./media/img/projects/swiper/btn_left.svg" alt="">
+            </div>
             <div class="swiper-pagination"></div>
         </div>
 
     </section>
-    <video width="640" height="360" controls autoplay>
-    <source src="https://github.com/Sitmonternna/artist_portfolio/releases/tag/mp4_chaos/yi_sitmonternna_chaos_mp4.mp4" type="video/mp4">
-   </video>
+    <video>
+        <source src="https://youtu.be/XDchUhwI69A">
+    </video>
     <section class="skills">
         <div class="contenue">
             <img class="title" src="./media/img/skills/title.svg" alt="">
+
 
             <img class="ordi" src="./media/img/skills/icon/ordi.svg" alt="">
 
@@ -131,110 +181,11 @@
 
     </section>
 
-    <section class="polaris" id="projects">
-
-        <h2 class="title">Polaris</h2>
-        <img class="present" src="./projets/polaris/thumbnail_polaris.svg">
-
-        <p class="contexte">
-            Un site de storytelling qui suit l'aventure de Polaris, héros luttant contre les forces du mal dans un
-            univers étoilé.
-        </p>
-
-        <div class="role">
-            <h3>Rôle</h3>
-            <p class="texte_descriptif">
-                Design du personnage et des objets, avec animations programmées en GSAP.
-            </p>
-        </div>
-
-        <div class="application">
-            <img class="figma" src="./media/img/skills/application/figma.svg" alt="">
-            <img class="vs" src="./media/img/skills/application/vs.svg" alt="">
-
-        </div>
-
-    </section>
-
-    <section class="aurorae">
-
-        <h2>Aurorae</h2>
-        <iframe class="mp4_aurorae" src="https://www.youtube.com/embed/qD21wO-teCk" frameborder="0" allowfullscreen>
-        </iframe>
-
-        <p class="contexte">
-            Court-métrage vidéo qui vous plonge dans un tourbillon d'émotions. Il raconte l'histoire d'un personnage
-            mystique confrontée à une transformation psychologique profonde.
-        </p>
-        <div class="role">
-            <h3>Rôle</h3>
-            <p class="texte_descriptif">
-                Conception, production et montage vidéo, ainsi que le montage sonore réalisé avec Reaper.
-            </p>
-        </div>
-        <div class="application">
-            <img class="davinci" src="./media/img/skills/application/davinci.svg" alt="">
-        </div>
-
-    </section>
-
-    <section class="chaos">
-        <h2>Chaos</h2>
-        <iframe class="mp4_chaos" src="https://www.youtube.com/embed/XDchUhwI69A" frameborder="0" allowfullscreen>
-        </iframe>
-
-        <p class="contexte">
-            Court métrage d’animation 3D qui immerge le visiteur dans un univers de ville abandonnée, suscitant des
-            émotions de vide et de chaos.
-        </p>
-        <div class="role">
-            <h3>Rôle</h3>
-            <p class="texte_descriptif">
-                Création de l’animation de l’environnement axée sur l’eau et les algues, accompagnée du montage vidéo et
-                de la fabrication des sons d’ambiance réalisés avec Reaper.
-            </p>
-        </div>
-        <div class="application">
-            <img class="maya" src="./media/img/skills/application/maya.svg" alt="">
-            <img class="davinci" src="./media/img/skills/application/davinci.svg" alt="">
-        </div>
-
-    </section>
-
-
-
-    <section class="crystalize">
-        
-            <h2>Crystalize</h2>
-            <img class="present" src="./projets/crystalize/3d_crystalize.svg">
-
-            <p class="contexte">
-                Modélisation 3D d'un monde lumineux abandonné, invitant le visiteur à plonger dans un univers
-                fantastique.
-            </p>
-            <div class="role">
-                <h3>Rôle</h3>
-                <p class="texte_descriptif">
-                    Modélisation de gros champignons, vaisseau, coraux et étoiles ainsi que la lumière de la scène et
-                    des
-                    objets.
-                </p>
-            </div>
-
-            <div class="application">
-                <img class="maya" src="./media/img/skills/application/maya.svg" alt="">
-                <img class="photoshop" src="./media/img/skills/application/photoshop.svg" alt="">
-            </div>
-        
-    </section>
-
-
-
     <section class="interest">
         <img class="title" src="./media/img/interest/interest_title.svg" alt="">
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact">
 
         <div class="contenue">
             <img class="text" src="./media/img/contacts/contact_text.svg" alt="">

@@ -132,23 +132,92 @@ body {
   margin-left: auto;
   margin-right: auto;
   align-self: flex-start;
-  margin-top: 5%;
+  margin-block: 2% 4%;
 }
 .projects .swiper {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
 }
-.projects .swiper .swiper-slide {
+.projects .swiper-slide {
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.projects .swiper .swiper-slide img {
+.projects .swiper-slide .plus {
+  z-index: 5;
+  position: absolute;
+  display: inline-block;
+  bottom: 5%;
+  right: 5%;
+}
+.projects .swiper-slide .plus .eye_link {
+  position: relative;
+  width: 105%;
+  bottom: 5%;
+}
+.projects .swiper-pagination {
+  font-family: kiwiMaru;
+  font-size: 1em;
+  color: var(--lightBeige);
+}
+.projects .swiper-button-prev {
+  transform: scale(3);
+  left: 10%;
+}
+.projects .swiper-button-next {
+  transform: scale(3);
+  right: 10%;
+}
+.projects .swiper-slide img {
   display: block;
-  transform: scale(0.99);
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 35px;
+}
+.projects .swiper-slide:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(161, 122, 122, 0.568627451);
+  z-index: 1;
+  border-radius: 35px;
+}
+.projects .swiper {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+}
+.projects .swiper-slide .hover-text {
+  height: 50%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color: white;
+  opacity: 0; /* Start as invisible */
+  transition: opacity 0.3s ease;
+  z-index: 2; /* Above the overlay */
+}
+.projects .swiper-slide .hover-text h2 {
+  font-family: kiwiMaru;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+.projects .swiper-slide .hover-text h4 {
+  margin: 0;
+  font-size: 1em;
+  text-align: left;
+  font-family: kiwiMaru;
+}
+.projects .swiper-slide:hover .hover-text {
+  opacity: 1; /* Become visible on hover */
 }
 
 /*about*/

@@ -1,10 +1,21 @@
-// Get the button
-const scrollToTopBtn = document.getElementsByClassName('.go_up');
-
-// Scroll to top function
-scrollToTopBtn.onclick = function() {
+function goUpBtn() {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth' // Smooth scroll
+        behavior: 'smooth' 
     });
-};
+}
+
+//swipper
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    centeredSlides: true,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
