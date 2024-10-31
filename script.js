@@ -62,14 +62,14 @@ var swiper2 = new Swiper(".mySwiper4", {
 });
 
 
-var swiper = new Swiper(".mySwiper8", {
+var swiper = new Swiper(".mySwiper9", {
   loop: true,
   spaceBetween: 10,
   slidesPerView: 4,
   freeMode: true,
   watchSlidesProgress: true,
 });
-var swiper2 = new Swiper(".mySwiper9", {
+var swiper2 = new Swiper(".mySwiper8", {
   loop: true,
   spaceBetween: 10,
   navigation: {
