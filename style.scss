@@ -1480,18 +1480,12 @@ body {
 
 
 }
+*/
 
-@media only screen and (min-width: 335px) and (max-width: 768px) {
-    .nav {
-        .menu {
-            a {
-                font-size: 100%;
-            }
-        }
-    }
+//@media only screen and (min-width: 335px) and (max-width: 768px) {
+   
 
-}
-
+/*
 @media only screen and (max-width: 335px) {
     .nav {
         .menu {
@@ -1544,7 +1538,7 @@ body {
 
     }
 }
-
+*/
 @media screen and (min-width: 768px) {
     .skills {
         height: 100%;
@@ -1569,15 +1563,15 @@ body {
         }
 
         .text_vector {
-            font-size: 3em;
+            font-size: 1em;
         }
 
         .text_editing {
-            font-size: 3em;
+            font-size: 1em;
         }
 
         .text_ordi {
-            font-size: 3em;
+            font-size: 1em;
         }
 
         .coding {
@@ -1593,15 +1587,15 @@ body {
         }
 
         .text_animation {
-            font-size: 3em;
+            font-size: 1em;
         }
 
         .text_modele {
-            font-size: 3em;
+            font-size: 1em;
         }
 
         .text_coding {
-            font-size: 3em;
+            font-size: 1em;
         }
 
         .application {
@@ -1646,84 +1640,181 @@ body {
     }
 
     .about {
+        height: 80vh;
+        margin-top: 0;
         .contenue {
             height: 30%;
 
             h3 {
-                font-size: 250%;
+                font-size: 2em;
             }
 
             p {
-                font-size: 170%;
+                font-size: 1em;
             }
         }
     }
-
-
-    .aurorae {
-        .contexte {
-            width: 80%;
-            font-size: 80%;
+    .projects{
+        height: 50vh;
+        .swiper-slide{
+            .plus{
+                display: flex;
+            .eye_link{
+            bottom: 2%;
+            width: 40%;
+            justify-self: flex-end;
         }
-
-        h3 {
-            width: 80%;
-            font-size: 80%;
         }
-
-        .texte_descriptif {
-            width: 80%;
-            font-size: 80%;
         }
-
-        .mp4_aurorae {
-            height: 50%;
-        }
-
+        
+        
     }
 
-    .chaos {
-        h2 {
-            align-self: flex-end;
+    .polaris{
+        height: 65vh;
+        h2{
+            font-size: 3em;
         }
 
         .contexte {
-            width: 80%;
-            font-size: 80%;
+            font-size: 1em;
         }
-
-        h3 {
-            width: 80%;
-            font-size: 80%;
+        .role{
+           h3 {
+            font-size: 2em;
         }
 
         .texte_descriptif {
-            width: 80%;
-            font-size: 80%;
+            font-size: 1em;
+        } 
+        }
+
+        .carroussel {
+            height: 30%;
+            width: 90%;
+
+            .swiper-button{
+                &-next{
+                    width: 20%;
+                    transform: scale(1.3);
+                }
+                &-prev{
+                    width: 20%;
+                    transform: scale(1.3);
+                }
+            }
+            }
+        }
+   
+
+    .aurorae {
+        height: 65vh;
+        h2{
+            font-size: 3em;
+        }
+
+        .contexte {
+            font-size: 1em;
+        }
+        .role{
+           h3 {
+            font-size: 2em;
+        }
+
+        .texte_descriptif {
+            font-size: 1em;
+        } 
+        }
+
+        .carroussel {
+            height: 30%;
+            width: 90%;
+
+            .swiper-button{
+                &-next{
+                    width: 20%;
+                    transform: scale(1.3);
+                }
+                &-prev{
+                    width: 20%;
+                    transform: scale(1.3);
+                }
+            }
+            }
+        }
+
+    
+
+    .chaos {
+        height: 65vh;
+        h2{
+            font-size: 3em;
+        }
+        .contexte {
+            font-size: 1em;
+        }
+        .role{
+           h3 {
+            font-size: 2em;
+        }
+
+        .texte_descriptif {
+            font-size: 1em;
+        } 
         }
 
         .mp4_chaos {
-            height: 40%;
+            height: 30%;
         }
 
     }
 
     .crystalize {
-        .contexte {
-            width: 80%;
-            font-size: 80%;
-        }
+        height: 65vh;
 
-        h3 {
-            width: 80%;
-            font-size: 80%;
+        h2{
+            font-size: 3em;
+        }
+        .contexte {
+            font-size: 1em;
+        }
+        .role{
+           h3 {
+            font-size: 2em;
         }
 
         .texte_descriptif {
-            width: 80%;
-            font-size: 80%;
+            font-size: 1em;
+        } 
         }
 
-    }
+        .carroussel {
+            height: 30%;
+            width: 90%;
+            .swiper-button{
+                &-next{
+                    width: 20%;
+                    transform: scale(1.3);
+                }
+                &-prev{
+                    width: 20%;
+                    transform: scale(1.3);
+                }
+            }
+            }
+        }
 
-}*/
+        .interest{
+            height: 80vh;
+        }
+        .contact{
+            height: 80vh;
+        }
+        .thank_you{
+            height: 40vh;
+        }
+        .presentation{
+            height: 60vh;
+        }
+    
+ }
