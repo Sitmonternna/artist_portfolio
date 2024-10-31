@@ -405,11 +405,11 @@ body {
   justify-self: flex-end;
 }
 
-.polaris {
+.chaos {
   display: grid;
-  background-image: url(./projets/crystalize/crystalize_bk.svg);
+  background-image: url(./projets/chaos/img/chaos_bk.svg);
   width: 100%;
-  height: 120vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -419,95 +419,29 @@ body {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-.polaris .carroussel {
+.chaos .mp4_chaos {
+  margin-top: 15%;
   align-self: center;
   justify-self: center;
   grid-area: 1/2/5/4;
   width: 85%;
   height: 70%;
-  background-color: var(--greyAsparagus);
+  border-radius: 35px;
 }
-.polaris .carroussel .swiper-button-prev {
-  transform: scale(3);
-  left: 2%;
-}
-.polaris .carroussel .swiper-button-next {
-  transform: scale(3);
-  right: 2%;
-}
-.polaris .carroussel .swiper {
-  width: 100%;
-  height: 100%;
-}
-.polaris .carroussel .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.polaris .carroussel .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.polaris .carroussel .swiper-slide iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.polaris .carroussel .swiper {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.polaris .carroussel .swiper-slide {
-  background-size: cover;
-  background-position: center;
-}
-.polaris .carroussel .mySwiper2 {
-  height: 80%;
-  width: 100%;
-}
-.polaris .carroussel .mySwiper3 {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-.polaris .carroussel .mySwiper3 .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.4;
-}
-.polaris .carroussel .mySwiper3 .swiper-slide-thumb-active {
-  opacity: 1;
-}
-.polaris .carroussel .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.polaris h2 {
+.chaos h2 {
   align-self: flex-end;
   margin-bottom: 0;
+  margin-top: 20%;
   justify-self: flex-start;
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 6em;
-  color: var(--greyAsparagus);
+  font-size: 5.5em;
+  color: var(--pinkishBrown);
   grid-area: 1/1/2/2;
   margin-left: 9%;
 }
-.polaris .contexte {
+.chaos .contexte {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 300;
@@ -518,12 +452,12 @@ body {
   align-self: flex-end;
   justify-self: center;
 }
-.polaris .role {
+.chaos .role {
   align-self: center;
   margin-inline: auto auto;
   grid-area: 3/1/4/2;
 }
-.polaris .role h3 {
+.chaos .role h3 {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 500;
@@ -534,7 +468,7 @@ body {
   width: 80%;
   margin-bottom: 0;
 }
-.polaris .role .texte_descriptif {
+.chaos .role .texte_descriptif {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 300;
@@ -546,18 +480,18 @@ body {
   width: 80%;
   margin-top: 0;
 }
-.polaris .application {
+.chaos .application {
   display: flex;
   flex-direction: row;
   grid-area: 4/1/5/2;
 }
-.polaris .application .figma {
+.chaos .application .maya {
   width: 13%;
   align-self: flex-start;
   justify-self: flex-start;
   margin-left: 9%;
 }
-.polaris .application .vs {
+.chaos .application .davinci {
   width: 13%;
   align-self: flex-start;
   margin-left: 4%;
@@ -565,7 +499,7 @@ body {
 
 .aurorae {
   display: grid;
-  background-image: url(./projets/crystalize/crystalize_bk.svg);
+  background-color: var(--sunshine);
   width: 100%;
   height: 120vh;
   background-repeat: no-repeat;
@@ -584,6 +518,13 @@ body {
   width: 85%;
   height: 70%;
   background-color: var(--greyAsparagus);
+}
+.aurorae .carroussel .swiper-slide iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .aurorae .carroussel .swiper-button-prev {
   transform: scale(3);
@@ -622,21 +563,21 @@ body {
   background-size: cover;
   background-position: center;
 }
-.aurorae .carroussel .mySwiper2 {
+.aurorae .carroussel .mySwiper4 {
   height: 80%;
   width: 100%;
 }
-.aurorae .carroussel .mySwiper3 {
+.aurorae .carroussel .mySwiper5 {
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0;
 }
-.aurorae .carroussel .mySwiper3 .swiper-slide {
+.aurorae .carroussel .mySwiper5 .swiper-slide {
   width: 25%;
   height: 100%;
   opacity: 0.4;
 }
-.aurorae .carroussel .mySwiper3 .swiper-slide-thumb-active {
+.aurorae .carroussel .mySwiper5 .swiper-slide-thumb-active {
   opacity: 1;
 }
 .aurorae .carroussel .swiper-slide img {
@@ -654,7 +595,7 @@ body {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 6em;
-  color: var(--greyAsparagus);
+  color: var(--hawaiianTan);
   grid-area: 1/1/2/2;
   margin-left: 9%;
 }
@@ -702,16 +643,11 @@ body {
   flex-direction: row;
   grid-area: 4/1/5/2;
 }
-.aurorae .application .maya {
+.aurorae .application .davinci {
   width: 13%;
   align-self: flex-start;
   justify-self: flex-start;
   margin-left: 9%;
-}
-.aurorae .application .photoshop {
-  width: 13%;
-  align-self: flex-start;
-  margin-left: 4%;
 }
 
 .crystalize {
