@@ -34,7 +34,7 @@ body {
 .presentation {
     // none: #AB4D05 2px solid;
     position: relative;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1808,7 +1808,7 @@ img.go_up{
  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .skills {
         height: 100%;
         margin-bottom: 15%;
