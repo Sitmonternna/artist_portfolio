@@ -21,6 +21,10 @@ body {
 }
 
 /*btn*/
+#scrollToTopBtn{
+    background-color: transparent;
+    border: none;
+}
 .go_up {
     position: fixed;
     bottom: 30px;
@@ -34,7 +38,7 @@ body {
 .presentation {
     // none: #AB4D05 2px solid;
     position: relative;
-    height: 120vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,32 +75,40 @@ body {
 
     }
 
-    .name {
+    div.contenue {
+        display: flex;
         flex-direction: column;
-        margin-block-start: auto;
-        margin-bottom: 4%;
-        width: 70%;
+        margin-block: auto auto;
+
+
+        .name {
+            align-self: center;
+            width: 70%;
+        }
+
+        .arrow {
+            align-self: center;
+            margin-top: 4%;
+            width: 3%;
+
+            animation: up_down 1.5s infinite ease-in-out;
+
+        }
     }
 
-    .arrow {
-        flex-direction: column;
-        width: 3%;
-        margin-bottom: auto;
-        animation: up_down 2s infinite ease-in-out;
-    }
 
 
     @keyframes up_down {
         0% {
-            margin-top: 0;
+            transform: translateY(0);
         }
 
         50% {
-            margin-top: 3%;
+            transform: translateY(50%);
         }
 
         100% {
-            margin-top: 0;
+            mtransform: translateY(0);
         }
     }
 
@@ -140,7 +152,7 @@ body {
     flex-direction: column;
     //none: #FF9894 2px solid;
     position: relative;
-    height: 110vh;
+    height: 100vh;
     width: 100%;
     background-image: url(./media/img/background/project.svg);
     background-repeat: no-repeat;
@@ -148,7 +160,7 @@ body {
     background-size: cover;
 
     .title {
-        width: 25%;
+        width: 30%;
         margin-left: auto;
         margin-right: auto;
         align-self: flex-start;
@@ -156,6 +168,7 @@ body {
     }
 
     .swiper {
+        margin-block: auto;
         width: 100%;
         height: 100%;
     }
@@ -442,47 +455,47 @@ body {
 
         .ae {
             grid-area: 1 / 1 / 2 / 2;
-            justify-self: flex-end;
+            justify-self: center;
         }
 
         .davinci {
             grid-area: 1 / 2 / 2 / 3;
-            justify-self: flex-end;
+            justify-self: center;
         }
 
         .figma {
             grid-area: 1 / 3 / 2 / 4;
-            justify-self: flex-end;
+            justify-self: center;
         }
 
         .illustrator {
             grid-area: 1 / 4 / 2 / 5;
-            justify-self: flex-end;
+            justify-self: center;
         }
 
         .maya {
             grid-area: 1 / 5 / 2 / 6;
-            justify-self: flex-end;
+            justify-self: center;
         }
 
         .photoshop {
             grid-area: 1 / 6 / 2 / 7;
-            justify-self: flex-end;
+            justify-self: center;
         }
 
         .sass {
             grid-area: 1 / 7 / 2 / 8;
-            justify-self: flex-end;
+            justify-self: center;
         }
 
         .unity {
             grid-area: 1 / 8 / 2 / 9;
-            justify-self: flex-end;
+            justify-self: center;
         }
 
         .vs {
             grid-area: 1 / 9 / 2 / 10;
-            justify-self: flex-end;
+            justify-self: center;
         }
     }
 }
@@ -495,8 +508,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    //border: 3px solid red;
-    display: grid;
+    margin-block: 0;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
@@ -534,7 +546,7 @@ body {
         font-family: KiwiMaru;
         text-transform: uppercase;
         font-weight: 300;
-        font-size: 2em;
+        font-size: 1.5em;
         color: var(--lightBeige);
         width: 80%;
         grid-area: 2 / 1 / 3 / 2;
@@ -565,7 +577,7 @@ body {
             font-family: KiwiMaru;
             text-transform: uppercase;
             font-weight: 300;
-            font-size: 2em;
+            font-size: 1.5em;
             color: var(--lightBeige);
             width: 40%;
             align-self: center;
@@ -618,15 +630,17 @@ body {
         align-self: center;
         justify-self: center;
         grid-area: 1 / 2 / 5 / 4;
-        width: 85%;
+        width: 90%;
         height: 70%;
-        background-color: var(--greyAsparagus);
+        background-color: #879e9f;
+        border-radius: 25px;
 
         .swiper-slide iframe {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 15px;
         }
 
         .swiper-button {
@@ -644,6 +658,7 @@ body {
         .swiper {
             width: 100%;
             height: 100%;
+            border-radius: 15px;
         }
 
         .swiper-slide {
@@ -653,6 +668,8 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 15px;
+
         }
 
         .swiper-slide img {
@@ -660,6 +677,7 @@ body {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 15px;
         }
 
         .swiper {
@@ -667,32 +685,38 @@ body {
             height: 300px;
             margin-left: auto;
             margin-right: auto;
+            border-radius: 15px;
         }
 
         .swiper-slide {
             background-size: cover;
             background-position: center;
+            border-radius: 15px;
         }
 
         .mySwiper8 {
             height: 80%;
             width: 100%;
+            border-radius: 15px;
         }
 
         .mySwiper9 {
             height: 20%;
             box-sizing: border-box;
             padding: 10px 0;
+            border-radius: 15px;
         }
 
         .mySwiper9 .swiper-slide {
             width: 25%;
             height: 100%;
             opacity: 0.4;
+            border-radius: 15px;
         }
 
         .mySwiper9 .swiper-slide-thumb-active {
             opacity: 1;
+            border-radius: 15px;
         }
 
         .swiper-slide img {
@@ -700,6 +724,7 @@ body {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 15px;
         }
     }
 
@@ -711,20 +736,20 @@ body {
         text-transform: uppercase;
         font-weight: 800;
         font-size: 6em;
-        color: var(--hawaiianTan);
+        color: var(--greyAsparagus);
         grid-area: 1 / 1 / 2 / 2;
         margin-left: 9%;
     }
 
-    .contexte {
+    p.contexte {
         font-family: KiwiMaru;
         text-transform: uppercase;
         font-weight: 300;
-        font-size: 2em;
+        font-size: 1.5em;
         color: var(--lightBeige);
         width: 80%;
         grid-area: 2 / 1 / 3 / 2;
-        align-self: flex-end;
+        align-self: center;
         justify-self: center;
     }
 
@@ -751,7 +776,7 @@ body {
             font-family: KiwiMaru;
             text-transform: uppercase;
             font-weight: 300;
-            font-size: 2em;
+            font-size: 1.5em;
             color: var(--lightBeige);
             width: 40%;
             align-self: center;
@@ -788,10 +813,11 @@ body {
 }
 
 .aurorae {
+    margin-block: 0;
     display: grid;
     background-color: var(--sunshine);
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -808,14 +834,16 @@ body {
         justify-self: center;
         grid-area: 1 / 2 / 5 / 4;
         width: 85%;
-        height: 70%;
-        background-color: var(--greyAsparagus);
+        height: 85%;
+        background-color: #d69b4f;
+        border-radius: 25px;
 
         .swiper-slide iframe {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 15px;
         }
 
         .swiper-button {
@@ -842,6 +870,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+
         }
 
         .swiper-slide img {
@@ -849,6 +878,7 @@ body {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 10px;
         }
 
         .swiper {
@@ -856,11 +886,15 @@ body {
             height: 300px;
             margin-left: auto;
             margin-right: auto;
+            border-radius: 25px;
+
+
         }
 
         .swiper-slide {
             background-size: cover;
             background-position: center;
+            border-radius: 25px;
         }
 
         .mySwiper4 {
@@ -872,16 +906,19 @@ body {
             height: 20%;
             box-sizing: border-box;
             padding: 10px 0;
+            border-radius: 25px;
         }
 
         .mySwiper5 .swiper-slide {
             width: 25%;
             height: 100%;
             opacity: 0.4;
+            border-radius: 25px;
         }
 
         .mySwiper5 .swiper-slide-thumb-active {
             opacity: 1;
+            border-radius: 25px;
         }
 
         .swiper-slide img {
@@ -905,15 +942,15 @@ body {
         margin-left: 9%;
     }
 
-    .contexte {
+    p.contexte {
         font-family: KiwiMaru;
         text-transform: uppercase;
         font-weight: 300;
-        font-size: 2em;
+        font-size: 1.5em;
         color: var(--lightBeige);
         width: 80%;
         grid-area: 2 / 1 / 3 / 2;
-        align-self: flex-end;
+        align-self: center;
         justify-self: center;
     }
 
@@ -940,7 +977,7 @@ body {
             font-family: KiwiMaru;
             text-transform: uppercase;
             font-weight: 300;
-            font-size: 2em;
+            font-size: 1.5em;
             color: var(--lightBeige);
             width: 40%;
             align-self: center;
@@ -966,7 +1003,6 @@ body {
 
     }
 
-
 }
 
 .crystalize {
@@ -989,9 +1025,10 @@ body {
         align-self: center;
         justify-self: center;
         grid-area: 1 / 2 / 5 / 4;
-        width: 85%;
-        height: 70%;
+        width: 95%;
+        height: 75%;
         background-color: var(--greyAsparagus);
+        border-radius: 25px;
 
         .swiper-button {
             &-prev {
@@ -1008,6 +1045,7 @@ body {
         .swiper {
             width: 100%;
             height: 100%;
+            border-radius: 25px;
         }
 
         .swiper-slide {
@@ -1017,6 +1055,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            border-radius: 25px;
         }
 
         .swiper-slide img {
@@ -1024,6 +1063,7 @@ body {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 15px;
         }
 
         .swiper {
@@ -1031,6 +1071,26 @@ body {
             height: 300px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .mySwiper8 {
+            height: 80%;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .mySwiper9 {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+            border-radius: 15px;
+        }
+
+        .mySwiper9 .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+            border-radius: 15px;
         }
 
         .swiper-slide {
@@ -1041,18 +1101,21 @@ body {
         .mySwiper2 {
             height: 80%;
             width: 100%;
+            border-radius: 15px;
         }
 
         .mySwiper3 {
             height: 20%;
             box-sizing: border-box;
             padding: 10px 0;
+            border-radius: 15px;
         }
 
         .mySwiper3 .swiper-slide {
             width: 25%;
             height: 100%;
             opacity: 0.4;
+            
         }
 
         .mySwiper3 .swiper-slide-thumb-active {
@@ -1080,15 +1143,15 @@ body {
         margin-left: 9%;
     }
 
-    .contexte {
+    p.contexte {
         font-family: KiwiMaru;
         text-transform: uppercase;
         font-weight: 300;
-        font-size: 2em;
+        font-size: 1.5em;
         color: var(--lightBeige);
         width: 80%;
         grid-area: 2 / 1 / 3 / 2;
-        align-self: flex-end;
+        align-self: center;
         justify-self: center;
     }
 
@@ -1115,7 +1178,7 @@ body {
             font-family: KiwiMaru;
             text-transform: uppercase;
             font-weight: 300;
-            font-size: 2em;
+            font-size: 1.5em;
             color: var(--lightBeige);
             width: 40%;
             align-self: center;
@@ -1172,7 +1235,7 @@ body {
     display: grid;
     background-image: url(./media/img/background/contact_bk.svg);
     width: 100%;
-    height: 130vh;
+    height: 100vh;
     //border: var(--blush) solid 2px;
     background-repeat: no-repeat;
     background-position: center;
@@ -1180,38 +1243,42 @@ body {
     margin-block: auto auto;
 
     .contenue {
+        display: grid;
         align-self: center;
-        width: 80%;
+        width: 70%;
+        width: 50%;
         margin-inline: auto auto;
         //border: #AB4D05 3px solid;
         align-items: center;
         justify-content: center;
-        display: grid;
-
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr 0.4fr;
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 1%;
         grid-row-gap: 0;
 
-    }
-
-    .text {
+        .text {
         grid-area: 1 / 1 / 3 / 3;
         width: 100%;
-
-        justify-self: flex-end;
+        justify-self: center;
     }
 
     .linkedin {
+        display: flex;
         grid-area: 1 / 3 / 2 / 4;
         align-self: flex-end;
-        justify-self: flex-start;
+        justify-self: center;
     }
 
     .gmail {
+        display: flex;
         grid-area: 2 / 3 / 3 / 4;
-        justify-self: flex-start;
+        justify-self: center;
+        align-self: flex-end;
     }
+
+    }
+
+    
 }
 
 //thank you
@@ -1480,14 +1547,12 @@ body {
 
 
 }*/
+/*
+@media only screen and (min-width: 375px) and (max-width: 768px) {}
 
-@media only screen and (min-width: 375px) and (max-width: 768px) {
-
-}
-   
 
 @media only screen and (max-width: 375px) {
-    
+
     .skills {
         height: 100%;
         margin-bottom: 15%;
@@ -1590,6 +1655,7 @@ body {
     .about {
         height: 40vh;
         margin-top: 0;
+
         .contenue {
             height: 30%;
 
@@ -1603,129 +1669,141 @@ body {
         }
     }
 
-    .projects{
+    .projects {
         font-size: 0.5em;
         height: 20vh;
-        img.swiper-button{
-            &-next{
+
+        img.swiper-button {
+            &-next {
                 width: 20%;
                 transform: scale(1);
             }
-            &-prev{
+
+            &-prev {
                 width: 20%;
                 transform: scale(1);
             }
         }
-        .swiper-slide{
-            img{
+
+        .swiper-slide {
+            img {
                 border-radius: 15px;
             }
-            
-            .plus{
+
+            .plus {
                 display: flex;
-            .eye_link{
-            bottom: 2%;
-            width: 20%;
-            justify-self: flex-end;
+
+                .eye_link {
+                    bottom: 2%;
+                    width: 20%;
+                    justify-self: flex-end;
+                }
+            }
         }
-        }
-        }
-        
-        
+
+
     }
 
-    .polaris{
+    .polaris {
         height: 30vh;
-        h2{
+
+        h2 {
             font-size: 2em;
         }
 
         .contexte {
             font-size: 0.5em;
         }
-        .role{
-           h3 {
-            font-size: 1em;
-        }
 
-        .texte_descriptif {
-            font-size: 0.5em;
-        } 
+        .role {
+            h3 {
+                font-size: 1em;
+            }
+
+            .texte_descriptif {
+                font-size: 0.5em;
+            }
         }
 
         .carroussel {
             height: 40%;
             width: 90%;
 
-            .swiper-button{
-                &-next{
+            .swiper-button {
+                &-next {
                     width: 20%;
                     transform: scale(1.3);
                 }
-                &-prev{
+
+                &-prev {
                     width: 20%;
                     transform: scale(1.3);
                 }
-            }
             }
         }
-   
+    }
+
 
     .aurorae {
         height: 30vh;
-        h2{
+
+        h2 {
             font-size: 2em;
         }
 
         .contexte {
             font-size: 0.5em;
         }
-        .role{
-           h3 {
-            font-size: 1em;
-        }
 
-        .texte_descriptif {
-            font-size: 0.5em;
-        } 
+        .role {
+            h3 {
+                font-size: 1em;
+            }
+
+            .texte_descriptif {
+                font-size: 0.5em;
+            }
         }
 
         .carroussel {
             height: 40%;
             width: 90%;
 
-            .swiper-button{
-                &-next{
+            .swiper-button {
+                &-next {
                     width: 20%;
                     transform: scale(1.3);
                 }
-                &-prev{
+
+                &-prev {
                     width: 20%;
                     transform: scale(1.3);
                 }
-            }
             }
         }
+    }
 
-    
+
 
     .chaos {
         height: 50vh;
-        h2{
+
+        h2 {
             font-size: 2em;
         }
 
         .contexte {
             font-size: 0.5em;
         }
-        .role{
-           h3 {
-            font-size: 1em;
-        }
 
-        .texte_descriptif {
-            font-size: 0.5em;
-        } 
+        .role {
+            h3 {
+                font-size: 1em;
+            }
+
+            .texte_descriptif {
+                font-size: 0.5em;
+            }
         }
 
         .mp4_chaos {
@@ -1737,98 +1815,111 @@ body {
 
     .crystalize {
         height: 30vh;
-        h2{
+
+        h2 {
             font-size: 2em;
         }
 
         .contexte {
             font-size: 0.5em;
         }
-        .role{
-           h3 {
-            font-size: 1em;
-        }
 
-        .texte_descriptif {
-            font-size: 0.5em;
-        } 
+        .role {
+            h3 {
+                font-size: 1em;
+            }
+
+            .texte_descriptif {
+                font-size: 0.5em;
+            }
         }
 
         .carroussel {
             height: 40%;
             width: 90%;
 
-            .swiper-button{
-                &-next{
+            .swiper-button {
+                &-next {
                     width: 20%;
                     transform: scale(1.3);
                 }
-                &-prev{
+
+                &-prev {
                     width: 20%;
                     transform: scale(1.3);
                 }
             }
-            }
+        }
+    }
+
+    .interest {
+        height: 25vh;
+    }
+
+    .contact {
+        height: 25vh;
+
+        img.linkedin {
+            width: 25%;
         }
 
-        .interest{
-            height: 25vh;
+        img.gmail {
+            width: 25%;
         }
-        .contact{
-            height: 25vh;
-            img.linkedin{
-                width: 25%;
-            }
-            img.gmail{
-                width: 25%;
-            }
+    }
+
+    .thank_you {
+        height: 20vh;
+    }
+
+    .presentation {
+        img.arrow {
+            margin-bottom: 30%;
         }
-        .thank_you{
-            height: 20vh;
+
+        height: 30vh;
+
+        .logo {
+            width: 15%;
+            margin-top: 2%;
         }
-        .presentation{
-            img.arrow{
-                margin-bottom: 30%;
-            }
-            height: 30vh;
-.logo{
-                    width: 15%;
-                    margin-top: 2%;
-                }
-            .menu{
-                
-                a{
-                    font-size: 1em;
-                }
+
+        .menu {
+
+            a {
+                font-size: 1em;
             }
         }
-    
-img.go_up{
-    width: 20%;
- }
+    }
+
+    img.go_up {
+        width: 20%;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .skills {
-        height: 100%;
-        margin-bottom: 15%;
-        margin-top: 10%;
+        height: 120vh;
+        width: 100%;
+        margin-block: 0;
+        //margin-bottom: 15%;
+        //margin-top: 10%;
 
         .title {
-            width: 200%;
+            width: 100%;
             align-self: flex-start;
         }
 
         .ordi {
-            width: 40%;
+            width: 25%;
         }
 
         .editing {
-            width: 40%;
+            width: 25%;
         }
 
         .vector {
-            width: 40%;
+            width: 25%;
         }
 
         .text_vector {
@@ -1844,15 +1935,15 @@ img.go_up{
         }
 
         .coding {
-            width: 40%;
+            width: 25%;
         }
 
         .modele {
-            width: 40%;
+            width: 25%;
         }
 
         .animation {
-            width: 40%;
+            width: 25%;
         }
 
         .text_animation {
@@ -1868,6 +1959,7 @@ img.go_up{
         }
 
         .application {
+            margin-block: 0;
 
             .ae {
                 width: 60%;
@@ -1911,6 +2003,7 @@ img.go_up{
     .about {
         height: 80vh;
         margin-top: 0;
+
         .contenue {
             height: 30%;
 
@@ -1923,113 +2016,126 @@ img.go_up{
             }
         }
     }
-    .projects{
+
+    .projects {
         height: 50vh;
-        .swiper-slide{
-            .plus{
+
+        .swiper-slide {
+            .plus {
                 display: flex;
-            .eye_link{
-            bottom: 2%;
-            width: 40%;
-            justify-self: flex-end;
+
+                .eye_link {
+                    bottom: 2%;
+                    width: 40%;
+                    justify-self: flex-end;
+                }
+            }
         }
-        }
-        }
-        
-        
+
+
     }
 
-    .polaris{
+    .polaris {
         height: 65vh;
-        h2{
+
+        h2 {
             font-size: 3em;
         }
 
         .contexte {
             font-size: 1em;
         }
-        .role{
-           h3 {
-            font-size: 2em;
-        }
 
-        .texte_descriptif {
-            font-size: 1em;
-        } 
+        .role {
+            h3 {
+                font-size: 2em;
+            }
+
+            .texte_descriptif {
+                font-size: 1em;
+            }
         }
 
         .carroussel {
             height: 30%;
             width: 90%;
 
-            .swiper-button{
-                &-next{
+            .swiper-button {
+                &-next {
                     width: 20%;
                     transform: scale(1.3);
                 }
-                &-prev{
+
+                &-prev {
                     width: 20%;
                     transform: scale(1.3);
                 }
-            }
             }
         }
-   
+    }
+
 
     .aurorae {
         height: 65vh;
-        h2{
+
+        h2 {
             font-size: 3em;
         }
 
         .contexte {
             font-size: 1em;
         }
-        .role{
-           h3 {
-            font-size: 2em;
-        }
 
-        .texte_descriptif {
-            font-size: 1em;
-        } 
+        .role {
+            h3 {
+                font-size: 2em;
+            }
+
+            .texte_descriptif {
+                font-size: 1.5em;
+                align-self: center;
+            }
         }
 
         .carroussel {
-            height: 30%;
+            height: 90%;
             width: 90%;
 
-            .swiper-button{
-                &-next{
+            .swiper-button {
+                &-next {
                     width: 20%;
                     transform: scale(1.3);
                 }
-                &-prev{
+
+                &-prev {
                     width: 20%;
                     transform: scale(1.3);
                 }
-            }
             }
         }
+    }
 
-    
+
 
     .chaos {
         height: 65vh;
-        h2{
+
+        h2 {
             font-size: 3em;
         }
+
         .contexte {
             font-size: 1em;
         }
-        .role{
-           h3 {
-            font-size: 2em;
-        }
 
-        .texte_descriptif {
-            font-size: 1em;
-        } 
+        .role {
+            h3 {
+                font-size: 2em;
+            }
+
+            .texte_descriptif {
+                font-size: 1em;
+            }
         }
 
         .mp4_chaos {
@@ -2041,49 +2147,56 @@ img.go_up{
     .crystalize {
         height: 65vh;
 
-        h2{
+        h2 {
             font-size: 3em;
         }
+
         .contexte {
             font-size: 1em;
         }
-        .role{
-           h3 {
-            font-size: 2em;
-        }
 
-        .texte_descriptif {
-            font-size: 1em;
-        } 
+        .role {
+            h3 {
+                font-size: 2em;
+            }
+
+            .texte_descriptif {
+                font-size: 1em;
+            }
         }
 
         .carroussel {
             height: 30%;
             width: 90%;
-            .swiper-button{
-                &-next{
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-                &-prev{
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-            }
-        }
 
-        .interest{
-            height: 80vh;
+            .swiper-button {
+                &-next {
+                    width: 20%;
+                    transform: scale(1.3);
+                }
+
+                &-prev {
+                    width: 20%;
+                    transform: scale(1.3);
+                }
+            }
         }
-        .contact{
-            height: 80vh;
-        }
-        .thank_you{
-            height: 40vh;
-        }
-        .presentation{
-            height: 60vh;
-        }
-    
- }
+    }
+
+    .interest {
+        height: 80vh;
+    }
+
+    .contact {
+        height: 80vh;
+    }
+
+    .thank_you {
+        height: 40vh;
+    }
+
+    .presentation {
+        height: 60vh;
+    }
+
+}*/
