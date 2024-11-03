@@ -1303,6 +1303,213 @@ body {
 
 
 }*/
+@media only screen and (min-width: 768px) and (max-width: 1140px) {
+  .about p {
+    font-size: 1em;
+  }
+  .about h3 {
+    font-size: 2em;
+  }
+  .about .my_face {
+    width: 100%;
+  }
+  .projects {
+    height: 50vh;
+  }
+  .projects .swiper .swiper-wrapper {
+    height: 100%;
+    width: 120%;
+  }
+  .skills .contenue .title {
+    width: 100%;
+  }
+  .skills .application .ae {
+    width: 70%;
+  }
+  .skills .application .davinci {
+    width: 70%;
+  }
+  .skills .application .figma {
+    width: 70%;
+  }
+  .skills .application .illustrator {
+    width: 70%;
+  }
+  .skills .application .maya {
+    width: 70%;
+  }
+  .skills .application .photoshop {
+    width: 70%;
+  }
+  .skills .application .sass {
+    width: 70%;
+  }
+  .skills .application .unity {
+    width: 70%;
+  }
+  .skills .application .vs {
+    width: 70%;
+  }
+  .polaris {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 15% 40%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .polaris h2 {
+    font-size: 4em;
+  }
+  .polaris p.contexte {
+    font-size: 1em;
+  }
+  .polaris .role h3 {
+    font-size: 1.9em;
+  }
+  .polaris .role p.texte_descriptif {
+    font-size: 1em;
+  }
+  .polaris .application {
+    align-self: center;
+  }
+  .polaris .carroussel {
+    height: 50%;
+    width: 95%;
+    margin-top: 25%;
+  }
+  .polaris .carroussel .swiper-button-next {
+    width: 5%;
+    margin-right: 2%;
+  }
+  .polaris .carroussel .swiper-button-prev {
+    width: 5%;
+    margin-left: 2%;
+  }
+  .aurorae {
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.5fr 0.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .aurorae h2 {
+    font-size: 4em;
+  }
+  .aurorae p.contexte {
+    font-size: 1em;
+  }
+  .aurorae .role h3 {
+    font-size: 1.9em;
+  }
+  .aurorae .role p.texte_descriptif {
+    font-size: 1em;
+  }
+  .aurorae .application {
+    align-self: center;
+  }
+  .aurorae .carroussel {
+    height: 50%;
+    width: 95%;
+    margin-top: 30%;
+  }
+  .aurorae .carroussel .swiper-button-next {
+    width: 5%;
+    margin-right: 2%;
+  }
+  .aurorae .carroussel .swiper-button-prev {
+    width: 5%;
+    margin-left: 2%;
+  }
+  .chaos {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 0.5fr 0.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .chaos .mp4_chaos {
+    align-self: center;
+    height: 55%;
+  }
+  .chaos h2 {
+    font-size: 4.5em;
+  }
+  .chaos p.contexte {
+    font-size: 1em;
+  }
+  .chaos .role h3 {
+    font-size: 1.9em;
+  }
+  .chaos .role p.texte_descriptif {
+    font-size: 1em;
+  }
+  .chaos .application {
+    align-self: center;
+  }
+  .crystalize {
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.5fr 0.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .crystalize h2 {
+    font-size: 4em;
+  }
+  .crystalize p.contexte {
+    font-size: 1em;
+  }
+  .crystalize .role h3 {
+    font-size: 1.9em;
+  }
+  .crystalize .role p.texte_descriptif {
+    font-size: 1em;
+  }
+  .crystalize .application {
+    align-self: center;
+  }
+  .crystalize .carroussel {
+    height: 50%;
+    width: 95%;
+    margin-top: 30%;
+  }
+  .crystalize .carroussel .swiper-button-next {
+    width: 5%;
+    margin-right: 2%;
+  }
+  .crystalize .carroussel .swiper-button-prev {
+    width: 5%;
+    margin-left: 2%;
+  }
+  .interest {
+    height: 70vh;
+  }
+  .contact {
+    height: 70vh;
+  }
+  .contact .gmail {
+    width: 95%;
+  }
+  .contact .linkedin {
+    width: 90%;
+  }
+  .thank_you {
+    height: 70vh;
+  }
+  .thank_you .contenue .thank_you_text {
+    width: 90%;
+  }
+  .thank_you .contenue .work_text {
+    width: 90%;
+  }
+  .thank_you .contenue .avatar {
+    width: 90%;
+  }
+}
 @media only screen and (min-width: 375px) and (max-width: 768px) {
   .presentation .nav a {
     font-size: 100%;
@@ -1338,7 +1545,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .projects .small .polaris {
+  .projects .small .present_polaris {
     background-image: none;
     height: 25vh;
     display: flex;
@@ -1346,16 +1553,16 @@ body {
     margin-bottom: 20%;
     position: relative;
   }
-  .projects .small .polaris .thumbnail_polaris {
+  .projects .small .present_polaris .thumbnail_polaris {
     margin-inline: auto auto;
     width: 90%;
     height: auto;
     border-radius: 25px;
   }
-  .projects .small .polaris .thumbnail_polaris:hover .hover-text {
+  .projects .small .present_polaris .thumbnail_polaris:hover .hover-text {
     display: flex;
   }
-  .projects .small .polaris .eye_link {
+  .projects .small .present_polaris .eye_link {
     z-index: 5;
     position: absolute;
     display: inline-block;
@@ -1363,7 +1570,7 @@ body {
     right: 8%;
     width: 10%;
   }
-  .projects .small .polaris .small_hover_text {
+  .projects .small .present_polaris .small_hover_text {
     position: absolute;
     top: 10%;
     left: 8%;
@@ -1374,10 +1581,10 @@ body {
     z-index: 2;
     /* Above the overlay */
   }
-  .projects .small .polaris .small_hover_text:hover {
+  .projects .small .present_polaris .small_hover_text:hover {
     opacity: 1;
   }
-  .projects .small .polaris .small_hover_text h2 {
+  .projects .small .present_polaris .small_hover_text h2 {
     color: white;
     font-family: kiwiMaru;
     font-size: 2em;
@@ -1385,29 +1592,29 @@ body {
     margin: 0;
     text-align: left;
   }
-  .projects .small .polaris .small_hover_text h4 {
+  .projects .small .present_polaris .small_hover_text h4 {
     margin: 0;
     font-size: 0.8em;
     text-align: left;
     font-family: kiwiMaru;
   }
-  .projects .small .aurorae {
+  .projects .small .present_aurorae {
     background-color: transparent;
     height: 25vh;
     display: flex;
     flex-direction: column;
     position: relative;
   }
-  .projects .small .aurorae .thumbnail_aurorae {
+  .projects .small .present_aurorae .thumbnail_aurorae {
     margin-inline: auto auto;
     width: 90%;
     height: auto;
     border-radius: 25px;
   }
-  .projects .small .aurorae .thumbnail_aurorae:hover .hover-text {
+  .projects .small .present_aurorae .thumbnail_aurorae:hover .hover-text {
     display: flex;
   }
-  .projects .small .aurorae .eye_link {
+  .projects .small .present_aurorae .eye_link {
     z-index: 5;
     position: absolute;
     display: inline-block;
@@ -1415,7 +1622,7 @@ body {
     right: 8%;
     width: 10%;
   }
-  .projects .small .aurorae .small_hover_text {
+  .projects .small .present_aurorae .small_hover_text {
     position: absolute;
     top: 10%;
     left: 8%;
@@ -1426,10 +1633,10 @@ body {
     z-index: 2;
     /* Above the overlay */
   }
-  .projects .small .aurorae .small_hover_text:hover {
+  .projects .small .present_aurorae .small_hover_text:hover {
     opacity: 1;
   }
-  .projects .small .aurorae .small_hover_text h2 {
+  .projects .small .present_aurorae .small_hover_text h2 {
     color: white;
     font-family: kiwiMaru;
     font-size: 2em;
@@ -1437,13 +1644,13 @@ body {
     margin: 0;
     text-align: left;
   }
-  .projects .small .aurorae .small_hover_text h4 {
+  .projects .small .present_aurorae .small_hover_text h4 {
     margin: 0;
     font-size: 0.8em;
     text-align: left;
     font-family: kiwiMaru;
   }
-  .projects .small .chaos {
+  .projects .small .present_chaos {
     background-image: none;
     height: 25vh;
     display: flex;
@@ -1451,16 +1658,16 @@ body {
     margin-block: 20%;
     position: relative;
   }
-  .projects .small .chaos .thumbnail_chaos {
+  .projects .small .present_chaos .thumbnail_chaos {
     margin-inline: auto auto;
     width: 90%;
     height: auto;
     border-radius: 25px;
   }
-  .projects .small .chaos .thumbnail_chaos:hover .hover-text {
+  .projects .small .present_chaos .thumbnail_chaos:hover .hover-text {
     display: flex;
   }
-  .projects .small .chaos .eye_link {
+  .projects .small .present_chaos .eye_link {
     z-index: 5;
     position: absolute;
     display: inline-block;
@@ -1468,7 +1675,7 @@ body {
     right: 8%;
     width: 10%;
   }
-  .projects .small .chaos .small_hover_text {
+  .projects .small .present_chaos .small_hover_text {
     position: absolute;
     top: 10%;
     left: 8%;
@@ -1479,10 +1686,10 @@ body {
     z-index: 2;
     /* Above the overlay */
   }
-  .projects .small .chaos .small_hover_text:hover {
+  .projects .small .present_chaos .small_hover_text:hover {
     opacity: 1;
   }
-  .projects .small .chaos .small_hover_text h2 {
+  .projects .small .present_chaos .small_hover_text h2 {
     color: white;
     font-family: kiwiMaru;
     font-size: 2em;
@@ -1490,29 +1697,29 @@ body {
     margin: 0;
     text-align: left;
   }
-  .projects .small .chaos .small_hover_text h4 {
+  .projects .small .present_chaos .small_hover_text h4 {
     margin: 0;
     font-size: 0.8em;
     text-align: left;
     font-family: kiwiMaru;
   }
-  .projects .small .crystal {
+  .projects .small .present_crystal {
     background-color: transparent;
     height: 25vh;
     display: flex;
     flex-direction: column;
     position: relative;
   }
-  .projects .small .crystal .thumbnail_crystal {
+  .projects .small .present_crystal .thumbnail_crystal {
     margin-inline: auto auto;
     width: 90%;
     height: auto;
     border-radius: 25px;
   }
-  .projects .small .crystal .thumbnail_crystal:hover .hover-text {
+  .projects .small .present_crystal .thumbnail_crystal:hover .hover-text {
     display: flex;
   }
-  .projects .small .crystal .eye_link {
+  .projects .small .present_crystal .eye_link {
     z-index: 5;
     position: absolute;
     display: inline-block;
@@ -1520,7 +1727,7 @@ body {
     right: 8%;
     width: 10%;
   }
-  .projects .small .crystal .small_hover_text {
+  .projects .small .present_crystal .small_hover_text {
     position: absolute;
     top: 10%;
     left: 8%;
@@ -1531,10 +1738,10 @@ body {
     z-index: 2;
     /* Above the overlay */
   }
-  .projects .small .crystal .small_hover_text:hover {
+  .projects .small .present_crystal .small_hover_text:hover {
     opacity: 1;
   }
-  .projects .small .crystal .small_hover_text h2 {
+  .projects .small .present_crystal .small_hover_text h2 {
     color: white;
     font-family: kiwiMaru;
     font-size: 2em;
@@ -1542,7 +1749,7 @@ body {
     margin: 0;
     text-align: left;
   }
-  .projects .small .crystal .small_hover_text h4 {
+  .projects .small .present_crystal .small_hover_text h4 {
     margin: 0;
     font-size: 0.8em;
     text-align: left;
@@ -2012,7 +2219,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  .projects .small .polaris {
+  .projects .small .present_polaris {
     background-image: none;
     height: 25vh;
     width: 100%;
@@ -2022,16 +2229,16 @@ body {
     position: relative;
     margin-bottom: 0;
   }
-  .projects .small .polaris .thumbnail_polaris {
+  .projects .small .present_polaris .thumbnail_polaris {
     margin-inline: auto auto;
     width: 90%;
     height: auto;
     border-radius: 25px;
   }
-  .projects .small .polaris .thumbnail_polaris:hover .hover-text {
+  .projects .small .present_polaris .thumbnail_polaris:hover .hover-text {
     display: flex;
   }
-  .projects .small .polaris .eye_link {
+  .projects .small .present_polaris .eye_link {
     z-index: 5;
     position: absolute;
     display: flex;
@@ -2041,7 +2248,7 @@ body {
     top: 43%;*/
     width: 10%;
   }
-  .projects .small .polaris .small_hover_text {
+  .projects .small .present_polaris .small_hover_text {
     position: absolute;
     top: 10%;
     left: 8%;
@@ -2052,10 +2259,10 @@ body {
     z-index: 2;
     /* Above the overlay */
   }
-  .projects .small .polaris .small_hover_text:hover {
+  .projects .small .present_polaris .small_hover_text:hover {
     opacity: 1;
   }
-  .projects .small .polaris .small_hover_text h2 {
+  .projects .small .present_polaris .small_hover_text h2 {
     color: white;
     font-family: kiwiMaru;
     font-size: 2em;
@@ -2063,13 +2270,13 @@ body {
     margin: 0;
     text-align: left;
   }
-  .projects .small .polaris .small_hover_text h4 {
+  .projects .small .present_polaris .small_hover_text h4 {
     margin: 0;
     font-size: 0.8em;
     text-align: left;
     font-family: kiwiMaru;
   }
-  .projects .small .aurorae {
+  .projects .small .present_aurorae {
     background-color: transparent;
     height: 25vh;
     display: flex;
@@ -2077,16 +2284,16 @@ body {
     position: relative;
     margin-bottom: 0;
   }
-  .projects .small .aurorae .thumbnail_aurorae {
+  .projects .small .present_aurorae .thumbnail_aurorae {
     margin-inline: auto auto;
     width: 90%;
     height: auto;
     border-radius: 25px;
   }
-  .projects .small .aurorae .thumbnail_aurorae:hover .hover-text {
+  .projects .small .present_aurorae .thumbnail_aurorae:hover .hover-text {
     display: flex;
   }
-  .projects .small .aurorae .eye_link {
+  .projects .small .present_aurorae .eye_link {
     z-index: 5;
     position: absolute;
     display: flex;
@@ -2096,7 +2303,7 @@ body {
     top: 43%;*/
     width: 10%;
   }
-  .projects .small .aurorae .small_hover_text {
+  .projects .small .present_aurorae .small_hover_text {
     position: absolute;
     top: 10%;
     left: 8%;
@@ -2107,10 +2314,10 @@ body {
     z-index: 2;
     /* Above the overlay */
   }
-  .projects .small .aurorae .small_hover_text:hover {
+  .projects .small .present_aurorae .small_hover_text:hover {
     opacity: 1;
   }
-  .projects .small .aurorae .small_hover_text h2 {
+  .projects .small .present_aurorae .small_hover_text h2 {
     color: white;
     font-family: kiwiMaru;
     font-size: 2em;
@@ -2118,13 +2325,13 @@ body {
     margin: 0;
     text-align: left;
   }
-  .projects .small .aurorae .small_hover_text h4 {
+  .projects .small .present_aurorae .small_hover_text h4 {
     margin: 0;
     font-size: 0.8em;
     text-align: left;
     font-family: kiwiMaru;
   }
-  .projects .small .chaos {
+  .projects .small .present_chaos {
     background-image: none;
     height: 25vh;
     display: flex;
@@ -2133,16 +2340,16 @@ body {
     position: relative;
     margin-bottom: 0;
   }
-  .projects .small .chaos .thumbnail_chaos {
+  .projects .small .present_chaos .thumbnail_chaos {
     margin-inline: auto auto;
     width: 90%;
     height: auto;
     border-radius: 25px;
   }
-  .projects .small .chaos .thumbnail_chaos:hover .hover-text {
+  .projects .small .present_chaos .thumbnail_chaos:hover .hover-text {
     display: flex;
   }
-  .projects .small .chaos .eye_link {
+  .projects .small .present_chaos .eye_link {
     z-index: 5;
     position: absolute;
     display: flex;
@@ -2152,7 +2359,7 @@ body {
     top: 43%;*/
     width: 10%;
   }
-  .projects .small .chaos .small_hover_text {
+  .projects .small .present_chaos .small_hover_text {
     position: absolute;
     top: 10%;
     left: 8%;
@@ -2163,10 +2370,10 @@ body {
     z-index: 2;
     /* Above the overlay */
   }
-  .projects .small .chaos .small_hover_text:hover {
+  .projects .small .present_chaos .small_hover_text:hover {
     opacity: 1;
   }
-  .projects .small .chaos .small_hover_text h2 {
+  .projects .small .present_chaos .small_hover_text h2 {
     color: white;
     font-family: kiwiMaru;
     font-size: 2em;
@@ -2174,13 +2381,13 @@ body {
     margin: 0;
     text-align: left;
   }
-  .projects .small .chaos .small_hover_text h4 {
+  .projects .small .present_chaos .small_hover_text h4 {
     margin: 0;
     font-size: 0.8em;
     text-align: left;
     font-family: kiwiMaru;
   }
-  .projects .small .crystal {
+  .projects .small .present_crystal {
     background-color: transparent;
     height: 25vh;
     display: flex;
@@ -2188,16 +2395,16 @@ body {
     position: relative;
     margin-bottom: 0;
   }
-  .projects .small .crystal .thumbnail_crystal {
+  .projects .small .present_crystal .thumbnail_crystal {
     margin-inline: auto auto;
     width: 90%;
     height: auto;
     border-radius: 25px;
   }
-  .projects .small .crystal .thumbnail_crystal:hover .hover-text {
+  .projects .small .present_crystal .thumbnail_crystal:hover .hover-text {
     display: flex;
   }
-  .projects .small .crystal .eye_link {
+  .projects .small .present_crystal .eye_link {
     z-index: 5;
     position: absolute;
     display: flex;
@@ -2207,7 +2414,7 @@ body {
     top: 43%;*/
     width: 10%;
   }
-  .projects .small .crystal .small_hover_text {
+  .projects .small .present_crystal .small_hover_text {
     position: absolute;
     top: 10%;
     left: 8%;
@@ -2218,10 +2425,10 @@ body {
     z-index: 2;
     /* Above the overlay */
   }
-  .projects .small .crystal .small_hover_text:hover {
+  .projects .small .present_crystal .small_hover_text:hover {
     opacity: 1;
   }
-  .projects .small .crystal .small_hover_text h2 {
+  .projects .small .present_crystal .small_hover_text h2 {
     color: white;
     font-family: kiwiMaru;
     font-size: 2em;
@@ -2229,7 +2436,7 @@ body {
     margin: 0;
     text-align: left;
   }
-  .projects .small .crystal .small_hover_text h4 {
+  .projects .small .present_crystal .small_hover_text h4 {
     margin: 0;
     font-size: 0.8em;
     text-align: left;

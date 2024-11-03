@@ -1524,6 +1524,313 @@ body {
 
 
 }*/
+@media only screen and (min-width: 768px) and (max-width: 1140px) {
+
+    .about {
+
+        p {
+            font-size: 1em;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+
+        .my_face {
+            width: 100%;
+        }
+
+    }
+    .projects{
+        height: 50vh;
+        .swiper{
+            .swiper-wrapper{
+                height: 100%;
+                width: 120%;
+            }
+        }
+    }
+    .skills {
+        .contenue{
+            .title{
+                width: 100%;
+            }
+        }
+        .application {
+            .ae {
+                width: 70%;
+            }
+
+            .davinci {
+                width: 70%;
+            }
+
+            .figma {
+                width: 70%;
+            }
+
+            .illustrator {
+                width: 70%;
+            }
+
+            .maya {
+                width: 70%;
+            }
+
+            .photoshop {
+                width: 70%;
+            }
+
+            .sass {
+                width: 70%;
+            }
+
+            .unity {
+                width: 70%;
+            }
+
+            .vs {
+                width: 70%;
+            }
+        }
+
+    }
+
+    .polaris {
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% 15%  40% ;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        h2 {
+            font-size: 4em;
+        }
+
+
+        p.contexte {
+            font-size: 1em;
+
+        }
+
+        .role {
+            h3 {
+                font-size: 1.9em;
+
+            }
+
+            p.texte_descriptif {
+                font-size: 1em;
+
+            }
+        }
+
+        .application {
+            align-self: center;
+        }
+
+        .carroussel {
+            height: 50%;
+            width: 95%;
+            margin-top: 25%;
+
+            .swiper-button {
+                &-next {
+                    width: 5%;
+                    margin-right: 2%;
+                }
+
+                &-prev {
+                    width: 5%;
+                    margin-left: 2%;
+                }
+            }
+        }
+    }
+
+    .aurorae {
+        height: 75vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 0.5fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        h2 {
+            font-size: 4em;
+        }
+
+
+        p.contexte {
+            font-size: 1em;
+
+        }
+
+        .role {
+            h3 {
+                font-size: 1.9em;
+
+            }
+
+            p.texte_descriptif {
+                font-size: 1em;
+
+            }
+        }
+
+        .application {
+            align-self: center;
+        }
+
+        .carroussel {
+            height: 50%;
+            width: 95%;
+            margin-top: 30%;
+
+            .swiper-button {
+                &-next {
+                    width: 5%;
+                    margin-right: 2%;
+                }
+
+                &-prev {
+                    width: 5%;
+                    margin-left: 2%;
+                }
+            }
+        }
+    }
+
+    .chaos {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.7fr 0.5fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        .mp4_chaos {
+            align-self: center;
+            height: 55%;
+        }
+
+        h2 {
+            font-size: 4.5em;
+        }
+
+
+        p.contexte {
+            font-size: 1em;
+
+        }
+
+        .role {
+            h3 {
+                font-size: 1.9em;
+
+            }
+
+            p.texte_descriptif {
+                font-size: 1em;
+
+            }
+        }
+
+        .application {
+            align-self: center;
+        }
+    }
+
+    .crystalize {
+        height: 75vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 0.5fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        h2 {
+            font-size: 4em;
+        }
+
+
+        p.contexte {
+            font-size: 1em;
+
+        }
+
+        .role {
+            h3 {
+                font-size: 1.9em;
+
+            }
+
+            p.texte_descriptif {
+                font-size: 1em;
+
+            }
+        }
+
+        .application {
+            align-self: center;
+        }
+
+        .carroussel {
+            height: 50%;
+            width: 95%;
+            margin-top: 30%;
+
+            .swiper-button {
+                &-next {
+                    width: 5%;
+                    margin-right: 2%;
+                }
+
+                &-prev {
+                    width: 5%;
+                    margin-left: 2%;
+                }
+            }
+        }
+    }
+
+    .interest {
+        height: 70vh;
+    }
+
+    .contact {
+        height: 70vh;
+
+        .gmail {
+            width: 95%;
+        }
+
+        .linkedin {
+            width: 90%;
+        }
+    }
+
+    .thank_you {
+        height: 70vh;
+
+        .contenue {
+            .thank_you_text {
+                width: 90%;
+            }
+
+            .work_text {
+                width: 90%;
+            }
+
+            .avatar {
+                width: 90%;
+
+            }
+        }
+    }
+}
+
 
 @media only screen and (min-width: 375px) and (max-width: 768px) {
     .presentation {
@@ -1578,7 +1885,7 @@ body {
             flex-direction: column;
 
 
-            .polaris {
+            .present_polaris {
                 background-image: none;
                 height: 25vh;
                 display: flex;
@@ -1645,7 +1952,7 @@ body {
                 }
             }
 
-            .aurorae {
+            .present_aurorae {
                 background-color: transparent;
                 height: 25vh;
                 display: flex;
@@ -1711,7 +2018,7 @@ body {
                 }
             }
 
-            .chaos {
+            .present_chaos {
                 background-image: none;
                 height: 25vh;
                 display: flex;
@@ -1778,7 +2085,7 @@ body {
                 }
             }
 
-            .crystal {
+            .present_crystal {
                 background-color: transparent;
                 height: 25vh;
                 display: flex;
@@ -2277,7 +2584,7 @@ body {
 
 
 @media only screen and (max-width: 375px) {
-    .go_up{
+    .go_up {
         width: 20%;
     }
 
@@ -2475,7 +2782,7 @@ body {
             flex-direction: column;
 
 
-            .polaris {
+            .present_polaris {
                 background-image: none;
                 height: 25vh;
                 width: 100%;
@@ -2546,7 +2853,7 @@ body {
                 }
             }
 
-            .aurorae {
+            .present_aurorae {
                 background-color: transparent;
                 height: 25vh;
                 display: flex;
@@ -2615,7 +2922,7 @@ body {
                 }
             }
 
-            .chaos {
+            .present_chaos {
                 background-image: none;
                 height: 25vh;
                 display: flex;
@@ -2685,7 +2992,7 @@ body {
                 }
             }
 
-            .crystal {
+            .present_crystal {
                 background-color: transparent;
                 height: 25vh;
                 display: flex;
@@ -3067,7 +3374,7 @@ body {
         background-color: var(--blush);
         height: 35vh;
 
-        .title{
+        .title {
             width: 85%;
         }
     }
@@ -3075,7 +3382,8 @@ body {
     .contact {
         background-image: none;
         background-color: var(--cloudyBlue);
-        height: 35vh;        display: flex;
+        height: 35vh;
+        display: flex;
 
         .contenue {
             width: 90%;
@@ -3100,8 +3408,9 @@ body {
     }
 
     .thank_you {
-        
+
         height: 35vh;
+
         .contenue {
             .thank_you_text {
                 width: 90%;
