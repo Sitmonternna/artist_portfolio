@@ -92,37 +92,6 @@ body {
   }
 }
 
-/*passion_love
-.passion_love {
-    display: flex;
-    flex-direction: column;
-    none: #FF9894 2px solid;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-color: var(--cloudyBlue);
-
-    .contenu {
-        display: flex;
-        margin-inline: auto auto;
-        margin-top: 15%;
-        transform: scale(1.5);
-    }
-
-    .half_moon {
-        width: 15%;
-        align-self: flex-start;
-        margin-inline: auto auto;
-    }
-
-    .contenu {
-        width: 45%;
-        margin-left: auto;
-        margin-right: auto;
-        align-self: center;
-        margin-top: 12%;
-    }
-}*/
 /*projects*/
 .projects {
   display: flex;
@@ -134,6 +103,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.projects .small {
+  display: none;
 }
 .projects .title {
   width: 30%;
@@ -229,7 +201,6 @@ body {
 }
 .projects .swiper-slide:hover .hover-text {
   opacity: 1;
-  /* Become visible on hover */
 }
 
 /*about*/
@@ -1108,6 +1079,11 @@ body {
 }
 
 /*
+@media screen and (min-width: 768px) {
+
+
+}
+
 @media (max-width: 768px) {
     .nav {
         .logo {
@@ -1327,656 +1303,1206 @@ body {
 
 
 }*/
-/*
-@media only screen and (min-width: 375px) and (max-width: 768px) {}
-
-
-@media only screen and (max-width: 375px) {
-
-    .skills {
-        height: 100%;
-        margin-bottom: 15%;
-        margin-top: 10%;
-
-        .title {
-            width: 200%;
-            align-self: flex-start;
-        }
-
-        .ordi {
-            width: 40%;
-        }
-
-        .editing {
-            width: 40%;
-        }
-
-        .vector {
-            width: 40%;
-        }
-
-        .text_vector {
-            font-size: 0.8em;
-        }
-
-        .text_editing {
-            font-size: 0.8em;
-        }
-
-        .text_ordi {
-            font-size: 0.8em;
-        }
-
-        .coding {
-            width: 40%;
-        }
-
-        .modele {
-            width: 40%;
-        }
-
-        .animation {
-            width: 40%;
-        }
-
-        .text_animation {
-            font-size: 0.8em;
-        }
-
-        .text_modele {
-            font-size: 0.8em;
-        }
-
-        .text_coding {
-            font-size: 0.8em;
-        }
-
-        .application {
-
-            .ae {
-                width: 60%;
-            }
-
-            .davinci {
-                width: 60%;
-            }
-
-            .figma {
-                width: 60%;
-            }
-
-            .illustrator {
-                width: 60%;
-            }
-
-            .maya {
-                width: 60%;
-            }
-
-            .photoshop {
-                width: 60%;
-            }
-
-            .sass {
-                width: 60%;
-            }
-
-            .unity {
-                width: 60%;
-            }
-
-            .vs {
-                width: 60%;
-            }
-        }
-
-    }
-
-    .about {
-        height: 40vh;
-        margin-top: 0;
-
-        .contenue {
-            height: 30%;
-
-            h3 {
-                font-size: 1em;
-            }
-
-            p {
-                font-size: 0.5em;
-            }
-        }
-    }
-
-    .projects {
-        font-size: 0.5em;
-        height: 20vh;
-
-        img.swiper-button {
-            &-next {
-                width: 20%;
-                transform: scale(1);
-            }
-
-            &-prev {
-                width: 20%;
-                transform: scale(1);
-            }
-        }
-
-        .swiper-slide {
-            img {
-                border-radius: 15px;
-            }
-
-            .plus {
-                display: flex;
-
-                .eye_link {
-                    bottom: 2%;
-                    width: 20%;
-                    justify-self: flex-end;
-                }
-            }
-        }
-
-
-    }
-
-    .polaris {
-        height: 30vh;
-
-        h2 {
-            font-size: 2em;
-        }
-
-        .contexte {
-            font-size: 0.5em;
-        }
-
-        .role {
-            h3 {
-                font-size: 1em;
-            }
-
-            .texte_descriptif {
-                font-size: 0.5em;
-            }
-        }
-
-        .carroussel {
-            height: 40%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-
-    .aurorae {
-        height: 30vh;
-
-        h2 {
-            font-size: 2em;
-        }
-
-        .contexte {
-            font-size: 0.5em;
-        }
-
-        .role {
-            h3 {
-                font-size: 1em;
-            }
-
-            .texte_descriptif {
-                font-size: 0.5em;
-            }
-        }
-
-        .carroussel {
-            height: 40%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-
-
-    .chaos {
-        height: 50vh;
-
-        h2 {
-            font-size: 2em;
-        }
-
-        .contexte {
-            font-size: 0.5em;
-        }
-
-        .role {
-            h3 {
-                font-size: 1em;
-            }
-
-            .texte_descriptif {
-                font-size: 0.5em;
-            }
-        }
-
-        .mp4_chaos {
-            height: 30%;
-            border-radius: 15px;
-        }
-
-    }
-
-    .crystalize {
-        height: 30vh;
-
-        h2 {
-            font-size: 2em;
-        }
-
-        .contexte {
-            font-size: 0.5em;
-        }
-
-        .role {
-            h3 {
-                font-size: 1em;
-            }
-
-            .texte_descriptif {
-                font-size: 0.5em;
-            }
-        }
-
-        .carroussel {
-            height: 40%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-    .interest {
-        height: 25vh;
-    }
-
-    .contact {
-        height: 25vh;
-
-        img.linkedin {
-            width: 25%;
-        }
-
-        img.gmail {
-            width: 25%;
-        }
-    }
-
-    .thank_you {
-        height: 20vh;
-    }
-
-    .presentation {
-        img.arrow {
-            margin-bottom: 30%;
-        }
-
-        height: 30vh;
-
-        .logo {
-            width: 15%;
-            margin-top: 2%;
-        }
-
-        .menu {
-
-            a {
-                font-size: 1em;
-            }
-        }
-    }
-
-    img.go_up {
-        width: 20%;
-    }
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .presentation .nav a {
+    font-size: 100%;
+  }
+  .about p {
+    font-size: 1em;
+  }
+  .about h3 {
+    font-size: 2em;
+  }
+  .about .my_face {
+    width: 100%;
+  }
+  .projects {
+    background-position: center;
+    background-size: cover;
+    height: 190vh;
+    width: 100%;
+  }
+  .projects .mySwiper {
+    display: none;
+  }
+  .projects .title {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-start;
+    margin-block: 2% 4%;
+  }
+  .projects .small {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .projects .small .polaris {
+    background-image: none;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+    position: relative;
+  }
+  .projects .small .polaris .thumbnail_polaris {
+    margin-inline: auto auto;
+    width: 90%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .projects .small .polaris .thumbnail_polaris:hover .hover-text {
+    display: flex;
+  }
+  .projects .small .polaris .eye_link {
+    z-index: 5;
+    position: absolute;
+    display: inline-block;
+    bottom: -15%;
+    right: 8%;
+    width: 10%;
+  }
+  .projects .small .polaris .small_hover_text {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    color: white;
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    /* Above the overlay */
+  }
+  .projects .small .polaris .small_hover_text:hover {
+    opacity: 1;
+  }
+  .projects .small .polaris .small_hover_text h2 {
+    color: white;
+    font-family: kiwiMaru;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+  }
+  .projects .small .polaris .small_hover_text h4 {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: left;
+    font-family: kiwiMaru;
+  }
+  .projects .small .aurorae {
+    background-color: transparent;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .projects .small .aurorae .thumbnail_aurorae {
+    margin-inline: auto auto;
+    width: 90%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .projects .small .aurorae .thumbnail_aurorae:hover .hover-text {
+    display: flex;
+  }
+  .projects .small .aurorae .eye_link {
+    z-index: 5;
+    position: absolute;
+    display: inline-block;
+    bottom: -15%;
+    right: 8%;
+    width: 10%;
+  }
+  .projects .small .aurorae .small_hover_text {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    color: white;
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    /* Above the overlay */
+  }
+  .projects .small .aurorae .small_hover_text:hover {
+    opacity: 1;
+  }
+  .projects .small .aurorae .small_hover_text h2 {
+    color: white;
+    font-family: kiwiMaru;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+  }
+  .projects .small .aurorae .small_hover_text h4 {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: left;
+    font-family: kiwiMaru;
+  }
+  .projects .small .chaos {
+    background-image: none;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    margin-block: 20%;
+    position: relative;
+  }
+  .projects .small .chaos .thumbnail_chaos {
+    margin-inline: auto auto;
+    width: 90%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .projects .small .chaos .thumbnail_chaos:hover .hover-text {
+    display: flex;
+  }
+  .projects .small .chaos .eye_link {
+    z-index: 5;
+    position: absolute;
+    display: inline-block;
+    bottom: -15%;
+    right: 8%;
+    width: 10%;
+  }
+  .projects .small .chaos .small_hover_text {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    color: white;
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    /* Above the overlay */
+  }
+  .projects .small .chaos .small_hover_text:hover {
+    opacity: 1;
+  }
+  .projects .small .chaos .small_hover_text h2 {
+    color: white;
+    font-family: kiwiMaru;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+  }
+  .projects .small .chaos .small_hover_text h4 {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: left;
+    font-family: kiwiMaru;
+  }
+  .projects .small .crystal {
+    background-color: transparent;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .projects .small .crystal .thumbnail_crystal {
+    margin-inline: auto auto;
+    width: 90%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .projects .small .crystal .thumbnail_crystal:hover .hover-text {
+    display: flex;
+  }
+  .projects .small .crystal .eye_link {
+    z-index: 5;
+    position: absolute;
+    display: inline-block;
+    bottom: -15%;
+    right: 8%;
+    width: 10%;
+  }
+  .projects .small .crystal .small_hover_text {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    color: white;
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    /* Above the overlay */
+  }
+  .projects .small .crystal .small_hover_text:hover {
+    opacity: 1;
+  }
+  .projects .small .crystal .small_hover_text h2 {
+    color: white;
+    font-family: kiwiMaru;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+  }
+  .projects .small .crystal .small_hover_text h4 {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: left;
+    font-family: kiwiMaru;
+  }
+  .skills {
+    height: auto;
+  }
+  .skills .contenue {
+    align-self: center;
+  }
+  .skills .contenue .title {
+    transform: scale(3);
+  }
+  .skills .contenue .text_animation {
+    font-size: 1em;
+  }
+  .skills .contenue .text_modele {
+    font-size: 1em;
+  }
+  .skills .contenue .text_coding {
+    font-size: 1em;
+  }
+  .skills .contenue .text_vector {
+    font-size: 1em;
+  }
+  .skills .contenue .text_editing {
+    font-size: 1em;
+  }
+  .skills .contenue .text_ordi {
+    font-size: 1em;
+  }
+  .skills .contenue .ordi {
+    width: 30%;
+  }
+  .skills .contenue .editing {
+    width: 30%;
+  }
+  .skills .contenue .vector {
+    width: 30%;
+  }
+  .skills .contenue .coding {
+    width: 30%;
+  }
+  .skills .contenue .modele {
+    width: 30%;
+  }
+  .skills .contenue .animation {
+    width: 30%;
+  }
+  .skills .application .ae {
+    width: 80%;
+  }
+  .skills .application .davinci {
+    width: 80%;
+  }
+  .skills .application .figma {
+    width: 80%;
+  }
+  .skills .application .illustrator {
+    width: 80%;
+  }
+  .skills .application .maya {
+    width: 80%;
+  }
+  .skills .application .photoshop {
+    width: 80%;
+  }
+  .skills .application .sass {
+    width: 80%;
+  }
+  .skills .application .unity {
+    width: 80%;
+  }
+  .skills .application .vs {
+    width: 80%;
+  }
+  .chaos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 0.5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .chaos h2 {
+    grid-area: 1/2/2/3;
+    font-size: 1.9em;
+  }
+  .chaos .contexte {
+    grid-area: 2/1/3/2;
+    font-size: 1em;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .chaos .role {
+    display: grid;
+    grid-area: 2/2/3/3;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .chaos .role h3 {
+    font-size: 1.5em;
+    margin-block: auto;
+  }
+  .chaos .role .texte_descriptif {
+    font-size: 0.8em;
+    margin-block: auto;
+  }
+  .chaos .application {
+    grid-area: 2/3/3/4;
+    margin-block: auto;
+  }
+  .chaos .application .maya {
+    width: 30%;
+  }
+  .chaos .application .davinci {
+    width: 30%;
+  }
+  .chaos .mp4_chaos {
+    align-self: flex-start;
+    grid-area: 3/1/4/4;
+    width: 90%;
+    height: 70%;
+  }
+  .polaris {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.7fr 0.5fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .polaris h2 {
+    grid-area: 1/2/2/3;
+    font-size: 1.9em;
+  }
+  .polaris p.contexte {
+    grid-area: 2/1/3/2;
+    font-size: 0.8em;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .polaris .role {
+    display: grid;
+    grid-area: 2/2/3/3;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .polaris .role h3 {
+    font-size: 1.5em;
+    margin-block: auto;
+  }
+  .polaris .role .texte_descriptif {
+    font-size: 0.8em;
+    margin-block: auto;
+  }
+  .polaris .application {
+    grid-area: 2/3/3/4;
+    margin-block: auto;
+  }
+  .polaris .application .vs {
+    width: 30%;
+  }
+  .polaris .application .figma {
+    width: 30%;
+  }
+  .polaris .carroussel {
+    align-self: flex-start;
+    margin-inline: auto;
+    grid-area: 3/1/4/4;
+    width: 80%;
+    height: 55%;
+  }
+  .polaris .carroussel .swiper-button-next {
+    margin-right: 2%;
+  }
+  .polaris .carroussel .swiper-button-prev {
+    margin-left: 2%;
+  }
+  .aurorae {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.5fr 0.9fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .aurorae h2 {
+    grid-area: 1/2/2/3;
+    font-size: 1.9em;
+  }
+  .aurorae p.contexte {
+    grid-area: 2/1/3/2;
+    font-size: 0.8em;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .aurorae .role {
+    display: grid;
+    grid-area: 2/2/3/3;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .aurorae .role h3 {
+    font-size: 1.5em;
+    margin-block: auto;
+  }
+  .aurorae .role .texte_descriptif {
+    font-size: 0.8em;
+    margin-block: auto;
+  }
+  .aurorae .application {
+    grid-area: 2/3/3/4;
+    margin-block: auto;
+  }
+  .aurorae .application .davinci {
+    width: 30%;
+    margin-inline: auto;
+  }
+  .aurorae .carroussel {
+    align-self: flex-start;
+    margin-inline: auto;
+    grid-area: 3/1/4/4;
+    width: 75%;
+    height: 60%;
+  }
+  .aurorae .carroussel .swiper-button-next {
+    margin-right: 2%;
+  }
+  .aurorae .carroussel .swiper-button-prev {
+    margin-left: 2%;
+  }
+  .crystalize {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.7fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .crystalize h2 {
+    grid-area: 1/2/2/3;
+    font-size: 1.9em;
+  }
+  .crystalize p.contexte {
+    grid-area: 2/1/3/2;
+    font-size: 0.8em;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .crystalize .role {
+    display: grid;
+    grid-area: 2/2/3/3;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .crystalize .role h3 {
+    font-size: 1.5em;
+    margin-block: auto;
+  }
+  .crystalize .role .texte_descriptif {
+    font-size: 0.8em;
+    margin-block: auto;
+  }
+  .crystalize .application {
+    grid-area: 2/3/3/4;
+    margin-block: auto;
+  }
+  .crystalize .application .maya {
+    width: 40%;
+  }
+  .crystalize .application .photoshop {
+    width: 40%;
+  }
+  .crystalize .carroussel {
+    align-self: flex-start;
+    margin-inline: auto;
+    grid-area: 3/1/4/4;
+    width: 90%;
+    height: 85%;
+  }
+  .crystalize .carroussel .swiper-button-next {
+    margin-right: 2%;
+  }
+  .crystalize .carroussel .swiper-button-prev {
+    margin-left: 2%;
+  }
+  .interest {
+    height: 80vh;
+  }
+  .contact {
+    height: 80vh;
+    display: flex;
+  }
+  .contact .contenue {
+    width: 80%;
+  }
+  .contact .contenue .text {
+    width: 85%;
+    justify-self: flex-end;
+  }
+  .contact .contenue .linkedin {
+    width: 75%;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+  .contact .contenue .gmail {
+    width: 85%;
+    justify-self: flex-start;
+  }
+  .thank_you {
+    height: 60vh;
+  }
+  .thank_you .contenue .thank_you_text {
+    width: 90%;
+  }
+  .thank_you .contenue .work_text {
+    width: 90%;
+  }
+  .thank_you .contenue .avatar {
+    width: 90%;
+  }
 }
-
-@media screen and (min-width: 768px) {
-    .skills {
-        height: 120vh;
-        width: 100%;
-        margin-block: 0;
-        //margin-bottom: 15%;
-        //margin-top: 10%;
-
-        .title {
-            width: 100%;
-            align-self: flex-start;
-        }
-
-        .ordi {
-            width: 25%;
-        }
-
-        .editing {
-            width: 25%;
-        }
-
-        .vector {
-            width: 25%;
-        }
-
-        .text_vector {
-            font-size: 1em;
-        }
-
-        .text_editing {
-            font-size: 1em;
-        }
-
-        .text_ordi {
-            font-size: 1em;
-        }
-
-        .coding {
-            width: 25%;
-        }
-
-        .modele {
-            width: 25%;
-        }
-
-        .animation {
-            width: 25%;
-        }
-
-        .text_animation {
-            font-size: 1em;
-        }
-
-        .text_modele {
-            font-size: 1em;
-        }
-
-        .text_coding {
-            font-size: 1em;
-        }
-
-        .application {
-            margin-block: 0;
-
-            .ae {
-                width: 60%;
-            }
-
-            .davinci {
-                width: 60%;
-            }
-
-            .figma {
-                width: 60%;
-            }
-
-            .illustrator {
-                width: 60%;
-            }
-
-            .maya {
-                width: 60%;
-            }
-
-            .photoshop {
-                width: 60%;
-            }
-
-            .sass {
-                width: 60%;
-            }
-
-            .unity {
-                width: 60%;
-            }
-
-            .vs {
-                width: 60%;
-            }
-        }
-
-    }
-
-    .about {
-        height: 80vh;
-        margin-top: 0;
-
-        .contenue {
-            height: 30%;
-
-            h3 {
-                font-size: 2em;
-            }
-
-            p {
-                font-size: 1em;
-            }
-        }
-    }
-
-    .projects {
-        height: 50vh;
-
-        .swiper-slide {
-            .plus {
-                display: flex;
-
-                .eye_link {
-                    bottom: 2%;
-                    width: 40%;
-                    justify-self: flex-end;
-                }
-            }
-        }
-
-
-    }
-
-    .polaris {
-        height: 65vh;
-
-        h2 {
-            font-size: 3em;
-        }
-
-        .contexte {
-            font-size: 1em;
-        }
-
-        .role {
-            h3 {
-                font-size: 2em;
-            }
-
-            .texte_descriptif {
-                font-size: 1em;
-            }
-        }
-
-        .carroussel {
-            height: 30%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-
-    .aurorae {
-        height: 65vh;
-
-        h2 {
-            font-size: 3em;
-        }
-
-        .contexte {
-            font-size: 1em;
-        }
-
-        .role {
-            h3 {
-                font-size: 2em;
-            }
-
-            .texte_descriptif {
-                font-size: 1.5em;
-                align-self: center;
-            }
-        }
-
-        .carroussel {
-            height: 90%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-
-
-    .chaos {
-        height: 65vh;
-
-        h2 {
-            font-size: 3em;
-        }
-
-        .contexte {
-            font-size: 1em;
-        }
-
-        .role {
-            h3 {
-                font-size: 2em;
-            }
-
-            .texte_descriptif {
-                font-size: 1em;
-            }
-        }
-
-        .mp4_chaos {
-            height: 30%;
-        }
-
-    }
-
-    .crystalize {
-        height: 65vh;
-
-        h2 {
-            font-size: 3em;
-        }
-
-        .contexte {
-            font-size: 1em;
-        }
-
-        .role {
-            h3 {
-                font-size: 2em;
-            }
-
-            .texte_descriptif {
-                font-size: 1em;
-            }
-        }
-
-        .carroussel {
-            height: 30%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-    .interest {
-        height: 80vh;
-    }
-
-    .contact {
-        height: 80vh;
-    }
-
-    .thank_you {
-        height: 40vh;
-    }
-
-    .presentation {
-        height: 60vh;
-    }
-
-}*//*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 375px) {
+  .go_up {
+    width: 20%;
+  }
+  .presentation {
+    height: 60vh;
+  }
+  .presentation .nav .logo {
+    width: 20%;
+  }
+  .presentation .nav a {
+    font-size: 80%;
+  }
+  .about {
+    height: 60vh;
+    background-color: var(--blush);
+    background-image: none;
+    width: 100%;
+  }
+  .about .contenue {
+    height: 60vh;
+    background-color: var(--blush);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 0.7fr 0.5fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-block: auto;
+  }
+  .about .contenue p.main {
+    font-size: 0.8em;
+    grid-area: 2/2/3/3;
+    align-self: flex-end;
+  }
+  .about .contenue p.appelle {
+    font-size: 0.8em;
+    grid-area: 3/2/4/3;
+    text-align: right;
+  }
+  .about .contenue h3 {
+    width: 100%;
+    font-size: 1.5em;
+    grid-area: 1/1/2/3;
+  }
+  .about .contenue .my_face {
+    width: 100%;
+    grid-area: 2/1/4/2;
+  }
+  .skills {
+    height: auto;
+  }
+  .skills .contenue {
+    align-self: center;
+  }
+  .skills .contenue .title {
+    transform: scale(3);
+  }
+  .skills .contenue p.text_animation {
+    font-size: 0.4em;
+  }
+  .skills .contenue p.text_modele {
+    font-size: 0.4em;
+  }
+  .skills .contenue p.text_coding {
+    font-size: 0.4em;
+  }
+  .skills .contenue p.text_vector {
+    font-size: 0.4em;
+    width: 80%;
+    margin-inline: auto;
+  }
+  .skills .contenue p.text_editing {
+    font-size: 0.4em;
+    width: 80%;
+    align-self: center;
+  }
+  .skills .contenue p.text_ordi {
+    font-size: 0.4em;
+  }
+  .skills .contenue .ordi {
+    width: 30%;
+  }
+  .skills .contenue .editing {
+    width: 30%;
+  }
+  .skills .contenue .vector {
+    width: 30%;
+  }
+  .skills .contenue .coding {
+    align-self: center;
+    width: 30%;
+  }
+  .skills .contenue .modele {
+    align-self: center;
+    width: 30%;
+  }
+  .skills .contenue .animation {
+    align-self: center;
+    width: 30%;
+  }
+  .skills .application .ae {
+    width: 80%;
+  }
+  .skills .application .davinci {
+    width: 80%;
+  }
+  .skills .application .figma {
+    width: 80%;
+  }
+  .skills .application .illustrator {
+    width: 80%;
+  }
+  .skills .application .maya {
+    width: 80%;
+  }
+  .skills .application .photoshop {
+    width: 80%;
+  }
+  .skills .application .sass {
+    width: 80%;
+  }
+  .skills .application .unity {
+    width: 80%;
+  }
+  .skills .application .vs {
+    width: 80%;
+  }
+  .projects {
+    background-color: var(--sunshine);
+    background-image: none;
+    height: 100vh;
+    width: 100%;
+  }
+  .projects .mySwiper {
+    display: none;
+  }
+  .projects .title {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: flex-start;
+    margin-block: 8% 8%;
+  }
+  .projects .small {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .projects .small .polaris {
+    background-image: none;
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .projects .small .polaris .thumbnail_polaris {
+    margin-inline: auto auto;
+    width: 90%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .projects .small .polaris .thumbnail_polaris:hover .hover-text {
+    display: flex;
+  }
+  .projects .small .polaris .eye_link {
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    margin-inline: 80% auto;
+    margin-block: -15% auto;
+    /*right: 8%;
+    top: 43%;*/
+    width: 10%;
+  }
+  .projects .small .polaris .small_hover_text {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    color: white;
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    /* Above the overlay */
+  }
+  .projects .small .polaris .small_hover_text:hover {
+    opacity: 1;
+  }
+  .projects .small .polaris .small_hover_text h2 {
+    color: white;
+    font-family: kiwiMaru;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+  }
+  .projects .small .polaris .small_hover_text h4 {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: left;
+    font-family: kiwiMaru;
+  }
+  .projects .small .aurorae {
+    background-color: transparent;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .projects .small .aurorae .thumbnail_aurorae {
+    margin-inline: auto auto;
+    width: 90%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .projects .small .aurorae .thumbnail_aurorae:hover .hover-text {
+    display: flex;
+  }
+  .projects .small .aurorae .eye_link {
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    margin-inline: 80% auto;
+    margin-block: -15% auto;
+    /*right: 8%;
+    top: 43%;*/
+    width: 10%;
+  }
+  .projects .small .aurorae .small_hover_text {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    color: white;
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    /* Above the overlay */
+  }
+  .projects .small .aurorae .small_hover_text:hover {
+    opacity: 1;
+  }
+  .projects .small .aurorae .small_hover_text h2 {
+    color: white;
+    font-family: kiwiMaru;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+  }
+  .projects .small .aurorae .small_hover_text h4 {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: left;
+    font-family: kiwiMaru;
+  }
+  .projects .small .chaos {
+    background-image: none;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    margin-block: 20%;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .projects .small .chaos .thumbnail_chaos {
+    margin-inline: auto auto;
+    width: 90%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .projects .small .chaos .thumbnail_chaos:hover .hover-text {
+    display: flex;
+  }
+  .projects .small .chaos .eye_link {
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    margin-inline: 80% auto;
+    margin-block: -15% auto;
+    /*right: 8%;
+    top: 43%;*/
+    width: 10%;
+  }
+  .projects .small .chaos .small_hover_text {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    color: white;
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    /* Above the overlay */
+  }
+  .projects .small .chaos .small_hover_text:hover {
+    opacity: 1;
+  }
+  .projects .small .chaos .small_hover_text h2 {
+    color: white;
+    font-family: kiwiMaru;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+  }
+  .projects .small .chaos .small_hover_text h4 {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: left;
+    font-family: kiwiMaru;
+  }
+  .projects .small .crystal {
+    background-color: transparent;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .projects .small .crystal .thumbnail_crystal {
+    margin-inline: auto auto;
+    width: 90%;
+    height: auto;
+    border-radius: 25px;
+  }
+  .projects .small .crystal .thumbnail_crystal:hover .hover-text {
+    display: flex;
+  }
+  .projects .small .crystal .eye_link {
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    margin-inline: 80% auto;
+    margin-block: -15% auto;
+    /*right: 8%;
+    top: 43%;*/
+    width: 10%;
+  }
+  .projects .small .crystal .small_hover_text {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    color: white;
+    opacity: 0;
+    /* Start as invisible */
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    /* Above the overlay */
+  }
+  .projects .small .crystal .small_hover_text:hover {
+    opacity: 1;
+  }
+  .projects .small .crystal .small_hover_text h2 {
+    color: white;
+    font-family: kiwiMaru;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: left;
+  }
+  .projects .small .crystal .small_hover_text h4 {
+    margin: 0;
+    font-size: 0.8em;
+    text-align: left;
+    font-family: kiwiMaru;
+  }
+  .skills {
+    margin-top: 10%;
+    height: auto;
+  }
+  .polaris {
+    background-image: none;
+    background-color: var(--cloudyBlue);
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.1fr 0.3fr 0.2fr;
+    margin-bottom: 0;
+    height: auto;
+  }
+  .polaris h2 {
+    grid-area: 1/2/2/3;
+    font-size: 1em;
+  }
+  .polaris p.contexte {
+    grid-area: 2/1/3/2;
+    font-size: 0.5em;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .polaris .role {
+    display: grid;
+    grid-area: 2/2/3/3;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .polaris .role h3 {
+    font-size: 1em;
+    margin-block: auto;
+  }
+  .polaris .role .texte_descriptif {
+    font-size: 0.5em;
+    margin-block: auto;
+  }
+  .polaris .application {
+    grid-area: 2/3/3/4;
+    margin-block: auto;
+  }
+  .polaris .application .vs {
+    width: 30%;
+  }
+  .polaris .application .figma {
+    width: 30%;
+  }
+  .polaris .carroussel {
+    align-self: center;
+    margin-inline: auto;
+    grid-area: 3/1/4/4;
+    width: 90%;
+    height: 55%;
+  }
+  .polaris .carroussel .swiper-button-next {
+    width: 5%;
+    margin-right: 4%;
+  }
+  .polaris .carroussel .swiper-button-prev {
+    width: 5%;
+    margin-left: 4%;
+  }
+  .aurorae {
+    background-image: none;
+    background-color: var(--sunshine);
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.1fr 0.3fr 0.2fr;
+    margin-bottom: 0;
+    height: auto;
+  }
+  .aurorae h2 {
+    grid-area: 1/2/2/3;
+    font-size: 1em;
+  }
+  .aurorae p.contexte {
+    grid-area: 2/1/3/2;
+    font-size: 0.5em;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .aurorae .role {
+    display: grid;
+    grid-area: 2/2/3/3;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .aurorae .role h3 {
+    font-size: 1em;
+    margin-block: auto;
+  }
+  .aurorae .role .texte_descriptif {
+    font-size: 0.5em;
+    margin-block: auto;
+  }
+  .aurorae .application {
+    grid-area: 2/3/3/4;
+    margin-block: auto;
+  }
+  .aurorae .application .davinci {
+    width: 30%;
+  }
+  .aurorae .carroussel {
+    align-self: center;
+    margin-inline: auto;
+    grid-area: 3/1/4/4;
+    width: 90%;
+    height: 55%;
+  }
+  .aurorae .carroussel .swiper-button-next {
+    width: 5%;
+    margin-right: 4%;
+  }
+  .aurorae .carroussel .swiper-button-prev {
+    width: 5%;
+    margin-left: 4%;
+  }
+  .chaos {
+    background-image: none;
+    background-color: var(--blush);
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.1fr 0.3fr 0.2fr;
+    margin-bottom: 0;
+    height: auto;
+  }
+  .chaos h2 {
+    grid-area: 1/2/2/3;
+    font-size: 1em;
+  }
+  .chaos p.contexte {
+    grid-area: 2/1/3/2;
+    font-size: 0.4em;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .chaos .role {
+    display: grid;
+    grid-area: 2/2/3/3;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .chaos .role h3 {
+    font-size: 0.7em;
+    margin-block: auto;
+  }
+  .chaos .role .texte_descriptif {
+    font-size: 0.4em;
+    margin-block: auto;
+  }
+  .chaos .application {
+    grid-area: 2/3/3/4;
+    margin-block: auto;
+  }
+  .chaos .application .vs {
+    width: 30%;
+  }
+  .chaos .application .maya {
+    width: 30%;
+  }
+  .chaos .application .davinci {
+    width: 30%;
+  }
+  .chaos .mp4_chaos {
+    align-self: flex-start;
+    grid-area: 3/1/4/4;
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+  }
+  .crystalize {
+    background-image: none;
+    background-color: var(--cloudyBlue);
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.1fr 0.3fr 0.2fr;
+    margin-bottom: 0;
+    height: auto;
+  }
+  .crystalize h2 {
+    grid-area: 1/2/2/3;
+    font-size: 1em;
+  }
+  .crystalize p.contexte {
+    grid-area: 2/1/3/2;
+    font-size: 0.5em;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .crystalize .role {
+    display: grid;
+    grid-area: 2/2/3/3;
+    align-self: flex-start;
+    margin-block: auto;
+  }
+  .crystalize .role h3 {
+    font-size: 1em;
+    margin-block: auto;
+  }
+  .crystalize .role .texte_descriptif {
+    font-size: 0.5em;
+    margin-block: auto;
+  }
+  .crystalize .application {
+    grid-area: 2/3/3/4;
+    margin-block: auto;
+  }
+  .crystalize .application .maya {
+    width: 30%;
+  }
+  .crystalize .application .photoshop {
+    width: 30%;
+  }
+  .crystalize .carroussel {
+    align-self: center;
+    margin-inline: auto;
+    grid-area: 3/1/4/4;
+    width: 90%;
+    height: 95%;
+  }
+  .crystalize .carroussel .swiper-button-next {
+    width: 5%;
+    margin-right: 4%;
+  }
+  .crystalize .carroussel .swiper-button-prev {
+    width: 5%;
+    margin-left: 4%;
+  }
+  .interest {
+    background-image: none;
+    background-color: var(--blush);
+    height: 35vh;
+  }
+  .interest .title {
+    width: 85%;
+  }
+  .contact {
+    background-image: none;
+    background-color: var(--cloudyBlue);
+    height: 35vh;
+    display: flex;
+  }
+  .contact .contenue {
+    width: 90%;
+  }
+  .contact .contenue .text {
+    width: 85%;
+    justify-self: flex-end;
+  }
+  .contact .contenue .linkedin {
+    width: 75%;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+  .contact .contenue .gmail {
+    width: 85%;
+    justify-self: flex-start;
+  }
+  .thank_you {
+    height: 35vh;
+  }
+  .thank_you .contenue .thank_you_text {
+    width: 90%;
+  }
+  .thank_you .contenue .work_text {
+    width: 90%;
+  }
+  .thank_you .contenue .avatar {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

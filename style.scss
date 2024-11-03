@@ -21,10 +21,11 @@ body {
 }
 
 /*btn*/
-#scrollToTopBtn{
+#scrollToTopBtn {
     background-color: transparent;
     border: none;
 }
+
 .go_up {
     position: fixed;
     bottom: 30px;
@@ -114,38 +115,6 @@ body {
 
 }
 
-/*passion_love
-.passion_love {
-    display: flex;
-    flex-direction: column;
-    none: #FF9894 2px solid;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-color: var(--cloudyBlue);
-
-    .contenu {
-        display: flex;
-        margin-inline: auto auto;
-        margin-top: 15%;
-        transform: scale(1.5);
-    }
-
-    .half_moon {
-        width: 15%;
-        align-self: flex-start;
-        margin-inline: auto auto;
-    }
-
-    .contenu {
-        width: 45%;
-        margin-left: auto;
-        margin-right: auto;
-        align-self: center;
-        margin-top: 12%;
-    }
-}*/
-
 /*projects*/
 .projects {
     display: flex;
@@ -158,6 +127,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    .small {
+        display: none;
+    }
 
     .title {
         width: 30%;
@@ -273,7 +246,6 @@ body {
 
     .swiper-slide:hover .hover-text {
         opacity: 1;
-        /* Become visible on hover */
     }
 
 
@@ -1115,7 +1087,7 @@ body {
             width: 25%;
             height: 100%;
             opacity: 0.4;
-            
+
         }
 
         .mySwiper3 .swiper-slide-thumb-active {
@@ -1257,28 +1229,28 @@ body {
         grid-row-gap: 0;
 
         .text {
-        grid-area: 1 / 1 / 3 / 3;
-        width: 100%;
-        justify-self: center;
+            grid-area: 1 / 1 / 3 / 3;
+            width: 100%;
+            justify-self: center;
+        }
+
+        .linkedin {
+            display: flex;
+            grid-area: 1 / 3 / 2 / 4;
+            align-self: flex-end;
+            justify-self: center;
+        }
+
+        .gmail {
+            display: flex;
+            grid-area: 2 / 3 / 3 / 4;
+            justify-self: center;
+            align-self: flex-end;
+        }
+
     }
 
-    .linkedin {
-        display: flex;
-        grid-area: 1 / 3 / 2 / 4;
-        align-self: flex-end;
-        justify-self: center;
-    }
 
-    .gmail {
-        display: flex;
-        grid-area: 2 / 3 / 3 / 4;
-        justify-self: center;
-        align-self: flex-end;
-    }
-
-    }
-
-    
 }
 
 //thank you
@@ -1328,6 +1300,11 @@ body {
 }
 
 /*
+@media screen and (min-width: 768px) {
+
+
+}
+
 @media (max-width: 768px) {
     .nav {
         .logo {
@@ -1547,656 +1524,1597 @@ body {
 
 
 }*/
-/*
-@media only screen and (min-width: 375px) and (max-width: 768px) {}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    .presentation {
+
+        .nav {
+            a {
+
+                font-size: 100%;
+            }
+        }
+    }
+
+    .about {
+
+        p {
+            font-size: 1em;
+        }
+
+        h3 {
+            font-size: 2em;
+        }
+
+        .my_face {
+            width: 100%;
+        }
+
+    }
+
+    .projects {
+        background-position: center;
+        background-size: cover;
+        height: 190vh;
+        width: 100%;
+        ;
+
+        .mySwiper {
+            display: none;
+        }
+
+        .title {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: flex-start;
+            margin-block: 2% 4%;
+        }
+
+        .small {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+
+
+            .polaris {
+                background-image: none;
+                height: 25vh;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20%;
+                position: relative;
+
+                .thumbnail_polaris {
+                    margin-inline: auto auto;
+                    width: 90%;
+                    height: auto;
+                    border-radius: 25px;
+
+                    &:hover {
+                        .hover-text {
+                            display: flex;
+                        }
+                    }
+                }
+
+                .eye_link {
+                    z-index: 5;
+                    position: absolute;
+                    display: inline-block;
+                    bottom: -15%;
+                    right: 8%;
+                    width: 10%;
+                }
+
+
+                .small_hover_text {
+                    position: absolute;
+                    top: 10%;
+                    left: 8%;
+                    color: white;
+                    opacity: 0;
+                    /* Start as invisible */
+                    transition: opacity 0.3s ease;
+                    z-index: 2;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    /* Above the overlay */
+                    h2 {
+                        color: white;
+                        font-family: kiwiMaru;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        margin: 0;
+
+                        text-align: left;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-size: 0.8em;
+                        text-align: left;
+                        font-family: kiwiMaru;
+                    }
+
+
+                }
+            }
+
+            .aurorae {
+                background-color: transparent;
+                height: 25vh;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .thumbnail_aurorae {
+                    margin-inline: auto auto;
+                    width: 90%;
+                    height: auto;
+                    border-radius: 25px;
+
+                    &:hover {
+                        .hover-text {
+                            display: flex;
+                        }
+                    }
+                }
+
+                .eye_link {
+                    z-index: 5;
+                    position: absolute;
+                    display: inline-block;
+                    bottom: -15%;
+                    right: 8%;
+                    width: 10%;
+                }
+
+
+                .small_hover_text {
+                    position: absolute;
+                    top: 10%;
+                    left: 8%;
+                    color: white;
+                    opacity: 0;
+                    /* Start as invisible */
+                    transition: opacity 0.3s ease;
+                    z-index: 2;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    /* Above the overlay */
+                    h2 {
+                        color: white;
+                        font-family: kiwiMaru;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        margin: 0;
+
+                        text-align: left;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-size: 0.8em;
+                        text-align: left;
+                        font-family: kiwiMaru;
+                    }
+
+
+                }
+            }
+
+            .chaos {
+                background-image: none;
+                height: 25vh;
+                display: flex;
+                flex-direction: column;
+                margin-block: 20%;
+                position: relative;
+
+                .thumbnail_chaos {
+                    margin-inline: auto auto;
+                    width: 90%;
+                    height: auto;
+                    border-radius: 25px;
+
+                    &:hover {
+                        .hover-text {
+                            display: flex;
+                        }
+                    }
+                }
+
+                .eye_link {
+                    z-index: 5;
+                    position: absolute;
+                    display: inline-block;
+                    bottom: -15%;
+                    right: 8%;
+                    width: 10%;
+                }
+
+
+                .small_hover_text {
+                    position: absolute;
+                    top: 10%;
+                    left: 8%;
+                    color: white;
+                    opacity: 0;
+                    /* Start as invisible */
+                    transition: opacity 0.3s ease;
+                    z-index: 2;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    /* Above the overlay */
+                    h2 {
+                        color: white;
+                        font-family: kiwiMaru;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        margin: 0;
+
+                        text-align: left;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-size: 0.8em;
+                        text-align: left;
+                        font-family: kiwiMaru;
+                    }
+
+
+                }
+            }
+
+            .crystal {
+                background-color: transparent;
+                height: 25vh;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .thumbnail_crystal {
+                    margin-inline: auto auto;
+                    width: 90%;
+                    height: auto;
+                    border-radius: 25px;
+
+                    &:hover {
+                        .hover-text {
+                            display: flex;
+                        }
+                    }
+                }
+
+                .eye_link {
+                    z-index: 5;
+                    position: absolute;
+                    display: inline-block;
+                    bottom: -15%;
+                    right: 8%;
+                    width: 10%;
+                }
+
+
+                .small_hover_text {
+                    position: absolute;
+                    top: 10%;
+                    left: 8%;
+                    color: white;
+                    opacity: 0;
+                    /* Start as invisible */
+                    transition: opacity 0.3s ease;
+                    z-index: 2;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    /* Above the overlay */
+                    h2 {
+                        color: white;
+                        font-family: kiwiMaru;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        margin: 0;
+
+                        text-align: left;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-size: 0.8em;
+                        text-align: left;
+                        font-family: kiwiMaru;
+                    }
+
+
+                }
+            }
+
+
+
+        }
+
+    }
+
+    .skills {
+        height: auto;
+
+        .contenue {
+
+            align-self: center;
+
+            .title {
+                transform: scale(3);
+            }
+
+            .text_animation {
+                font-size: 1em;
+            }
+
+            .text_modele {
+                font-size: 1em;
+            }
+
+            .text_coding {
+                font-size: 1em;
+            }
+
+            .text_vector {
+                font-size: 1em;
+            }
+
+            .text_editing {
+                font-size: 1em;
+            }
+
+            .text_ordi {
+                font-size: 1em;
+            }
+
+            .ordi {
+                width: 30%;
+            }
+
+            .editing {
+                width: 30%;
+            }
+
+            .vector {
+                width: 30%;
+            }
+
+            .coding {
+                width: 30%;
+            }
+
+            .modele {
+                width: 30%;
+            }
+
+            .animation {
+                width: 30%;
+            }
+        }
+
+        .application {
+            .ae {
+                width: 80%;
+            }
+
+            .davinci {
+                width: 80%;
+            }
+
+            .figma {
+                width: 80%;
+            }
+
+            .illustrator {
+                width: 80%;
+            }
+
+            .maya {
+                width: 80%;
+            }
+
+            .photoshop {
+                width: 80%;
+            }
+
+            .sass {
+                width: 80%;
+            }
+
+            .unity {
+                width: 80%;
+            }
+
+            .vs {
+                width: 80%;
+            }
+        }
+    }
+
+    .chaos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.7fr 0.5fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        h2 {
+            grid-area: 1 / 2 / 2 / 3;
+            font-size: 1.9em
+        }
+
+        .contexte {
+            grid-area: 2 / 1 / 3 / 2;
+            font-size: 1em;
+            align-self: flex-start;
+            margin-block: auto;
+        }
+
+        .role {
+            display: grid;
+            grid-area: 2 / 2 / 3 / 3;
+            align-self: flex-start;
+            margin-block: auto;
+
+            h3 {
+                font-size: 1.5em;
+                margin-block: auto;
+            }
+
+            .texte_descriptif {
+                font-size: 0.8em;
+                margin-block: auto;
+
+            }
+        }
+
+        .application {
+            grid-area: 2 / 3 / 3 / 4;
+            margin-block: auto;
+
+            .maya {
+                width: 30%;
+            }
+
+            .davinci {
+
+                width: 30%;
+
+            }
+        }
+
+        .mp4_chaos {
+            align-self: flex-start;
+            grid-area: 3 / 1 / 4 / 4;
+            width: 90%;
+            height: 70%;
+
+        }
+
+
+    }
+
+
+    .polaris {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.7fr 0.5fr 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        h2 {
+            grid-area: 1 / 2 / 2 / 3;
+            font-size: 1.9em
+        }
+
+        p.contexte {
+            grid-area: 2 / 1 / 3 / 2;
+            font-size: 0.8em;
+            align-self: flex-start;
+            margin-block: auto;
+        }
+
+        .role {
+            display: grid;
+            grid-area: 2 / 2 / 3 / 3;
+            align-self: flex-start;
+            margin-block: auto;
+
+            h3 {
+                font-size: 1.5em;
+                margin-block: auto;
+            }
+
+            .texte_descriptif {
+                font-size: 0.8em;
+                margin-block: auto;
+
+            }
+        }
+
+        .application {
+            grid-area: 2 / 3 / 3 / 4;
+            margin-block: auto;
+
+            .vs {
+                width: 30%;
+            }
+
+            .figma {
+
+                width: 30%;
+
+            }
+        }
+
+        .carroussel {
+            align-self: flex-start;
+            margin-inline: auto;
+            grid-area: 3 / 1 / 4 / 4;
+            width: 80%;
+            height: 55%;
+
+            .swiper-button {
+                &-next {
+                    margin-right: 2%;
+                }
+
+                &-prev {
+                    margin-left: 2%;
+                }
+            }
+
+        }
+    }
+
+
+    .aurorae {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.5fr 0.9fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        h2 {
+            grid-area: 1 / 2 / 2 / 3;
+            font-size: 1.9em
+        }
+
+        p.contexte {
+            grid-area: 2 / 1 / 3 / 2;
+            font-size: 0.8em;
+            align-self: flex-start;
+            margin-block: auto;
+        }
+
+        .role {
+            display: grid;
+            grid-area: 2 / 2 / 3 / 3;
+            align-self: flex-start;
+            margin-block: auto;
+
+            h3 {
+                font-size: 1.5em;
+                margin-block: auto;
+            }
+
+            .texte_descriptif {
+                font-size: 0.8em;
+                margin-block: auto;
+
+            }
+        }
+
+        .application {
+            grid-area: 2 / 3 / 3 / 4;
+            margin-block: auto;
+
+            .davinci {
+                width: 30%;
+                margin-inline: auto;
+            }
+        }
+
+        .carroussel {
+            align-self: flex-start;
+            margin-inline: auto;
+            grid-area: 3 / 1 / 4 / 4;
+            width: 75%;
+            height: 60%;
+
+            .swiper-button {
+                &-next {
+                    margin-right: 2%;
+                }
+
+                &-prev {
+                    margin-left: 2%;
+                }
+            }
+
+        }
+    }
+
+    .crystalize {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.7fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        h2 {
+            grid-area: 1 / 2 / 2 / 3;
+            font-size: 1.9em
+        }
+
+        p.contexte {
+            grid-area: 2 / 1 / 3 / 2;
+            font-size: 0.8em;
+            align-self: flex-start;
+            margin-block: auto;
+        }
+
+        .role {
+            display: grid;
+            grid-area: 2 / 2 / 3 / 3;
+            align-self: flex-start;
+            margin-block: auto;
+
+            h3 {
+                font-size: 1.5em;
+                margin-block: auto;
+            }
+
+            .texte_descriptif {
+                font-size: 0.8em;
+                margin-block: auto;
+
+            }
+        }
+
+        .application {
+            grid-area: 2 / 3 / 3 / 4;
+            margin-block: auto;
+
+            .maya {
+                width: 40%;
+            }
+
+            .photoshop {
+                width: 40%;
+            }
+        }
+
+        .carroussel {
+            align-self: flex-start;
+            margin-inline: auto;
+            grid-area: 3 / 1 / 4 / 4;
+            width: 90%;
+            height: 85%;
+
+            .swiper-button {
+                &-next {
+                    margin-right: 2%;
+                }
+
+                &-prev {
+                    margin-left: 2%;
+                }
+            }
+
+        }
+    }
+
+    .interest {
+        height: 80vh;
+    }
+
+    .contact {
+        height: 80vh;
+        display: flex;
+
+        .contenue {
+            width: 80%;
+
+            .text {
+                width: 85%;
+                justify-self: flex-end;
+            }
+
+            .linkedin {
+                width: 75%;
+                justify-self: flex-start;
+                align-self: flex-start;
+            }
+
+            .gmail {
+                width: 85%;
+                justify-self: flex-start;
+            }
+        }
+
+    }
+
+    .thank_you {
+        height: 60vh;
+
+        .contenue {
+            .thank_you_text {
+                width: 90%;
+            }
+
+            .work_text {
+                width: 90%;
+            }
+
+            .avatar {
+                width: 90%;
+
+            }
+        }
+    }
+
+}
+
 
 
 @media only screen and (max-width: 375px) {
-
-    .skills {
-        height: 100%;
-        margin-bottom: 15%;
-        margin-top: 10%;
-
-        .title {
-            width: 200%;
-            align-self: flex-start;
-        }
-
-        .ordi {
-            width: 40%;
-        }
-
-        .editing {
-            width: 40%;
-        }
-
-        .vector {
-            width: 40%;
-        }
-
-        .text_vector {
-            font-size: 0.8em;
-        }
-
-        .text_editing {
-            font-size: 0.8em;
-        }
-
-        .text_ordi {
-            font-size: 0.8em;
-        }
-
-        .coding {
-            width: 40%;
-        }
-
-        .modele {
-            width: 40%;
-        }
-
-        .animation {
-            width: 40%;
-        }
-
-        .text_animation {
-            font-size: 0.8em;
-        }
-
-        .text_modele {
-            font-size: 0.8em;
-        }
-
-        .text_coding {
-            font-size: 0.8em;
-        }
-
-        .application {
-
-            .ae {
-                width: 60%;
-            }
-
-            .davinci {
-                width: 60%;
-            }
-
-            .figma {
-                width: 60%;
-            }
-
-            .illustrator {
-                width: 60%;
-            }
-
-            .maya {
-                width: 60%;
-            }
-
-            .photoshop {
-                width: 60%;
-            }
-
-            .sass {
-                width: 60%;
-            }
-
-            .unity {
-                width: 60%;
-            }
-
-            .vs {
-                width: 60%;
-            }
-        }
-
-    }
-
-    .about {
-        height: 40vh;
-        margin-top: 0;
-
-        .contenue {
-            height: 30%;
-
-            h3 {
-                font-size: 1em;
-            }
-
-            p {
-                font-size: 0.5em;
-            }
-        }
-    }
-
-    .projects {
-        font-size: 0.5em;
-        height: 20vh;
-
-        img.swiper-button {
-            &-next {
-                width: 20%;
-                transform: scale(1);
-            }
-
-            &-prev {
-                width: 20%;
-                transform: scale(1);
-            }
-        }
-
-        .swiper-slide {
-            img {
-                border-radius: 15px;
-            }
-
-            .plus {
-                display: flex;
-
-                .eye_link {
-                    bottom: 2%;
-                    width: 20%;
-                    justify-self: flex-end;
-                }
-            }
-        }
-
-
-    }
-
-    .polaris {
-        height: 30vh;
-
-        h2 {
-            font-size: 2em;
-        }
-
-        .contexte {
-            font-size: 0.5em;
-        }
-
-        .role {
-            h3 {
-                font-size: 1em;
-            }
-
-            .texte_descriptif {
-                font-size: 0.5em;
-            }
-        }
-
-        .carroussel {
-            height: 40%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-
-    .aurorae {
-        height: 30vh;
-
-        h2 {
-            font-size: 2em;
-        }
-
-        .contexte {
-            font-size: 0.5em;
-        }
-
-        .role {
-            h3 {
-                font-size: 1em;
-            }
-
-            .texte_descriptif {
-                font-size: 0.5em;
-            }
-        }
-
-        .carroussel {
-            height: 40%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-
-
-    .chaos {
-        height: 50vh;
-
-        h2 {
-            font-size: 2em;
-        }
-
-        .contexte {
-            font-size: 0.5em;
-        }
-
-        .role {
-            h3 {
-                font-size: 1em;
-            }
-
-            .texte_descriptif {
-                font-size: 0.5em;
-            }
-        }
-
-        .mp4_chaos {
-            height: 30%;
-            border-radius: 15px;
-        }
-
-    }
-
-    .crystalize {
-        height: 30vh;
-
-        h2 {
-            font-size: 2em;
-        }
-
-        .contexte {
-            font-size: 0.5em;
-        }
-
-        .role {
-            h3 {
-                font-size: 1em;
-            }
-
-            .texte_descriptif {
-                font-size: 0.5em;
-            }
-        }
-
-        .carroussel {
-            height: 40%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-    .interest {
-        height: 25vh;
-    }
-
-    .contact {
-        height: 25vh;
-
-        img.linkedin {
-            width: 25%;
-        }
-
-        img.gmail {
-            width: 25%;
-        }
-    }
-
-    .thank_you {
-        height: 20vh;
-    }
-
-    .presentation {
-        img.arrow {
-            margin-bottom: 30%;
-        }
-
-        height: 30vh;
-
-        .logo {
-            width: 15%;
-            margin-top: 2%;
-        }
-
-        .menu {
-
-            a {
-                font-size: 1em;
-            }
-        }
-    }
-
-    img.go_up {
+    .go_up{
         width: 20%;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .skills {
-        height: 120vh;
-        width: 100%;
-        margin-block: 0;
-        //margin-bottom: 15%;
-        //margin-top: 10%;
-
-        .title {
-            width: 100%;
-            align-self: flex-start;
-        }
-
-        .ordi {
-            width: 25%;
-        }
-
-        .editing {
-            width: 25%;
-        }
-
-        .vector {
-            width: 25%;
-        }
-
-        .text_vector {
-            font-size: 1em;
-        }
-
-        .text_editing {
-            font-size: 1em;
-        }
-
-        .text_ordi {
-            font-size: 1em;
-        }
-
-        .coding {
-            width: 25%;
-        }
-
-        .modele {
-            width: 25%;
-        }
-
-        .animation {
-            width: 25%;
-        }
-
-        .text_animation {
-            font-size: 1em;
-        }
-
-        .text_modele {
-            font-size: 1em;
-        }
-
-        .text_coding {
-            font-size: 1em;
-        }
-
-        .application {
-            margin-block: 0;
-
-            .ae {
-                width: 60%;
-            }
-
-            .davinci {
-                width: 60%;
-            }
-
-            .figma {
-                width: 60%;
-            }
-
-            .illustrator {
-                width: 60%;
-            }
-
-            .maya {
-                width: 60%;
-            }
-
-            .photoshop {
-                width: 60%;
-            }
-
-            .sass {
-                width: 60%;
-            }
-
-            .unity {
-                width: 60%;
-            }
-
-            .vs {
-                width: 60%;
-            }
-        }
-
-    }
-
-    .about {
-        height: 80vh;
-        margin-top: 0;
-
-        .contenue {
-            height: 30%;
-
-            h3 {
-                font-size: 2em;
-            }
-
-            p {
-                font-size: 1em;
-            }
-        }
-    }
-
-    .projects {
-        height: 50vh;
-
-        .swiper-slide {
-            .plus {
-                display: flex;
-
-                .eye_link {
-                    bottom: 2%;
-                    width: 40%;
-                    justify-self: flex-end;
-                }
-            }
-        }
-
-
-    }
-
-    .polaris {
-        height: 65vh;
-
-        h2 {
-            font-size: 3em;
-        }
-
-        .contexte {
-            font-size: 1em;
-        }
-
-        .role {
-            h3 {
-                font-size: 2em;
-            }
-
-            .texte_descriptif {
-                font-size: 1em;
-            }
-        }
-
-        .carroussel {
-            height: 30%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-
-    .aurorae {
-        height: 65vh;
-
-        h2 {
-            font-size: 3em;
-        }
-
-        .contexte {
-            font-size: 1em;
-        }
-
-        .role {
-            h3 {
-                font-size: 2em;
-            }
-
-            .texte_descriptif {
-                font-size: 1.5em;
-                align-self: center;
-            }
-        }
-
-        .carroussel {
-            height: 90%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-
-
-    .chaos {
-        height: 65vh;
-
-        h2 {
-            font-size: 3em;
-        }
-
-        .contexte {
-            font-size: 1em;
-        }
-
-        .role {
-            h3 {
-                font-size: 2em;
-            }
-
-            .texte_descriptif {
-                font-size: 1em;
-            }
-        }
-
-        .mp4_chaos {
-            height: 30%;
-        }
-
-    }
-
-    .crystalize {
-        height: 65vh;
-
-        h2 {
-            font-size: 3em;
-        }
-
-        .contexte {
-            font-size: 1em;
-        }
-
-        .role {
-            h3 {
-                font-size: 2em;
-            }
-
-            .texte_descriptif {
-                font-size: 1em;
-            }
-        }
-
-        .carroussel {
-            height: 30%;
-            width: 90%;
-
-            .swiper-button {
-                &-next {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-
-                &-prev {
-                    width: 20%;
-                    transform: scale(1.3);
-                }
-            }
-        }
-    }
-
-    .interest {
-        height: 80vh;
-    }
-
-    .contact {
-        height: 80vh;
-    }
-
-    .thank_you {
-        height: 40vh;
     }
 
     .presentation {
         height: 60vh;
+
+        .nav {
+            .logo {
+                width: 20%;
+            }
+
+            a {
+
+                font-size: 80%;
+            }
+        }
     }
 
-}*/
+    .about {
+        height: 60vh;
+        background-color: var(--blush);
+        background-image: none;
+        width: 100%;
+
+        .contenue {
+            height: 60vh;
+            background-color: var(--blush);
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 0.5fr 0.7fr 0.5fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+
+            margin-block: auto;
+
+            p.main {
+                font-size: 0.8em;
+                grid-area: 2 / 2 / 3 / 3;
+                align-self: flex-end;
+            }
+
+            p.appelle {
+                font-size: 0.8em;
+                grid-area: 3 / 2 / 4 / 3;
+                text-align: right;
+            }
+
+
+            h3 {
+                width: 100%;
+                font-size: 1.5em;
+                grid-area: 1 / 1 / 2 / 3;
+            }
+
+            .my_face {
+                width: 100%;
+                grid-area: 2 / 1 / 4 / 2;
+            }
+        }
+
+    }
+
+    .skills {
+
+        height: auto;
+
+        .contenue {
+
+            align-self: center;
+
+            .title {
+                transform: scale(3);
+            }
+
+            p.text_animation {
+                font-size: 0.4em;
+            }
+
+            p.text_modele {
+                font-size: 0.4em;
+            }
+
+            p.text_coding {
+                font-size: 0.4em;
+            }
+
+            p.text_vector {
+                font-size: 0.4em;
+                width: 80%;
+                margin-inline: auto;
+            }
+
+            p.text_editing {
+                font-size: 0.4em;
+                width: 80%;
+                align-self: center;
+
+            }
+
+            p.text_ordi {
+                font-size: 0.4em;
+            }
+
+            .ordi {
+                width: 30%;
+            }
+
+            .editing {
+                width: 30%;
+            }
+
+            .vector {
+                width: 30%;
+            }
+
+            .coding {
+                align-self: center;
+                width: 30%;
+            }
+
+            .modele {
+                align-self: center;
+                width: 30%;
+            }
+
+            .animation {
+                align-self: center;
+                width: 30%;
+            }
+        }
+
+        .application {
+            .ae {
+                width: 80%;
+            }
+
+            .davinci {
+                width: 80%;
+            }
+
+            .figma {
+                width: 80%;
+            }
+
+            .illustrator {
+                width: 80%;
+            }
+
+            .maya {
+                width: 80%;
+            }
+
+            .photoshop {
+                width: 80%;
+            }
+
+            .sass {
+                width: 80%;
+            }
+
+            .unity {
+                width: 80%;
+            }
+
+            .vs {
+                width: 80%;
+            }
+        }
+    }
+
+    .projects {
+        background-color: var(--sunshine);
+        background-image: none;
+        height: 100vh;
+        width: 100%;
+        ;
+
+        .mySwiper {
+            display: none;
+        }
+
+        .title {
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: flex-start;
+            margin-block: 8% 8%;
+        }
+
+        .small {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+
+
+            .polaris {
+                background-image: none;
+                height: 25vh;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20%;
+                position: relative;
+                margin-bottom: 0;
+
+                .thumbnail_polaris {
+                    margin-inline: auto auto;
+                    width: 90%;
+                    height: auto;
+                    border-radius: 25px;
+
+                    &:hover {
+                        .hover-text {
+                            display: flex;
+                        }
+                    }
+                }
+
+                .eye_link {
+                    z-index: 5;
+                    position: absolute;
+                    display: flex;
+                    margin-inline: 80% auto;
+                    margin-block: -15% auto;
+                    /*right: 8%;
+                    top: 43%;*/
+                    width: 10%;
+                }
+
+
+                .small_hover_text {
+                    position: absolute;
+                    top: 10%;
+                    left: 8%;
+                    color: white;
+                    opacity: 0;
+                    /* Start as invisible */
+                    transition: opacity 0.3s ease;
+                    z-index: 2;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    /* Above the overlay */
+                    h2 {
+                        color: white;
+                        font-family: kiwiMaru;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        margin: 0;
+
+                        text-align: left;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-size: 0.8em;
+                        text-align: left;
+                        font-family: kiwiMaru;
+                    }
+
+
+                }
+            }
+
+            .aurorae {
+                background-color: transparent;
+                height: 25vh;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                margin-bottom: 0;
+
+                .thumbnail_aurorae {
+                    margin-inline: auto auto;
+                    width: 90%;
+                    height: auto;
+                    border-radius: 25px;
+
+                    &:hover {
+                        .hover-text {
+                            display: flex;
+                        }
+                    }
+                }
+
+                .eye_link {
+                    z-index: 5;
+                    position: absolute;
+                    display: flex;
+                    margin-inline: 80% auto;
+                    margin-block: -15% auto;
+                    /*right: 8%;
+                    top: 43%;*/
+                    width: 10%;
+                }
+
+
+                .small_hover_text {
+                    position: absolute;
+                    top: 10%;
+                    left: 8%;
+                    color: white;
+                    opacity: 0;
+                    /* Start as invisible */
+                    transition: opacity 0.3s ease;
+                    z-index: 2;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    /* Above the overlay */
+                    h2 {
+                        color: white;
+                        font-family: kiwiMaru;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        margin: 0;
+
+                        text-align: left;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-size: 0.8em;
+                        text-align: left;
+                        font-family: kiwiMaru;
+                    }
+
+
+                }
+            }
+
+            .chaos {
+                background-image: none;
+                height: 25vh;
+                display: flex;
+                flex-direction: column;
+                margin-block: 20%;
+                position: relative;
+                margin-bottom: 0;
+
+                .thumbnail_chaos {
+                    margin-inline: auto auto;
+                    width: 90%;
+                    height: auto;
+                    border-radius: 25px;
+
+                    &:hover {
+                        .hover-text {
+                            display: flex;
+                        }
+                    }
+                }
+
+                .eye_link {
+                    z-index: 5;
+                    position: absolute;
+                    display: flex;
+                    margin-inline: 80% auto;
+                    margin-block: -15% auto;
+                    /*right: 8%;
+                    top: 43%;*/
+                    width: 10%;
+                }
+
+
+                .small_hover_text {
+                    position: absolute;
+                    top: 10%;
+                    left: 8%;
+                    color: white;
+                    opacity: 0;
+                    /* Start as invisible */
+                    transition: opacity 0.3s ease;
+                    z-index: 2;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    /* Above the overlay */
+                    h2 {
+                        color: white;
+                        font-family: kiwiMaru;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        margin: 0;
+
+                        text-align: left;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-size: 0.8em;
+                        text-align: left;
+                        font-family: kiwiMaru;
+                    }
+
+
+                }
+            }
+
+            .crystal {
+                background-color: transparent;
+                height: 25vh;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                margin-bottom: 0;
+
+                .thumbnail_crystal {
+                    margin-inline: auto auto;
+                    width: 90%;
+                    height: auto;
+                    border-radius: 25px;
+
+                    &:hover {
+                        .hover-text {
+                            display: flex;
+                        }
+                    }
+                }
+
+                .eye_link {
+                    z-index: 5;
+                    position: absolute;
+                    display: flex;
+                    margin-inline: 80% auto;
+                    margin-block: -15% auto;
+                    /*right: 8%;
+                    top: 43%;*/
+                    width: 10%;
+                }
+
+
+                .small_hover_text {
+                    position: absolute;
+                    top: 10%;
+                    left: 8%;
+                    color: white;
+                    opacity: 0;
+                    /* Start as invisible */
+                    transition: opacity 0.3s ease;
+                    z-index: 2;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    /* Above the overlay */
+                    h2 {
+                        color: white;
+                        font-family: kiwiMaru;
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        margin: 0;
+
+                        text-align: left;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-size: 0.8em;
+                        text-align: left;
+                        font-family: kiwiMaru;
+                    }
+
+
+                }
+            }
+
+
+
+        }
+
+    }
+
+    .skills {
+        margin-top: 10%;
+        height: auto;
+    }
+
+
+    .polaris {
+        background-image: none;
+        background-color: var(--cloudyBlue);
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.1fr 0.3fr 0.2fr;
+        margin-bottom: 0;
+        height: auto;
+
+        h2 {
+            grid-area: 1 / 2 / 2 / 3;
+            font-size: 1em
+        }
+
+        p.contexte {
+            grid-area: 2 / 1 / 3 / 2;
+            font-size: 0.5em;
+            align-self: flex-start;
+            margin-block: auto;
+        }
+
+        .role {
+            display: grid;
+            grid-area: 2 / 2 / 3 / 3;
+            align-self: flex-start;
+            margin-block: auto;
+
+            h3 {
+                font-size: 1em;
+                margin-block: auto;
+            }
+
+            .texte_descriptif {
+                font-size: 0.5em;
+                margin-block: auto;
+
+            }
+        }
+
+        .application {
+            grid-area: 2 / 3 / 3 / 4;
+            margin-block: auto;
+
+            .vs {
+                width: 30%;
+            }
+
+            .figma {
+
+                width: 30%;
+
+            }
+        }
+
+        .carroussel {
+            align-self: center;
+            margin-inline: auto;
+            grid-area: 3 / 1 / 4 / 4;
+            width: 90%;
+            height: 55%;
+
+            .swiper-button {
+                &-next {
+                    width: 5%;
+                    margin-right: 4%;
+                }
+
+                &-prev {
+                    width: 5%;
+                    margin-left: 4%;
+                }
+            }
+
+        }
+    }
+
+    .aurorae {
+        background-image: none;
+        background-color: var(--sunshine);
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.1fr 0.3fr 0.2fr;
+        margin-bottom: 0;
+        height: auto;
+
+        h2 {
+            grid-area: 1 / 2 / 2 / 3;
+            font-size: 1em
+        }
+
+        p.contexte {
+            grid-area: 2 / 1 / 3 / 2;
+            font-size: 0.5em;
+            align-self: flex-start;
+            margin-block: auto;
+        }
+
+        .role {
+            display: grid;
+            grid-area: 2 / 2 / 3 / 3;
+            align-self: flex-start;
+            margin-block: auto;
+
+            h3 {
+                font-size: 1em;
+                margin-block: auto;
+            }
+
+            .texte_descriptif {
+                font-size: 0.5em;
+                margin-block: auto;
+
+            }
+        }
+
+        .application {
+            grid-area: 2 / 3 / 3 / 4;
+            margin-block: auto;
+
+            .davinci {
+                width: 30%;
+            }
+        }
+
+        .carroussel {
+            align-self: center;
+            margin-inline: auto;
+            grid-area: 3 / 1 / 4 / 4;
+            width: 90%;
+            height: 55%;
+
+
+            .swiper-button {
+                &-next {
+                    width: 5%;
+                    margin-right: 4%;
+                }
+
+                &-prev {
+                    width: 5%;
+                    margin-left: 4%;
+                }
+            }
+
+
+        }
+    }
+
+
+    .chaos {
+
+        background-image: none;
+        background-color: var(--blush);
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.1fr 0.3fr 0.2fr;
+        margin-bottom: 0;
+        height: auto;
+
+        h2 {
+            grid-area: 1 / 2 / 2 / 3;
+            font-size: 1em
+        }
+
+        p.contexte {
+            grid-area: 2 / 1 / 3 / 2;
+            font-size: 0.4em;
+            align-self: flex-start;
+            margin-block: auto;
+        }
+
+        .role {
+            display: grid;
+            grid-area: 2 / 2 / 3 / 3;
+            align-self: flex-start;
+            margin-block: auto;
+
+            h3 {
+                font-size: 0.7em;
+                margin-block: auto;
+            }
+
+            .texte_descriptif {
+                font-size: 0.4em;
+                margin-block: auto;
+
+            }
+        }
+
+        .application {
+            grid-area: 2 / 3 / 3 / 4;
+            margin-block: auto;
+
+            .vs {
+                width: 30%;
+            }
+
+            .maya {
+
+                width: 30%;
+
+            }
+
+            .davinci {
+
+                width: 30%;
+
+            }
+        }
+
+        .mp4_chaos {
+            align-self: flex-start;
+            grid-area: 3 / 1 / 4 / 4;
+            width: 90%;
+            height: 70%;
+            border-radius: 10px;
+
+        }
+    }
+
+    .crystalize {
+        background-image: none;
+        background-color: var(--cloudyBlue);
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.1fr 0.3fr 0.2fr;
+        margin-bottom: 0;
+        height: auto;
+
+        h2 {
+            grid-area: 1 / 2 / 2 / 3;
+            font-size: 1em
+        }
+
+        p.contexte {
+            grid-area: 2 / 1 / 3 / 2;
+            font-size: 0.5em;
+            align-self: flex-start;
+            margin-block: auto;
+        }
+
+        .role {
+            display: grid;
+            grid-area: 2 / 2 / 3 / 3;
+            align-self: flex-start;
+            margin-block: auto;
+
+            h3 {
+                font-size: 1em;
+                margin-block: auto;
+            }
+
+            .texte_descriptif {
+                font-size: 0.5em;
+                margin-block: auto;
+
+            }
+        }
+
+        .application {
+            grid-area: 2 / 3 / 3 / 4;
+            margin-block: auto;
+
+            .maya {
+                width: 30%;
+            }
+
+            .photoshop {
+                width: 30%;
+            }
+        }
+
+        .carroussel {
+            align-self: center;
+            margin-inline: auto;
+            grid-area: 3 / 1 / 4 / 4;
+            width: 90%;
+            height: 95%;
+
+
+            .swiper-button {
+                &-next {
+                    width: 5%;
+                    margin-right: 4%;
+                }
+
+                &-prev {
+                    width: 5%;
+                    margin-left: 4%;
+                }
+            }
+
+
+        }
+    }
+
+    .interest {
+        background-image: none;
+        background-color: var(--blush);
+        height: 35vh;
+
+        .title{
+            width: 85%;
+        }
+    }
+
+    .contact {
+        background-image: none;
+        background-color: var(--cloudyBlue);
+        height: 35vh;        display: flex;
+
+        .contenue {
+            width: 90%;
+
+            .text {
+                width: 85%;
+                justify-self: flex-end;
+            }
+
+            .linkedin {
+                width: 75%;
+                justify-self: flex-start;
+                align-self: flex-start;
+            }
+
+            .gmail {
+                width: 85%;
+                justify-self: flex-start;
+            }
+        }
+
+    }
+
+    .thank_you {
+        
+        height: 35vh;
+        .contenue {
+            .thank_you_text {
+                width: 90%;
+            }
+
+            .work_text {
+                width: 90%;
+            }
+
+            .avatar {
+                width: 90%;
+
+            }
+        }
+    }
+}
