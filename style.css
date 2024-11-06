@@ -97,7 +97,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 100vh;
+  height: 80vh;
   width: 100%;
   background-image: url(./media/img/background/project.svg);
   background-repeat: no-repeat;
@@ -224,35 +224,52 @@ body {
   color: var(--hawaiianTan);
 }
 .about .contenue {
-  width: 80%;
+  width: 90%;
+  max-height: 80%;
   margin-inline: auto auto;
   margin-top: auto;
   margin-bottom: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 0.3fr 1fr 0.3fr 0.3fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
-.about .titre {
+.about .contenue .reference {
+  align-self: center;
+  justify-self: center;
+}
+.about .contenue .reference .about_cv {
+  width: 20%;
+  margin-right: 5%;
+}
+.about .contenue .reference .about_linkedin {
+  width: 20%;
+}
+.about .contenue .reference .about_gmail {
+  width: 25%;
+  align-self: center;
+  margin-right: 5%;
+}
+.about .contenue .titre {
   grid-area: 1/2/2/3;
   align-self: flex-end;
 }
-.about .main {
+.about .contenue .main {
   grid-area: 2/2/3/3;
 }
-.about .appelle {
+.about .contenue .appelle {
   grid-area: 3/2/4/3;
   align-self: flex-start;
   justify-self: flex-end;
 }
-.about .my_face {
+.about .contenue .my_face {
   grid-area: 1/1/5/2;
   width: 50%;
   justify-self: center;
   align-self: center;
 }
-.about .introduction {
+.about .contenue .introduction {
   grid-area: 1/2/2/3;
   width: 80%;
 }
@@ -280,29 +297,33 @@ body {
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  margin-bottom: 20%;
+  margin-block: 10%;
 }
 .skills .contenue {
   display: grid;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 0.8fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin-top: 5%;
 }
 .skills .title {
   grid-area: 1/2/2/3;
-  width: 65%;
+  width: 85%;
+  margin-bottom: 5%;
 }
 .skills .ordi {
   grid-area: 2/1/3/2;
+  width: 25%;
 }
 .skills .editing {
   grid-area: 2/2/3/3;
+  width: 25%;
 }
 .skills .vector {
   grid-area: 2/3/3/4;
+  width: 25%;
 }
 .skills .text_vector {
   grid-area: 3/3/4/4;
@@ -315,12 +336,15 @@ body {
 }
 .skills .coding {
   grid-area: 4/1/5/2;
+  width: 25%;
 }
 .skills .modele {
   grid-area: 4/2/5/3;
+  width: 25%;
 }
 .skills .animation {
   grid-area: 4/3/5/4;
+  width: 25%;
 }
 .skills .text_animation {
   grid-area: 5/3/6/4;
@@ -351,38 +375,47 @@ body {
 .skills .application .ae {
   grid-area: 1/1/2/2;
   justify-self: center;
+  width: 50%;
 }
 .skills .application .davinci {
   grid-area: 1/2/2/3;
   justify-self: center;
+  width: 50%;
 }
 .skills .application .figma {
   grid-area: 1/3/2/4;
   justify-self: center;
+  width: 50%;
 }
 .skills .application .illustrator {
   grid-area: 1/4/2/5;
   justify-self: center;
+  width: 50%;
 }
 .skills .application .maya {
   grid-area: 1/5/2/6;
   justify-self: center;
+  width: 50%;
 }
 .skills .application .photoshop {
   grid-area: 1/6/2/7;
   justify-self: center;
+  width: 50%;
 }
 .skills .application .sass {
   grid-area: 1/7/2/8;
   justify-self: center;
+  width: 50%;
 }
 .skills .application .unity {
   grid-area: 1/8/2/9;
   justify-self: center;
+  width: 50%;
 }
 .skills .application .vs {
   grid-area: 1/9/2/10;
   justify-self: center;
+  width: 50%;
 }
 
 .chaos {
@@ -395,7 +428,7 @@ body {
   background-size: cover;
   margin-block: 0;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 0.8fr 0.5fr 0.4fr 0.5fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -416,7 +449,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 5.5em;
+  font-size: 4em;
   color: var(--pinkishBrown);
   grid-area: 1/1/2/2;
   margin-left: 9%;
@@ -425,7 +458,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 18px;
   color: var(--lightBeige);
   width: 80%;
   grid-area: 2/1/3/2;
@@ -441,7 +474,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 3.5em;
+  font-size: 24px;
   color: var(--lightBeige);
   align-self: center;
   justify-self: center;
@@ -452,7 +485,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 18px;
   color: var(--lightBeige);
   width: 40%;
   align-self: center;
@@ -487,7 +520,7 @@ body {
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 0.8fr 0.5fr 0.4fr 0.5fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -586,7 +619,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 6em;
+  font-size: 3.5em;
   color: var(--greyAsparagus);
   grid-area: 1/1/2/2;
   margin-left: 9%;
@@ -595,7 +628,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 18px;
   color: var(--lightBeige);
   width: 80%;
   grid-area: 2/1/3/2;
@@ -611,7 +644,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 3.5em;
+  font-size: 24px;
   color: var(--lightBeige);
   align-self: center;
   justify-self: center;
@@ -622,7 +655,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 18px;
   color: var(--lightBeige);
   width: 40%;
   align-self: center;
@@ -659,7 +692,7 @@ body {
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 0.8fr 0.5fr 0.4fr 0.5fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -754,7 +787,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 6em;
+  font-size: 4em;
   color: var(--hawaiianTan);
   grid-area: 1/1/2/2;
   margin-left: 9%;
@@ -763,7 +796,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 18px;
   color: var(--lightBeige);
   width: 80%;
   grid-area: 2/1/3/2;
@@ -779,7 +812,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 3.5em;
+  font-size: 24px;
   color: var(--lightBeige);
   align-self: center;
   justify-self: center;
@@ -790,7 +823,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 18px;
   color: var(--lightBeige);
   width: 40%;
   align-self: center;
@@ -820,7 +853,7 @@ body {
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: 0.8fr 0.5fr 0.4fr 0.5fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
@@ -923,7 +956,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 6em;
+  font-size: 4em;
   color: var(--greyAsparagus);
   grid-area: 1/1/2/2;
   margin-left: 9%;
@@ -932,7 +965,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 18px;
   color: var(--lightBeige);
   width: 80%;
   grid-area: 2/1/3/2;
@@ -948,7 +981,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 3.5em;
+  font-size: 24px;
   color: var(--lightBeige);
   align-self: center;
   justify-self: center;
@@ -959,7 +992,7 @@ body {
   font-family: KiwiMaru;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 18px;
   color: var(--lightBeige);
   width: 40%;
   align-self: center;
@@ -1084,432 +1117,318 @@ body {
 
 }
 
-@media (max-width: 768px) {
-    .nav {
-        .logo {
-            width: 16%;
+
+@media only screen and (min-width: 768px) and (min-width: 1140px) {
+
+    .about {
+
+        p {
+            font-size: 1em;
         }
 
-        a {
-            font-size: 100%
+        h3 {
+            font-size: 2em;
         }
-    }
 
-    .presentation {
-        height: 20vh;
-    }
+        .my_face {
+            width: 100%;
+        }
 
-    .passion_love {
-        height: 20vh;
     }
 
     .projects {
-        height: 30vh;
+        height: 50vh;
 
-        .title {
-            margin-top: 17%;
+        .swiper {
+            .swiper-wrapper {
+                height: 100%;
+                width: 120%;
+            }
         }
-    }
-
-    .about {
-        height: 35vh;
-        margin-left: 5%;
-
-        .my_face {
-            width: 60%;
-        }
-
-        .introduction {
-            width: 90%;
-        }
-
-    }
-
-    .creativity {
-        display: flex;
-        margin-top: -20%;
-        width: 100%;
-        height: 40vh;
     }
 
     .skills {
-        height: 100%;
-        margin-bottom: 15%;
-        margin-top: 10%;
-
-        .title {
-            width: 200%;
+        .contenue {
+            .title {
+                width: 100%;
+            }
         }
-
-        .ordi {
-            width: 70%;
-        }
-
-        .editing {
-            width: 70%;
-        }
-
-        .vector {
-            width: 70%;
-        }
-
-        .text_vector {
-            width: 70%;
-        }
-
-        .text_editing {
-            width: 70%;
-        }
-
-        .text_ordi {
-            width: 70%;
-        }
-
-        .coding {
-            width: 70%;
-        }
-
-        .modele {
-            width: 70%;
-        }
-
-        .animation {
-            width: 70%;
-        }
-
-        .text_animation {
-            width: 70%;
-        }
-
-        .text_modele {
-            width: 70%;
-        }
-
-        .text_coding {
-            width: 70%;
-        }
-
-        p {
-            font-size: 80%;
-        }
-
-
 
         .application {
-
             .ae {
-                width: 60%;
+                width: 70%;
             }
 
             .davinci {
-                width: 60%;
+                width: 70%;
             }
 
             .figma {
-                width: 60%;
+                width: 70%;
             }
 
             .illustrator {
-                width: 60%;
+                width: 70%;
             }
 
             .maya {
-                width: 60%;
+                width: 70%;
             }
 
             .photoshop {
-                width: 60%;
+                width: 70%;
             }
 
             .sass {
-                width: 60%;
+                width: 70%;
             }
 
             .unity {
-                width: 60%;
+                width: 70%;
             }
 
             .vs {
-                width: 60%;
+                width: 70%;
             }
         }
 
     }
 
+    .polaris {
+        height: 90vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% 15% 40%;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        h2 {
+            font-size: 4em;
+        }
+
+
+        p.contexte {
+            font-size: 1em;
+
+        }
+
+        .role {
+            h3 {
+                font-size: 1.9em;
+
+            }
+
+            p.texte_descriptif {
+                font-size: 1em;
+
+            }
+        }
+
+        .application {
+            align-self: center;
+        }
+
+        .carroussel {
+            height: 50%;
+            width: 95%;
+            margin-top: 25%;
+
+            .swiper-button {
+                &-next {
+                    width: 5%;
+                    margin-right: 2%;
+                }
+
+                &-prev {
+                    width: 5%;
+                    margin-left: 2%;
+                }
+            }
+        }
+    }
+
+    .aurorae {
+        height: 75vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 0.5fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        h2 {
+            font-size: 4em;
+        }
+
+
+        p.contexte {
+            font-size: 1em;
+
+        }
+
+        .role {
+            h3 {
+                font-size: 1.9em;
+
+            }
+
+            p.texte_descriptif {
+                font-size: 1em;
+
+            }
+        }
+
+        .application {
+            align-self: center;
+        }
+
+        .carroussel {
+            height: 50%;
+            width: 95%;
+            margin-top: 30%;
+
+            .swiper-button {
+                &-next {
+                    width: 5%;
+                    margin-right: 2%;
+                }
+
+                &-prev {
+                    width: 5%;
+                    margin-left: 2%;
+                }
+            }
+        }
+    }
+
+    .chaos {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.7fr 0.5fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        .mp4_chaos {
+            align-self: center;
+            height: 55%;
+        }
+
+        h2 {
+            font-size: 4.5em;
+        }
+
+
+        p.contexte {
+            font-size: 1em;
+
+        }
+
+        .role {
+            h3 {
+                font-size: 1.9em;
+
+            }
+
+            p.texte_descriptif {
+                font-size: 1em;
+
+            }
+        }
+
+        .application {
+            align-self: center;
+        }
+    }
+
+    .crystalize {
+        height: 75vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 0.5fr 0.5fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        h2 {
+            font-size: 4em;
+        }
+
+
+        p.contexte {
+            font-size: 1em;
+
+        }
+
+        .role {
+            h3 {
+                font-size: 1.9em;
+
+            }
+
+            p.texte_descriptif {
+                font-size: 1em;
+
+            }
+        }
+
+        .application {
+            align-self: center;
+        }
+
+        .carroussel {
+            height: 50%;
+            width: 95%;
+            margin-top: 30%;
+
+            .swiper-button {
+                &-next {
+                    width: 5%;
+                    margin-right: 2%;
+                }
+
+                &-prev {
+                    width: 5%;
+                    margin-left: 2%;
+                }
+            }
+        }
+    }
+
     .interest {
-        display: flex;
-        margin-top: -20%;
-        width: 100%;
-        height: 30vh;
+        height: 70vh;
     }
 
     .contact {
-        display: flex;
-        height: 100%;
+        height: 70vh;
 
-        .contenue {
-            margin-top: -3%;
-            align-self: center;
-            justify-content: center;
-        }
-
-        .text {
-            width: 200%;
+        .gmail {
+            width: 95%;
         }
 
         .linkedin {
-            width: 40%;
-            justify-self: flex-end;
-        }
-
-        .gmail {
-            width: 47%;
-            justify-self: flex-end;
+            width: 90%;
         }
     }
 
     .thank_you {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
+        height: 70vh;
 
         .contenue {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 0px;
+            .thank_you_text {
+                width: 90%;
+            }
+
+            .work_text {
+                width: 90%;
+            }
+
+            .avatar {
+                width: 90%;
+
+            }
         }
-
-        .thank_you_text {
-            width: 90%;
-        }
-
-        .work_text {
-
-            width: 65%;
-            align-self: flex-start;
-
-
-        }
-
-        .avatar {
-            width: 80%;
-        }
-
-
     }
-
-
-}*/
-@media only screen and (min-width: 768px) and (max-width: 1140px) {
-  .about p {
-    font-size: 1em;
-  }
-  .about h3 {
-    font-size: 2em;
-  }
-  .about .my_face {
-    width: 100%;
-  }
-  .projects {
-    height: 50vh;
-  }
-  .projects .swiper .swiper-wrapper {
-    height: 100%;
-    width: 120%;
-  }
-  .skills .contenue .title {
-    width: 100%;
-  }
-  .skills .application .ae {
-    width: 70%;
-  }
-  .skills .application .davinci {
-    width: 70%;
-  }
-  .skills .application .figma {
-    width: 70%;
-  }
-  .skills .application .illustrator {
-    width: 70%;
-  }
-  .skills .application .maya {
-    width: 70%;
-  }
-  .skills .application .photoshop {
-    width: 70%;
-  }
-  .skills .application .sass {
-    width: 70%;
-  }
-  .skills .application .unity {
-    width: 70%;
-  }
-  .skills .application .vs {
-    width: 70%;
-  }
-  .polaris {
-    height: 90vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20% 15% 40%;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .polaris h2 {
-    font-size: 4em;
-  }
-  .polaris p.contexte {
-    font-size: 1em;
-  }
-  .polaris .role h3 {
-    font-size: 1.9em;
-  }
-  .polaris .role p.texte_descriptif {
-    font-size: 1em;
-  }
-  .polaris .application {
-    align-self: center;
-  }
-  .polaris .carroussel {
-    height: 50%;
-    width: 95%;
-    margin-top: 25%;
-  }
-  .polaris .carroussel .swiper-button-next {
-    width: 5%;
-    margin-right: 2%;
-  }
-  .polaris .carroussel .swiper-button-prev {
-    width: 5%;
-    margin-left: 2%;
-  }
-  .aurorae {
-    height: 75vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 0.5fr 0.5fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .aurorae h2 {
-    font-size: 4em;
-  }
-  .aurorae p.contexte {
-    font-size: 1em;
-  }
-  .aurorae .role h3 {
-    font-size: 1.9em;
-  }
-  .aurorae .role p.texte_descriptif {
-    font-size: 1em;
-  }
-  .aurorae .application {
-    align-self: center;
-  }
-  .aurorae .carroussel {
-    height: 50%;
-    width: 95%;
-    margin-top: 30%;
-  }
-  .aurorae .carroussel .swiper-button-next {
-    width: 5%;
-    margin-right: 2%;
-  }
-  .aurorae .carroussel .swiper-button-prev {
-    width: 5%;
-    margin-left: 2%;
-  }
-  .chaos {
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 0.5fr 0.5fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .chaos .mp4_chaos {
-    align-self: center;
-    height: 55%;
-  }
-  .chaos h2 {
-    font-size: 4.5em;
-  }
-  .chaos p.contexte {
-    font-size: 1em;
-  }
-  .chaos .role h3 {
-    font-size: 1.9em;
-  }
-  .chaos .role p.texte_descriptif {
-    font-size: 1em;
-  }
-  .chaos .application {
-    align-self: center;
-  }
-  .crystalize {
-    height: 75vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.4fr 0.5fr 0.5fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .crystalize h2 {
-    font-size: 4em;
-  }
-  .crystalize p.contexte {
-    font-size: 1em;
-  }
-  .crystalize .role h3 {
-    font-size: 1.9em;
-  }
-  .crystalize .role p.texte_descriptif {
-    font-size: 1em;
-  }
-  .crystalize .application {
-    align-self: center;
-  }
-  .crystalize .carroussel {
-    height: 50%;
-    width: 95%;
-    margin-top: 30%;
-  }
-  .crystalize .carroussel .swiper-button-next {
-    width: 5%;
-    margin-right: 2%;
-  }
-  .crystalize .carroussel .swiper-button-prev {
-    width: 5%;
-    margin-left: 2%;
-  }
-  .interest {
-    height: 70vh;
-  }
-  .contact {
-    height: 70vh;
-  }
-  .contact .gmail {
-    width: 95%;
-  }
-  .contact .linkedin {
-    width: 90%;
-  }
-  .thank_you {
-    height: 70vh;
-  }
-  .thank_you .contenue .thank_you_text {
-    width: 90%;
-  }
-  .thank_you .contenue .work_text {
-    width: 90%;
-  }
-  .thank_you .contenue .avatar {
-    width: 90%;
-  }
 }
+*/
 @media only screen and (min-width: 375px) and (max-width: 768px) {
   .presentation .nav a {
     font-size: 100%;
