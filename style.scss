@@ -121,7 +121,7 @@ body {
     flex-direction: column;
     //none: #FF9894 2px solid;
     position: relative;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background-image: url(./media/img/background/project.svg);
     background-repeat: no-repeat;
@@ -261,6 +261,7 @@ body {
     background-size: cover;
     background-position: center;
 
+
     p {
         font-family: KiwiMaru;
         font-size: 155%;
@@ -288,6 +289,7 @@ body {
         .reference {
             align-self: center;
             justify-self: center;
+            margin-bottom: 15%;
     
             .about_ {
                 &cv {
@@ -309,6 +311,7 @@ body {
         .titre {
             grid-area: 1 / 2 / 2 / 3;
             align-self: flex-end;
+            margin-top: 5%;
         }
     
         .main {

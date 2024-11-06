@@ -97,7 +97,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   background-image: url(./media/img/background/project.svg);
   background-repeat: no-repeat;
@@ -238,6 +238,7 @@ body {
 .about .contenue .reference {
   align-self: center;
   justify-self: center;
+  margin-bottom: 15%;
 }
 .about .contenue .reference .about_cv {
   width: 20%;
@@ -254,6 +255,7 @@ body {
 .about .contenue .titre {
   grid-area: 1/2/2/3;
   align-self: flex-end;
+  margin-top: 5%;
 }
 .about .contenue .main {
   grid-area: 2/2/3/3;
