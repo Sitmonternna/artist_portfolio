@@ -134,8 +134,11 @@ body {
 }
 .projects .swiper-slide .plus .eye_link {
   position: relative;
-  width: 105%;
-  bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  align-self: flex-end;
+  width: 55%;
 }
 .projects .swiper-pagination {
   font-family: kiwiMaru;
@@ -1468,7 +1471,7 @@ body {
   }
   .projects .small .present_polaris {
     background-image: none;
-    height: 25vh;
+    height: 30%;
     display: flex;
     flex-direction: column;
     margin-bottom: 20%;
@@ -1521,7 +1524,7 @@ body {
   }
   .projects .small .present_aurorae {
     background-color: transparent;
-    height: 25vh;
+    height: 30%;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -1573,7 +1576,7 @@ body {
   }
   .projects .small .present_chaos {
     background-image: none;
-    height: 25vh;
+    height: 30%;
     display: flex;
     flex-direction: column;
     margin-block: 20%;
@@ -1626,8 +1629,8 @@ body {
   }
   .projects .small .present_crystal {
     background-color: transparent;
-    height: 25vh;
-    display: flex;
+    height: 30%;
+    display: grid;
     flex-direction: column;
     position: relative;
   }
@@ -1640,13 +1643,18 @@ body {
   .projects .small .present_crystal .thumbnail_crystal:hover .hover-text {
     display: flex;
   }
-  .projects .small .present_crystal .eye_link {
-    z-index: 5;
+  .projects .small .present_crystal a {
+    display: grid;
+  }
+  .projects .small .present_crystal a .eye_link {
+    align-self: flex-end;
+    justify-self: flex-end;
+    display: flex;
     position: absolute;
-    display: inline-block;
-    bottom: -15%;
-    right: 8%;
-    width: 10%;
+    z-index: 5;
+    width: 9%;
+    margin-bottom: 2%;
+    margin-right: 9%;
   }
   .projects .small .present_crystal .small_hover_text {
     position: absolute;
