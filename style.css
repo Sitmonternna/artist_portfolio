@@ -1213,11 +1213,11 @@
 }
 .aurorae--synopsis--titre {
   width: 27%;
-  margin-block: 7% 5%;
+  margin-block: 10% 6%;
 }
 .aurorae--synopsis--description {
   color: var(--hawaiianTan);
-  font-size: 18px;
+  font-size: 24px;
   font-family: KiwiMaru;
   width: 65%;
   margin-bottom: 3%;
@@ -1225,7 +1225,7 @@
 }
 .aurorae--synopsis--lien {
   color: var(--lightBeige);
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
   font-family: KiwiMaru;
   width: 65%;
@@ -1235,17 +1235,13 @@
 }
 .aurorae--role {
   width: 100%;
-  height: 115vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .aurorae--role--yellow-wave {
   width: 100%;
-}
-.aurorae--role--blue-wave {
-  width: 100%;
-  bottom: 0;
 }
 .aurorae--role--titre {
   width: 27%;
@@ -1305,32 +1301,49 @@
 }
 .aurorae--connect {
   margin-top: 20vh;
+  padding-bottom: 10vh;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-color: var(--cloudyBlue);
+  align-content: center;
+}
+.aurorae--connect--blue-wave {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  top: -25%;
 }
 .aurorae--connect--grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 0.4fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  width: 65%;
+  margin-inline: auto;
 }
-.aurorae--connect h2 {
-  color: var(--lightBeige);
-  font-size: 105px;
-  font-family: KiwiMaru;
-  width: 55%;
-  margin-top: 10%;
+.aurorae--connect .part1 {
+  white-space: nowrap;
+  justify-self: flex-start;
+  grid-area: 1/1/2/2;
 }
-.aurorae--connect--icon {
-  position: relative;
-  width: 5%;
-  margin-top: -5%;
-  grid-area: 1/2/2/3;
-  left: -5%;
+.aurorae--connect .part2 {
+  white-space: nowrap;
+  justify-self: flex-start;
+  grid-area: 2/1/3/2;
 }
 .aurorae--connect--title {
-  grid-area: 1/1/2/2;
+  color: var(--lightBeige);
+  font-size: 65px;
+  font-family: KiwiMaru;
+  width: 55%;
+}
+.aurorae--connect--icon {
+  grid-area: 1/2/3/3;
+  width: 8vw;
+  justify-self: flex-start;
+  margin-top: -15%;
+  margin-left: -25%;
 }
 .aurorae--connect--application {
   display: flex;
@@ -1346,6 +1359,72 @@
   width: 10%;
 }
 
+@media only screen and (min-width: 475px) and (max-width: 768px) {
+  .aurorae--intro .texte_description {
+    margin-inline: auto auto;
+  }
+  .aurorae--intro .texte_description h3 {
+    font-size: 85%;
+  }
+  .aurorae--intro .texte_description h3.space--ecole {
+    left: 45%;
+  }
+  .aurorae--present .mp4 {
+    width: 75%;
+    height: auto;
+  }
+  .aurorae--synopsis--description {
+    font-size: 12px;
+  }
+  .aurorae--synopsis--lien {
+    margin-top: 5%;
+    font-size: 16px;
+  }
+  .aurorae--role {
+    height: 100vh;
+  }
+  .aurorae--role--titre {
+    width: 40%;
+    margin-top: 30%;
+  }
+  .aurorae--role--texte-descriptif {
+    margin-top: 10%;
+    font-size: 24px;
+  }
+  .aurorae--role--page-switch {
+    display: grid;
+    grid-template-columns: 0.1fr 1.5fr 1.5fr 0.1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 85%;
+    margin-block: 10% 20%;
+  }
+  .aurorae--role--page-switch p {
+    font-weight: 700;
+    color: var(--hawaiianTan);
+    font-size: 18px;
+    font-family: KiwiMaru;
+  }
+  .aurorae--role--page-switch img.aurorae--role--arrow-left {
+    height: 20%;
+  }
+  .aurorae--role--page-switch img.aurorae--role--arrow-right {
+    height: 20%;
+  }
+  .aurorae--connect--blue-wave {
+    top: -40%;
+  }
+  .aurorae--connect--grid {
+    margin-inline: 20% auto;
+  }
+  .aurorae--connect h2 {
+    font-size: 50px;
+  }
+  .aurorae--connect--icon {
+    width: 170%;
+  }
+}
 body {
   background-color: var(--lightBeige);
   position: relative;
