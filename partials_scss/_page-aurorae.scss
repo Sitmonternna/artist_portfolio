@@ -10,7 +10,7 @@
         position: relative;
         background-color: var(--cloudyBlue);
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -120,18 +120,20 @@
         height: 100vh;
         justify-content: center;
         align-items: center;
+        margin-block: 10%;
 
         .down_wave {
             position: absolute;
             width: 100%;
             top: 0%;
+            margin-bottom: 20%;
         }
 
         .mp4 {
             border-radius: 15px;
-            width: 65%;
-            height: 65%;
-            margin-top: 15%;
+            width: 55%;
+            height: 60%;
+            margin-top: 20%;
         }
 
 
@@ -184,6 +186,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 20%;
 
         &--yellow-wave {
             width: 100%;
@@ -281,10 +284,10 @@
         align-content: center;
 
         &--blue-wave {
+            z-index: -1;
             position: relative;
             width: 100%;
-            height: 30%;
-            top: -25%;
+            top: -20%;
         }
 
         &--grid {
@@ -388,6 +391,7 @@
 
         &role {
             height: 100vh;
+
             &--titre {
                 width: 40%;
                 margin-top: 30%;
@@ -442,9 +446,10 @@
 
         &connect {
             &--blue-wave {
-                
+
                 top: -40%;
             }
+
             &--grid {
                 margin-inline: 20% auto;
             }
