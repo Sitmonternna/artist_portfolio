@@ -1186,7 +1186,6 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
-  margin-block: 10%;
 }
 .aurorae--present .down_wave {
   position: absolute;
@@ -1196,8 +1195,8 @@
 }
 .aurorae--present .mp4 {
   border-radius: 15px;
-  width: 55%;
-  height: 60%;
+  min-width: 70%;
+  min-height: 60%;
   margin-top: 20%;
 }
 .aurorae--synopsis {
@@ -1237,18 +1236,29 @@
 }
 .aurorae--role {
   width: 100%;
-  height: 120vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20%;
+  padding-bottom: 25%;
+  position: relative;
+}
+.aurorae--role--blue-wave {
+  position: absolute;
+  /* Absolute position within the section */
+  bottom: 0;
+  /* Places the wave at the bottom of the section */
+  left: 0;
+  width: 100%;
+  /* Ensures wave stretches across the full width */
+  z-index: -1;
 }
 .aurorae--role--yellow-wave {
   width: 100%;
 }
 .aurorae--role--titre {
   width: 27%;
-  margin-block: 7% 5%;
+  margin-block: 10% 5%;
 }
 .aurorae--role--texte-descriptif {
   color: var(--hawaiianTan);
@@ -1265,7 +1275,7 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   width: 80%;
-  margin-block: 2% 10%;
+  margin-block: 5% 0;
 }
 .aurorae--role--page-switch p {
   color: var(--hawaiianTan);
@@ -1303,18 +1313,12 @@
   grid-area: 1/4/2/5;
 }
 .aurorae--connect {
-  margin-top: 20vh;
+  position: relative;
   padding-bottom: 10vh;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: var(--cloudyBlue);
   align-content: center;
-}
-.aurorae--connect--blue-wave {
-  z-index: -1;
-  position: relative;
-  width: 100%;
-  top: -20%;
 }
 .aurorae--connect--grid {
   display: grid;
@@ -1324,6 +1328,7 @@
   grid-row-gap: 0px;
   width: 65%;
   margin-inline: auto;
+  margin-top: 15%;
 }
 .aurorae--connect .part1 {
   white-space: nowrap;
@@ -1363,32 +1368,54 @@
 }
 
 @media only screen and (min-width: 475px) and (max-width: 768px) {
+  .aurorae--intro .aurorae_metrage {
+    width: 15%;
+  }
+  .aurorae--intro .aurorae_title {
+    margin-block: 45% 15%;
+    width: 50%;
+  }
   .aurorae--intro .texte_description {
     margin-inline: auto auto;
   }
   .aurorae--intro .texte_description h3 {
-    font-size: 85%;
+    font-size: 12px;
   }
   .aurorae--intro .texte_description h3.space--ecole {
-    left: 45%;
+    left: 15%;
+  }
+  .aurorae--intro .app_grid {
+    margin-top: 10%;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+  }
+  .aurorae--intro .app_grid img {
+    width: 70%;
   }
   .aurorae--present .mp4 {
-    width: 75%;
-    height: auto;
+    min-height: 20%;
+    min-width: 55%;
   }
   .aurorae--synopsis--description {
-    font-size: 12px;
+    font-size: 18px;
   }
   .aurorae--synopsis--lien {
     margin-top: 5%;
-    font-size: 16px;
+    font-size: 20px;
+  }
+  .aurorae--synopsis--titre {
+    width: 55%;
+    margin-block: 10% 10%;
   }
   .aurorae--role {
     height: 100vh;
   }
+  .aurorae--role--blue-wave {
+    margin-top: -10%;
+  }
   .aurorae--role--titre {
-    width: 40%;
-    margin-top: 30%;
+    width: 55%;
+    margin-top: 10%;
   }
   .aurorae--role--texte-descriptif {
     margin-top: 10%;
@@ -1401,7 +1428,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 85%;
-    margin-block: 10% 20%;
+    margin-block: 10% 25%;
   }
   .aurorae--role--page-switch p {
     font-weight: 700;
@@ -1415,17 +1442,85 @@
   .aurorae--role--page-switch img.aurorae--role--arrow-right {
     height: 20%;
   }
-  .aurorae--connect--blue-wave {
-    top: -40%;
-  }
   .aurorae--connect--grid {
     margin-inline: 20% auto;
+    -moz-column-gap: 3%;
+         column-gap: 3%;
   }
   .aurorae--connect h2 {
-    font-size: 50px;
+    font-size: 35px;
   }
-  .aurorae--connect--icon {
-    width: 170%;
+}
+@media only screen and (max-width: 475px) {
+  .aurorae--intro .aurorae_metrage {
+    width: 20%;
+  }
+  .aurorae--intro .aurorae_title {
+    margin-block: 55% 15%;
+    width: 45%;
+  }
+  .aurorae--intro .texte_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    width: 60%;
+    margin-bottom: 15%;
+  }
+  .aurorae--intro .texte_description h3 {
+    font-size: 20px;
+  }
+  .aurorae--intro .texte_description h3.space {
+    left: 0;
+  }
+  .aurorae--intro .app_grid {
+    -moz-column-gap: 45%;
+         column-gap: 45%;
+  }
+  .aurorae--intro .app_grid img {
+    width: 150%;
+  }
+  .aurorae--present {
+    height: 50vh;
+  }
+  .aurorae--present iframe.mp4 {
+    max-width: 55%;
+    min-height: 20%;
+  }
+  .aurorae--synopsis--half_moon {
+    width: 15%;
+    margin-top: -7%;
+  }
+  .aurorae--synopsis--titre {
+    margin-block: 35% 15%;
+    width: 50%;
+  }
+  .aurorae--synopsis--description {
+    font-size: 13px;
+    margin-bottom: 15%;
+  }
+  .aurorae--synopsis--lien {
+    font-size: 14px;
+  }
+  .aurorae--role--page-switch img.aurorae--role--arrow-left {
+    height: 20%;
+  }
+  .aurorae--role--page-switch img.aurorae--role--arrow-right {
+    height: 20%;
+  }
+  .aurorae--role--page-switch p {
+    font-size: 10px;
+  }
+  .aurorae--role--titre {
+    width: 50%;
+  }
+  .aurorae--role--texte-descriptif {
+    font-size: 13px;
+  }
+  .aurorae--connect h2 {
+    font-size: 20px;
   }
 }
 body {

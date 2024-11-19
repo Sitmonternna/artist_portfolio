@@ -15,7 +15,7 @@
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        //justify-content: space-evenly;
+
 
         .aurorae_metrage {
             width: 10%;
@@ -120,19 +120,20 @@
         height: 100vh;
         justify-content: center;
         align-items: center;
-        margin-block: 10%;
+        //margin-block: 10%;
 
         .down_wave {
             position: absolute;
             width: 100%;
+            //height: 20vh;
             top: 0%;
             margin-bottom: 20%;
         }
 
         .mp4 {
             border-radius: 15px;
-            width: 55%;
-            height: 60%;
+            min-width: 70%;
+            min-height: 60%;
             margin-top: 20%;
         }
 
@@ -182,11 +183,23 @@
 
     &role {
         width: 100%;
-        height: 120vh;
+        max-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 20%;
+        padding-bottom: 25%;
+        position: relative;
+
+        &--blue-wave {
+            position: absolute;
+            /* Absolute position within the section */
+            bottom: 0;
+            /* Places the wave at the bottom of the section */
+            left: 0;
+            width: 100%;
+            /* Ensures wave stretches across the full width */
+            z-index: -1;
+        }
 
         &--yellow-wave {
             width: 100%;
@@ -195,7 +208,7 @@
 
         &--titre {
             width: 27%;
-            margin-block: 7% 5%;
+            margin-block: 10% 5%;
         }
 
         &--texte-descriptif {
@@ -214,7 +227,7 @@
             grid-column-gap: 0px;
             grid-row-gap: 0px;
             width: 80%;
-            margin-block: 2% 10%;
+            margin-block: 5% 0;
 
             p {
 
@@ -270,25 +283,17 @@
                 }
             }
 
-
-
         }
     }
 
     &connect {
-        margin-top: 20vh;
+        position: relative;
+        //top: 20%;
         padding-bottom: 10vh;
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         background-color: var(--cloudyBlue);
         align-content: center;
-
-        &--blue-wave {
-            z-index: -1;
-            position: relative;
-            width: 100%;
-            top: -20%;
-        }
 
         &--grid {
             display: grid;
@@ -298,6 +303,7 @@
             grid-row-gap: 0px;
             width: 65%;
             margin-inline: auto;
+            margin-top: 15%;
         }
 
         .part1 {
@@ -353,19 +359,37 @@
     .aurorae-- {
 
         &intro {
+            .aurorae_metrage {
+                width: 15%;
+            }
+
+            .aurorae_title {
+                margin-block: 45% 15%;
+                width: 50%;
+            }
+
 
             .texte_description {
                 margin-inline: auto auto;
 
                 h3 {
-                    font-size: 85%;
+                    font-size: 12px;
 
                     &.space {
                         &--ecole {
-                            left: 45%;
+                            left: 15%;
                         }
 
                     }
+                }
+            }
+
+            .app_grid {
+                margin-top: 10%;
+                column-gap: 5%;
+
+                & img {
+                    width: 70%;
                 }
             }
 
@@ -373,28 +397,37 @@
 
         &present {
             .mp4 {
-                width: 75%;
-                height: auto;
+                min-height: 20%;
+                min-width: 55%;
             }
         }
 
         &synopsis {
             &--description {
-                font-size: 12px;
+                font-size: 18px;
             }
 
             &--lien {
                 margin-top: 5%;
-                font-size: 16px;
+                font-size: 20px;
+            }
+
+            &--titre {
+                width: 55%;
+                margin-block: 10% 10%;
             }
         }
 
         &role {
             height: 100vh;
 
+            &--blue-wave {
+                margin-top: -10%;
+            }
+
             &--titre {
-                width: 40%;
-                margin-top: 30%;
+                width: 55%;
+                margin-top: 10%;
             }
 
             &--texte-descriptif {
@@ -410,7 +443,7 @@
                 grid-column-gap: 0px;
                 grid-row-gap: 0px;
                 width: 85%;
-                margin-block: 10% 20%;
+                margin-block: 10% 25%;
 
                 p {
 
@@ -445,24 +478,133 @@
         }
 
         &connect {
-            &--blue-wave {
-
-                top: -40%;
-            }
 
             &--grid {
                 margin-inline: 20% auto;
+                column-gap: 3%;
+
             }
 
             h2 {
-                font-size: 50px;
-
-            }
-
-            &--icon {
-                width: 170%;
+                font-size: 35px;
 
             }
         }
     }
+}
+
+@media only screen and (max-width: 475px) {
+    .aurorae-- {
+        &intro {
+            .aurorae_metrage {
+                width: 20%
+            }
+
+            .aurorae_title {
+                margin-block: 55% 15%;
+                width: 45%;
+            }
+
+            .texte_description {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                column-gap: 0;
+
+                width: 60%;
+                margin-bottom: 15%;
+
+                h3 {
+                    font-size: 20px;
+
+                    &.space {
+                        left: 0;
+
+                    }
+                }
+
+            }
+
+            .app_grid {
+                column-gap: 45%;
+
+                & img {
+                    width: 150%;
+                }
+            }
+        }
+
+        &present {
+            height: 50vh;
+
+            iframe {
+                &.mp4 {
+                    max-width: 55%;
+                    min-height: 20%;
+                }
+            }
+
+        }
+
+        &synopsis {
+            &--half_moon {
+                width: 15%;
+                margin-top: -7%;
+            }
+
+            &--titre {
+                margin-block: 35% 15%;
+                width: 50%;
+            }
+
+            &--description {
+                font-size: 13px;
+                margin-bottom: 15%;
+
+            }
+
+            &--lien {
+                font-size: 14px;
+            }
+        }
+
+        &role {
+            &--page-switch {
+                img {
+                    &.aurorae--role--arrow-left {
+                        height: 20%;
+                    }
+                    &.aurorae--role--arrow-right {
+                        height: 20%;
+                    }
+                }
+
+
+                p {
+                    font-size: 10px;
+                }
+            }
+
+            &--titre {
+                width: 50%;
+            }
+
+            &--texte-descriptif {
+                font-size: 13px;
+            }
+        }
+
+        &connect {
+            h2 {
+                font-size: 20px;
+
+            }
+        }
+
+    }
+
+
+
+
 }
