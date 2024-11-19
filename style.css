@@ -2455,23 +2455,24 @@ body {
     margin-block: auto;
   }
   .about .contenue p.main {
-    font-size: 0.8em;
+    font-size: 10px;
     grid-area: 2/2/3/3;
-    align-self: flex-end;
+    align-self: center;
   }
   .about .contenue p.appelle {
-    font-size: 0.8em;
+    font-size: 10px;
     grid-area: 3/2/4/3;
     text-align: right;
   }
   .about .contenue h3 {
     width: 100%;
-    font-size: 1.5em;
+    font-size: 11px;
     grid-area: 1/1/2/3;
   }
   .about .contenue .my_face {
     width: 100%;
     grid-area: 2/1/4/2;
+    align-self: center;
   }
   .skills {
     height: auto;
