@@ -441,6 +441,52 @@
   align-self: flex-end;
 }
 
+@media only screen and (min-width: 475px) and (max-width: 768px) {
+  .contact {
+    height: 80vh;
+    display: flex;
+  }
+  .contact .contenue {
+    width: 80%;
+  }
+  .contact .contenue .text {
+    width: 85%;
+    justify-self: flex-end;
+  }
+  .contact .contenue .linkedin {
+    width: 75%;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+  .contact .contenue .gmail {
+    width: 85%;
+    justify-self: flex-start;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .contact {
+    background-image: none;
+    background-color: var(--cloudyBlue);
+    height: 35vh;
+    display: flex;
+  }
+  .contact .contenue {
+    width: 90%;
+  }
+  .contact .contenue .text {
+    width: 85%;
+    justify-self: flex-end;
+  }
+  .contact .contenue .linkedin {
+    width: 75%;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+  .contact .contenue .gmail {
+    width: 85%;
+    justify-self: flex-start;
+  }
+}
 .creativity {
   display: flex;
   width: 100%;
@@ -1023,10 +1069,17 @@
   }
 }
 @media only screen and (max-width: 475px) {
+  .projects {
+    height: 50vh;
+  }
   .projects .swiper {
     display: none;
   }
+  .projects .title {
+    margin-top: 20%;
+  }
   .projects .small {
+    margin-top: 10%;
     margin-inline: 25% auto;
     display: flex;
     flex-direction: column;
@@ -1039,7 +1092,7 @@
   }
   .projects .small .present .thumbnail {
     width: 70%;
-    border-radius: 15px;
+    border-radius: 10px;
   }
   .projects .small .present .eye_link {
     z-index: 1;
@@ -1060,14 +1113,14 @@
   }
   .projects .small .present .text h2 {
     font-family: kiwiMaru;
-    font-size: 14px;
+    font-size: 8px;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 3%;
   }
   .projects .small .present .text h4 {
     margin: 0;
-    font-size: 10px;
+    font-size: 6px;
     text-align: left;
     font-family: kiwiMaru;
   }

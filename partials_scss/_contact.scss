@@ -47,3 +47,62 @@
 
     }
 }
+
+@media only screen and (min-width: 475px) and (max-width: 768px) {
+    .contact {
+        height: 80vh;
+        display: flex;
+
+        .contenue {
+            width: 80%;
+
+            .text {
+                width: 85%;
+                justify-self: flex-end;
+            }
+
+            .linkedin {
+                width: 75%;
+                justify-self: flex-start;
+                align-self: flex-start;
+            }
+
+            .gmail {
+                width: 85%;
+                justify-self: flex-start;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 475px) {
+
+    .contact {
+        background-image: none;
+        background-color: var(--cloudyBlue);
+        height: 35vh;
+        display: flex;
+
+        .contenue {
+            width: 90%;
+
+            .text {
+                width: 85%;
+                justify-self: flex-end;
+            }
+
+            .linkedin {
+                width: 75%;
+                justify-self: flex-start;
+                align-self: flex-start;
+            }
+
+            .gmail {
+                width: 85%;
+                justify-self: flex-start;
+            }
+        }
+
+    }
+}
