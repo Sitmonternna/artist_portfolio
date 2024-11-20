@@ -1,105 +1,122 @@
+@use "colors";
+@use "font";
+
 .projects {
+    position: relative;
     display: flex;
     flex-direction: column;
-    //none: #FF9894 2px solid;
-    position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(./media/img/background/project.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: var(--sunshine);
 
-    .small {
-        display: none;
-    }
-
-    .title {
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        align-self: flex-start;
-        margin-block: 2% 4%;
-    }
-
-    .swiper {
-        margin-block: auto;
-        width: 100%;
-        height: 100%;
-    }
-
-    .swiper-slide {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .plus {
-            z-index: 5;
-            position: absolute;
-            display: inline-block;
-            bottom: 5%;
-            right: 5%;
-
-            .eye_link {
-                position: relative;
-                display: flex;
-                flex-direction: row;
-                justify-self: flex-end;
-                align-self: flex-end;
-                width: 55%;
-                //bottom: 5%;
-
-            }
-        }
-
-
-    }
-
-    .swiper-pagination {
-        font-family: kiwiMaru;
-        font-size: 1em;
-        color: var(--lightBeige);
-    }
-
-    .swiper-button {
-        &-prev {
-            transform: scale(3);
-            left: 10%;
-        }
-
-        &-next {
-            transform: scale(3);
-            right: 10%;
-        }
-    }
-
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 35px;
-    }
-
-    .swiper-slide:hover::before {
-        content: '';
+    &--wave {
         position: absolute;
         top: 0;
-        left: 0;
         width: 100%;
-        height: 100%;
-        background-color: #a17a7a91;
-        z-index: 1;
-        border-radius: 35px;
     }
 
-    .swiper {
-        width: 100%;
-        height: auto;
-        margin: 20px auto;
+    &--content {
+        display: flex;
+        flex-direction: column;
+        margin-block: 10%;
+
+        &--title {
+            width: 30%;
+            margin-inline: auto;
+            margin-bottom: 7%;
+            align-self: center;
+            justify-self: center;
+            z-index: 5;
+        }
+
+        /*
+        &--swiper {
+            width: 70%;
+            height: auto;
+
+            &-slide {
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                    &.projects--content--swiper-slide--thumbnail {
+                        text-align: center;
+                        font-size: 18px;
+                        background: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                    }
+                }
+
+            }
+
+        }*/
+
+        &--swiper {
+            &-container {
+                height: auto;
+                width: 100%;
+                //max-width: 800px;
+                /* Maximum width for the swiper */
+                margin: 0 auto;
+                position: relative;
+            }
+
+            &-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 100%;
+
+                & img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 20px;
+                    /* Optional: rounded corners for images */
+                }
+            }
+
+            &-button {
+                &-next {
+                    & img {
+                        &.swiper-button-next {
+                            position: absolute;
+                            top: 50%;
+                            transform: scale(2.5);
+                            border: none;
+                            cursor: pointer;
+                            z-index: 1000;
+
+                        }
+                    }
+
+                }
+
+                &-prev {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%) scale(2.5);
+                    border: none;
+                    cursor: pointer;
+                    z-index: 1000;
+                }
+            }
+
+        }
+
+        &--small {
+            display: none;
+        }
+
+
     }
 
+    /*
     .swiper-slide .hover-text {
         height: 50%;
         position: absolute;
@@ -107,11 +124,9 @@
         left: 5%;
         color: white;
         opacity: 0;
-        /* Start as invisible */
         transition: opacity 0.3s ease;
         z-index: 2;
 
-        /* Above the overlay */
         h2 {
             font-family: kiwiMaru;
             font-size: 3em;
@@ -132,7 +147,90 @@
 
     .swiper-slide:hover .hover-text {
         opacity: 1;
+    }*/
+}
+
+@media only screen and (min-width: 475px) and (max-width: 768px) {
+
+    .projects {
+        &--content {
+            margin-block: auto;
+
+            &--swiper-container {
+                display: none;
+            }
+
+            &--small {
+                display: flex;
+                margin-block: auto;
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+
+                .hover-text .link {
+                    height: 50%;
+                    position: absolute;
+                    top: 5%;
+                    left: 5%;
+                    color: white;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                    z-index: 2;
+
+                    h2 {
+                        font-family: kiwiMaru;
+                        font-size: 3em;
+                        text-transform: uppercase;
+                        margin-top: 0;
+                        margin-bottom: 3%;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-size: 1em;
+                        text-align: left;
+                        font-family: kiwiMaru;
+                    }
+
+                }
+
+                & img {
+                    max-width: 60%;
+                    height: auto;
+                    border-radius: 8px;
+
+                    &:hover .hover-text .link {
+                        opacity: 1;
+                    }
+
+                }
+            }
+        }
     }
+}
 
+@media only screen and (max-width: 475px) {
+    .projects {
+        &--content {
+            margin-block: auto;
 
+            &--swiper-container {
+                display: none;
+            }
+
+            &--small {
+                display: flex;
+                margin-block: auto;
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+
+                & img {
+                    max-width: 60%;
+                    height: auto;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
 }

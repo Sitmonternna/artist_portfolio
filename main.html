@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitmonternna Yi</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav--burger" onclick="toggleMenu()">
+            <span class="nav--burger--bar"></span>
+            <span class="nav--burger--bar"></span>
+            <span class="nav--burger--bar"></span>
+        </div>
+        <div class="nav--menu" id="navMenu">
+            <a href="#about">À propos</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contacts</a>
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn" onclick="goUpBtn()">
+        <img class="go_up" src="./media/img/btn_up.svg" alt="Scroll to Top">
+    </button>
+
+    <section class="presentation">
+        <div class="presentation--content">
+            <img class="presentation--content--name" src="./media/img/intro/name.svg" alt="name">
+            <img class="presentation--content--arrow" src="./media/img/intro/triple_arrow.svg" alt="arrow">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <img class="about--halfmoon" src="./media/img/about_me/halfmoon-about.svg" alt="">
+
+        <div class="about--content">
+            <h3 class="about--content--titre">Salut!! Je m’appelle Sitmonternna Yi</h3>
+            <img class="about--content--picture" src="./media/img/about_me/me_professional.svg" alt="my_face">
+
+            <p class="about--content--main">Je suis une étudiante en multimédia au Collège Montmorency,
+                avec une grande passion pour le montage et production de films,
+                l'animation 2D ainsi que le design graphique.</p>
+            <p class="about--content--call">-
+                Vous pouvez m'appeler Sit
+            </p>
+            <div class="about--content--reference">
+                <a href="./media/img/about_me/cv_yi_sitmonternna.pdf">
+                    <img class="about--content--cv" src="./media/img/about_me/icone/cv.svg" alt="">
+                </a>
+
+                <a href="mailto:ysitmonternna@gmail.com">
+                    <img class="about--content--gmail" src="./media/img/about_me/icone/mail.svg" alt="">
+                </a>
+
+
+                <a href="https://www.linkedin.com/feed/">
+                    <img class="about--content--linkedin" src="./media/img/about_me/icone/linkedin.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <img class="projects--wave" src="./media/img/wave/pink-yellow_wave.svg" alt="">
+
+        <div class="projects--content">
+            <img class="projects--content--title" src="./media/img/projects/title.svg" alt="title">
+
+            <!-- Swiper Container -->
+            <div class="projects--content--swiper-container mySwiper">
+                <!-- Swiper Wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="projects--content--swiper-slide">
+                        <img src="./media/img/projects/swiper/aurorae/c_aurorae.svg" alt="Image 1">
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="projects--content--swiper-slide">
+                        <img src="./media/img/projects/swiper/aurorae/c_aurorae.svg" alt="Image 2">
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="projects--content--swiper-slide">
+                        <img src="./media/img/projects/swiper/chaos/c_chaos.svg" alt="Image 3">
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="projects--content--swiper-slide">
+                        <img src="./media/img/projects/swiper/cristalize/c_crystalize.svg" alt="Image 4">
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="projects--content--swiper-button-next">
+                    <img class="swiper-button-next" src="./media/img/projects/swiper/btn_right.svg" alt="">
+                </div>
+                <div class="projects--content--swiper-button-prev">
+                    <img class="swiper-button-prev" src="./media/img/projects/swiper/btn_left.svg" alt="">
+
+                </div>
+            </div>
+
+            <div class="projects--content--small">
+                <div class="projects--content--small--aurorae">
+                    <img src="./media/img/projects/swiper/aurorae/c_aurorae.svg" alt="Image 1">
+                    <div class="hover-text">
+                        <h2>crystalize</h2>
+                        <h4>Modélisation 3d</h4>
+                    </div>
+                    <div class="link">
+                        <a href="#crystalize">
+                            <img class="eye_link" src="./media/img/projects/swiper/savoir_link.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects--content--small--polaris">
+                    <img src="./media/img/projects/swiper/aurorae/c_aurorae.svg" alt="Image 2">
+                    <div class="hover-text">
+                        <h2>crystalize</h2>
+                        <h4>Modélisation 3d</h4>
+                    </div>
+                    <div class="link">
+                        <a href="#crystalize">
+                            <img class="eye_link" src="./media/img/projects/swiper/savoir_link.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects--content--small--chaos">
+                    <img src="./media/img/projects/swiper/chaos/c_chaos.svg" alt="Image 3">
+                    <div class="hover-text">
+                        <h2>crystalize</h2>
+                        <h4>Modélisation 3d</h4>
+                    </div>
+                    <div class="link">
+                        <a href="#crystalize">
+                            <img class="eye_link" src="./media/img/projects/swiper/savoir_link.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects--content--small--crystalize">
+                    <img src="./media/img/projects/swiper/cristalize/c_crystalize.svg" alt="Image 4">
+                    <div class="hover-text">
+                        <h2>crystalize</h2>
+                        <h4>Modélisation 3d</h4>
+                    </div>
+                    <div class="link">
+                        <a href="#crystalize">
+                            <img class="eye_link" src="./media/img/projects/swiper/savoir_link.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
