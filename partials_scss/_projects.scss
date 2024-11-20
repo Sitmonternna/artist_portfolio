@@ -2,131 +2,123 @@
 @use "font";
 
 .projects {
-    position: relative;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    width: 100%;
     background-color: var(--sunshine);
+    position: relative;
+    height: 130vh;
+    width: 100%;
 
-    &--wave {
-        position: absolute;
-        top: 0;
+    .small {
+        display: none;
+    }
+
+    .wave {
         width: 100%;
     }
 
-    &--content {
+    .title {
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        align-self: flex-start;
+        margin-block: 2% 4%;
+    }
+
+    .swiper {
         display: flex;
-        flex-direction: column;
-        margin-block: 10%;
+        margin-block: auto;
+        width: 100%;
+        height: auto;
+    }
 
-        &--title {
-            width: 30%;
-            margin-inline: auto;
-            margin-bottom: 7%;
-            align-self: center;
-            justify-self: center;
+    .swiper-slide {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .plus {
+            transform: scale(2);
             z-index: 5;
-        }
+            position: absolute;
+            display: inline-block;
+            bottom: 10%;
+            right: 20%;
 
-        /*
-        &--swiper {
-            width: 70%;
-            height: auto;
-
-            &-slide {
-
-                img {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-
-                    &.projects--content--swiper-slide--thumbnail {
-                        text-align: center;
-                        font-size: 18px;
-                        background: #fff;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                    }
-                }
-
-            }
-
-        }*/
-
-        &--swiper {
-            &-container {
-                height: auto;
-                width: 100%;
-                //max-width: 800px;
-                /* Maximum width for the swiper */
-                margin: 0 auto;
+            .eye_link {
                 position: relative;
-            }
-
-            &-slide {
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                max-width: 100%;
+                flex-direction: row;
+                justify-self: flex-end;
+                align-self: flex-end;
+                width: 55%;
+                //bottom: 5%;
 
-                & img {
-                    width: 100%;
-                    height: auto;
-                    border-radius: 20px;
-                    /* Optional: rounded corners for images */
-                }
             }
-
-            &-button {
-                &-next {
-                    & img {
-                        &.swiper-button-next {
-                            position: absolute;
-                            top: 50%;
-                            transform: scale(2.5);
-                            border: none;
-                            cursor: pointer;
-                            z-index: 1000;
-
-                        }
-                    }
-
-                }
-
-                &-prev {
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%) scale(2.5);
-                    border: none;
-                    cursor: pointer;
-                    z-index: 1000;
-                }
-            }
-
-        }
-
-        &--small {
-            display: none;
         }
 
 
     }
 
-    /*
+    .swiper-pagination {
+        font-family: kiwiMaru;
+        font-size: 1em;
+        color: var(--lightBeige);
+    }
+
+    .swiper-button {
+        &-prev {
+            position: absolute;
+            transform: scale(5);
+            left: 15%;
+        }
+
+        &-next {
+            position: absolute;
+            transform: scale(5);
+            right: 15%;
+        }
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 70%;
+        height: 100%;
+        object-fit: cover;
+        background-position: center;
+        border-radius: 30px;
+    }
+
+    .swiper-slide:hover::before {
+        content: '';
+        position: absolute;
+        margin-inline: auto auto;
+        //width: 70%;
+        //height: 100%;
+        background-color: #a17a7a91;
+        z-index: 1;
+        border-radius: 30px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
     .swiper-slide .hover-text {
         height: 50%;
         position: absolute;
-        top: 5%;
-        left: 5%;
+        top: 8%;
+        left: 20%;
         color: white;
         opacity: 0;
+        /* Start as invisible */
         transition: opacity 0.3s ease;
         z-index: 2;
 
+        /* Above the overlay */
         h2 {
             font-family: kiwiMaru;
             font-size: 3em;
@@ -147,39 +139,57 @@
 
     .swiper-slide:hover .hover-text {
         opacity: 1;
-    }*/
+    }
+
+
 }
 
 @media only screen and (min-width: 475px) and (max-width: 768px) {
 
     .projects {
-        &--content {
-            margin-block: auto;
 
-            &--swiper-container {
-                display: none;
-            }
 
-            &--small {
-                display: flex;
-                margin-block: auto;
-                flex-direction: column;
-                align-items: center;
-                gap: 1em;
+        .swiper {
+            display: none;
+        }
 
-                .hover-text .link {
-                    height: 50%;
+        .small {
+            margin-inline: 25% auto;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            gap: 1em;
+
+            .present {
+                position: relative;
+
+                .thumbnail {
+                    width: 70%;
+                    border-radius: 15px;
+                }
+
+                .eye_link {
+                    z-index: 1;
                     position: absolute;
-                    top: 5%;
+                    width: 10%;
+                    bottom: 10%;
+                    right: 35%;
+                }
+
+                .text {
+                    height: 25%;
+                    position: absolute;
+                    top: 8%;
                     left: 5%;
                     color: white;
-                    opacity: 0;
                     transition: opacity 0.3s ease;
-                    z-index: 2;
+                    z-index: 1000;
 
+                    /* Above the overlay */
                     h2 {
                         font-family: kiwiMaru;
-                        font-size: 3em;
+                        font-size: 18px;
                         text-transform: uppercase;
                         margin-top: 0;
                         margin-bottom: 3%;
@@ -187,50 +197,90 @@
 
                     h4 {
                         margin: 0;
-                        font-size: 1em;
+                        font-size: 14px;
                         text-align: left;
                         font-family: kiwiMaru;
                     }
 
                 }
 
-                & img {
-                    max-width: 60%;
-                    height: auto;
-                    border-radius: 8px;
-
-                    &:hover .hover-text .link {
-                        opacity: 1;
-                    }
-
-                }
             }
+
+
         }
+
+
+
+
     }
 }
 
+
 @media only screen and (max-width: 475px) {
+   
+
     .projects {
-        &--content {
-            margin-block: auto;
 
-            &--swiper-container {
-                display: none;
-            }
 
-            &--small {
-                display: flex;
-                margin-block: auto;
-                flex-direction: column;
-                align-items: center;
-                gap: 1em;
-
-                & img {
-                    max-width: 60%;
-                    height: auto;
-                    border-radius: 8px;
-                }
-            }
+        .swiper {
+            display: none;
         }
+
+        .small {
+            margin-inline: 25% auto;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            gap: 1em;
+
+            .present {
+                position: relative;
+
+                .thumbnail {
+                    width: 70%;
+                    border-radius: 15px;
+                }
+
+                .eye_link {
+                    z-index: 1;
+                    position: absolute;
+                    width: 10%;
+                    bottom: 10%;
+                    right: 35%;
+                }
+
+                .text {
+                    height: 25%;
+                    position: absolute;
+                    top: 8%;
+                    left: 5%;
+                    color: white;
+                    transition: opacity 0.3s ease;
+                    z-index: 1000;
+
+                    /* Above the overlay */
+                    h2 {
+                        font-family: kiwiMaru;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        margin-top: 0;
+                        margin-bottom: 3%;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-size: 10px;
+                        text-align: left;
+                        font-family: kiwiMaru;
+                    }
+
+                }
+
+            }
+
+
+        }
+
     }
 }

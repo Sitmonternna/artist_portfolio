@@ -1,11 +1,9 @@
 .interest {
+    position: relative;
     display: flex;
     width: 100%;
-    height: 135vh;
-    background-image: url(./media/img/interest/interest_bk.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    height: 100vh;
+    background-color: var(--blush);
 
 
     .title {
@@ -13,5 +11,11 @@
         margin-left: auto;
         margin-right: auto;
         align-self: center;
+    }
+
+    .wave {
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
 }

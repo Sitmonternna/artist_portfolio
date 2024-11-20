@@ -90,6 +90,60 @@
   color: var(--hawaiianTan);
 }
 
+@media only screen and (min-width: 475px) and (max-width: 768px) {
+  .about--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about--content p {
+    font-size: 12px;
+  }
+  .about--content--picture {
+    width: 90%;
+    height: auto;
+    margin-block: 5%;
+  }
+  .about--content--call {
+    margin-block: 5%;
+  }
+  .about--content--reference {
+    margin-top: 5%;
+  }
+  .about--content--reference img {
+    width: 50%;
+  }
+  .about--content--titre {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .about--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about--content p {
+    font-size: 10px;
+  }
+  .about--content--picture {
+    width: 90%;
+    height: auto;
+    margin-block: 5%;
+  }
+  .about--content--call {
+    margin-block: 5%;
+  }
+  .about--content--reference {
+    margin-top: 5%;
+  }
+  .about--content--reference img {
+    width: 50%;
+  }
+  .about--content--titre {
+    font-size: 14px;
+  }
+}
 .aurorae {
   margin-block: 0;
   display: grid;
@@ -345,14 +399,16 @@
 }
 
 .contact {
+  position: relative;
   display: grid;
-  background-image: url(./media/img/background/contact_bk.svg);
   width: 100%;
   height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-block: auto auto;
+  background-color: var(--cloudyBlue);
+}
+.contact .wave {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .contact .contenue {
   display: grid;
@@ -576,19 +632,22 @@
 }
 
 .interest {
+  position: relative;
   display: flex;
   width: 100%;
-  height: 135vh;
-  background-image: url(./media/img/interest/interest_bk.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  height: 100vh;
+  background-color: var(--blush);
 }
 .interest .title {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   align-self: center;
+}
+.interest .wave {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .polaris {
@@ -799,201 +858,239 @@
   }
 }
 .projects {
-  position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100%;
   background-color: var(--sunshine);
-  /*
-  .swiper-slide .hover-text {
-      height: 50%;
-      position: absolute;
-      top: 5%;
-      left: 5%;
-      color: white;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      z-index: 2;
-
-      h2 {
-          font-family: kiwiMaru;
-          font-size: 3em;
-          text-transform: uppercase;
-          margin-top: 0;
-          margin-bottom: 3%;
-      }
-
-      h4 {
-          margin: 0;
-          font-size: 1em;
-          text-align: left;
-          font-family: kiwiMaru;
-      }
-
-  }
-
-
-  .swiper-slide:hover .hover-text {
-      opacity: 1;
-  }*/
-}
-.projects--wave {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.projects--content {
-  display: flex;
-  flex-direction: column;
-  margin-block: 10%;
-  /*
-  &--swiper {
-      width: 70%;
-      height: auto;
-
-      &-slide {
-
-          img {
-              display: block;
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-
-              &.projects--content--swiper-slide--thumbnail {
-                  text-align: center;
-                  font-size: 18px;
-                  background: #fff;
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-
-              }
-          }
-
-      }
-
-  }*/
-}
-.projects--content--title {
-  width: 30%;
-  margin-inline: auto;
-  margin-bottom: 7%;
-  align-self: center;
-  justify-self: center;
-  z-index: 5;
-}
-.projects--content--swiper-container {
-  height: auto;
-  width: 100%;
-  /* Maximum width for the swiper */
-  margin: 0 auto;
   position: relative;
+  height: 130vh;
+  width: 100%;
 }
-.projects--content--swiper-slide {
+.projects .small {
+  display: none;
+}
+.projects .wave {
+  width: 100%;
+}
+.projects .title {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: flex-start;
+  margin-block: 2% 4%;
+}
+.projects .swiper {
+  display: flex;
+  margin-block: auto;
+  width: 100%;
+  height: auto;
+}
+.projects .swiper-slide {
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
 }
-.projects--content--swiper-slide img {
+.projects .swiper-slide .plus {
+  transform: scale(2);
+  z-index: 5;
+  position: absolute;
+  display: inline-block;
+  bottom: 10%;
+  right: 20%;
+}
+.projects .swiper-slide .plus .eye_link {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  align-self: flex-end;
+  width: 55%;
+}
+.projects .swiper-pagination {
+  font-family: kiwiMaru;
+  font-size: 1em;
+  color: var(--lightBeige);
+}
+.projects .swiper-button-prev {
+  position: absolute;
+  transform: scale(5);
+  left: 15%;
+}
+.projects .swiper-button-next {
+  position: absolute;
+  transform: scale(5);
+  right: 15%;
+}
+.projects .swiper-slide img {
+  display: block;
+  width: 70%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  border-radius: 30px;
+}
+.projects .swiper-slide:hover::before {
+  content: "";
+  position: absolute;
+  margin-inline: auto auto;
+  background-color: rgba(161, 122, 122, 0.568627451);
+  z-index: 1;
+  border-radius: 30px;
+}
+.projects .swiper {
   width: 100%;
   height: auto;
-  border-radius: 20px;
-  /* Optional: rounded corners for images */
+  margin: 20px auto;
 }
-.projects--content--swiper-button-next img.swiper-button-next {
+.projects .swiper-slide .hover-text {
+  height: 50%;
   position: absolute;
-  top: 50%;
-  transform: scale(2.5);
-  border: none;
-  cursor: pointer;
-  z-index: 1000;
+  top: 8%;
+  left: 20%;
+  color: white;
+  opacity: 0;
+  /* Start as invisible */
+  transition: opacity 0.3s ease;
+  z-index: 2;
+  /* Above the overlay */
 }
-.projects--content--swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%) scale(2.5);
-  border: none;
-  cursor: pointer;
-  z-index: 1000;
+.projects .swiper-slide .hover-text h2 {
+  font-family: kiwiMaru;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 3%;
 }
-.projects--content--small {
-  display: none;
+.projects .swiper-slide .hover-text h4 {
+  margin: 0;
+  font-size: 1em;
+  text-align: left;
+  font-family: kiwiMaru;
+}
+.projects .swiper-slide:hover .hover-text {
+  opacity: 1;
 }
 
 @media only screen and (min-width: 475px) and (max-width: 768px) {
-  .projects--content {
-    margin-block: auto;
-  }
-  .projects--content--swiper-container {
+  .projects .swiper {
     display: none;
   }
-  .projects--content--small {
+  .projects .small {
+    margin-inline: 25% auto;
     display: flex;
-    margin-block: auto;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
+    justify-content: center;
     gap: 1em;
   }
-  .projects--content--small .hover-text .link {
-    height: 50%;
+  .projects .small .present {
+    position: relative;
+  }
+  .projects .small .present .thumbnail {
+    width: 70%;
+    border-radius: 15px;
+  }
+  .projects .small .present .eye_link {
+    z-index: 1;
     position: absolute;
-    top: 5%;
+    width: 10%;
+    bottom: 10%;
+    right: 35%;
+  }
+  .projects .small .present .text {
+    height: 25%;
+    position: absolute;
+    top: 8%;
     left: 5%;
     color: white;
-    opacity: 0;
     transition: opacity 0.3s ease;
-    z-index: 2;
+    z-index: 1000;
+    /* Above the overlay */
   }
-  .projects--content--small .hover-text .link h2 {
+  .projects .small .present .text h2 {
     font-family: kiwiMaru;
-    font-size: 3em;
+    font-size: 18px;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 3%;
   }
-  .projects--content--small .hover-text .link h4 {
+  .projects .small .present .text h4 {
     margin: 0;
-    font-size: 1em;
+    font-size: 14px;
     text-align: left;
     font-family: kiwiMaru;
   }
-  .projects--content--small img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 8px;
-  }
-  .projects--content--small img:hover .hover-text .link {
-    opacity: 1;
-  }
 }
 @media only screen and (max-width: 475px) {
-  .projects--content {
-    margin-block: auto;
-  }
-  .projects--content--swiper-container {
+  .projects .swiper {
     display: none;
   }
-  .projects--content--small {
+  .projects .small {
+    margin-inline: 25% auto;
     display: flex;
-    margin-block: auto;
     flex-direction: column;
-    align-items: center;
+    align-self: center;
+    justify-content: center;
     gap: 1em;
   }
-  .projects--content--small img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 8px;
+  .projects .small .present {
+    position: relative;
+  }
+  .projects .small .present .thumbnail {
+    width: 70%;
+    border-radius: 15px;
+  }
+  .projects .small .present .eye_link {
+    z-index: 1;
+    position: absolute;
+    width: 10%;
+    bottom: 10%;
+    right: 35%;
+  }
+  .projects .small .present .text {
+    height: 25%;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    color: white;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+    /* Above the overlay */
+  }
+  .projects .small .present .text h2 {
+    font-family: kiwiMaru;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 3%;
+  }
+  .projects .small .present .text h4 {
+    margin: 0;
+    font-size: 10px;
+    text-align: left;
+    font-family: kiwiMaru;
   }
 }
 .skills {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100vh;
-  margin-block: 10%;
+  padding-bottom: 15%;
+}
+.skills .content {
+  margin-inline: auto;
+  margin-block: 15% auto;
+  display: flex;
+  flex-direction: column;
+}
+.skills .wave {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
 .skills .contenue {
   display: grid;
@@ -1115,12 +1212,19 @@
 }
 
 .thank_you {
+  position: relative;
   display: grid;
   flex-direction: column;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+}
+.thank_you .wave {
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .thank_you .contenue {
+  margin-top: 10%;
   align-self: center;
   width: 80%;
   margin-inline: auto auto;
