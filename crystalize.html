@@ -1,14 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Crystalize</title>
+    <title>Aurorae</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper@latest/swiper-bundle.min.css" />
 </head>
+
 <body>
+    <div class="nav">
+        <div class="nav--burger" onclick="toggleMenu()">
+            <span class="nav--burger--bar"></span>
+            <span class="nav--burger--bar"></span>
+            <span class="nav--burger--bar"></span>
+        </div>
+        <div class="nav--menu" id="navMenu">
+            <a href="./main.html">Retour</a>
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn" onclick="goUpBtn()">
+        <img class="go_up" src="./media/img/btn_up.svg" alt="Scroll to Top">
+    </button>
+
+    <section class="projet--intro">
+        <img class="projet_metrage" src="./projets/crystalize/halfmoon_modelisation.svg" alt="">
+
+        <img class="projet_title" src="./projets/crystalize/titre_crystalize.svg" alt="">
+        <div class="texte_description">
+            <h3>Conception</h3>
+            <h3>Projet Équipe</h3>
+            <h3>Montage vidéo</h3>
+            <h3 class="space">Modélisation 3d</h3>
+            <h3 class="space--ecole">Projet École</h3>
+            <h3 class="space">Montage Sonore</h3>
+        </div>
+        <div class="app_grid">
+            <img class="maya_projet" src="./projets/crystalize/maya_blue.svg" alt="">
+        </div>
+
+    </section>
+
+    <section class="projet--present" id="cristalize">
+        <img class="down_wave" src="./projets/aurorae/background/upwave.svg" alt="wave">
+        
+        <div class="projet--present--defile" id="cristalize--defile">
+            <img src="./projets/crystalize/concept_couleur.svg" />
+            <img src="./projets/crystalize/concept_noir-blanc.svg" />
+            <img src="./projets/crystalize/epee.svg" />
+            <img src="./projets/crystalize/vaisseau.svg" />
+            <img src="./projets/crystalize/tout.svg" />
+        </div>
+    </section>
+
+    <section class="projet--synopsis">
+        <img class="projet--synopsis--half_moon" src="./projets/aurorae/background/concept.svg" alt="">
+        <img class="projet--synopsis--titre" src="./projets/aurorae/texte_synopsis.svg" alt="">
+        <p class="projet--synopsis--description">
+            Court métrage d’animation 3D qui immerge le visiteur dans un univers de ville abandonnée, suscitant des émotions de vide et de chaos.
+        </p>
+    </section>
+
+    <section class="projet--role">
+        <img class="projet--role--yellow-wave" src="./projets/aurorae/background/yellow_wave.svg" alt="">
+        <img class="projet--role--titre" src="./projets/aurorae/texte_role.svg" alt="">
+        <p class="projet--role--texte-descriptif">
+            Création de l’animation de l’environnement axée sur l’eau et les algues, accompagnée du montage vidéo et de la fabrication des sons d’ambiance réalisés avec Reaper.
+
+        <img class="projet--role--blue-wave" src="./projets/aurorae/background/down_wave.svg" alt="">
+
+
+    </section>
+
+    <section class="projet--connect">
+        <div class="projet--connect--grid">
+            <h2 class="projet--connect--title part1">
+                Soyons créatifs
+            </h2>
+
+            <br>
+
+            <h2 class="projet--connect--title part2">
+                ensemble !
+            </h2>
+
+            <img class="projet--connect--icon" src="./projets/aurorae/light.svg" alt="">
+        </div>
+        <div class="projet--connect--application">
+            <a class="email-link" href="mailto:ysitmonternna@gmail.com" target="_blank">
+                <img class="projet--connect--application--email" src="./media/img/contacts/apllication/mi_email.svg"
+                    alt="">
+            </a>
+
+
+            <a href="https://www.linkedin.com/feed/">
+                <img class="projet--connect--application--linkedin"
+                    src="./media/img/contacts/apllication/icomoon-free_linkedin.svg" alt="">
+            </a>
+
+
+
+
+        </div>
+    </section>
     <script src="https://unpkg.com/swiper@latest/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
+
 </html>

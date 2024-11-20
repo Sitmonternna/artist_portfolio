@@ -10,10 +10,25 @@
 </head>
 
 <body>
-    <section class="aurorae--intro">
-        <img class="aurorae_metrage" src="./projets/aurorae/background/half_metrage.svg" alt="">
+    <div class="nav">
+        <div class="nav--burger" onclick="toggleMenu()">
+            <span class="nav--burger--bar"></span>
+            <span class="nav--burger--bar"></span>
+            <span class="nav--burger--bar"></span>
+        </div>
+        <div class="nav--menu" id="navMenu">
+            <a href="./main.html">Retour</a>
+        </div>
+    </div>
 
-        <img class="aurorae_title" src="./projets/aurorae/intro/titre_aurorae.svg" alt="">
+    <button id="scrollToTopBtn" onclick="goUpBtn()">
+        <img class="go_up" src="./media/img/btn_up.svg" alt="Scroll to Top">
+    </button>
+
+    <section class="projet--intro">
+        <img class="projet_metrage" src="./projets/aurorae/background/half_metrage.svg" alt="">
+
+        <img class="projet_title" src="./projets/aurorae/intro/titre_aurorae.svg" alt="">
         <div class="texte_description">
             <h3>Concept</h3>
             <h3>Projet Equipe</h3>
@@ -23,26 +38,26 @@
             <h3 class="space">Montage Sonore</h3>
         </div>
         <div class="app_grid">
-            <img class="davinci_aurorae" src="./projets/aurorae/intro/davinci_blue.svg" alt="">
-            <img class="reaper_aurorae" src="./projets/aurorae/intro/reaper_blue.svg" alt="">
+            <img class="davinci_projet" src="./projets/aurorae/intro/davinci_blue.svg" alt="">
+            <img class="reaper_projet" src="./projets/aurorae/intro/reaper_blue.svg" alt="">
         </div>
 
     </section>
 
-    <section class="aurorae--present">
+    <section class="projet--present">
         <img class="down_wave" src="./projets/aurorae/background/upwave.svg" alt="wave">
         <iframe class="mp4" src="https://www.youtube.com/embed/qD21wO-teCk" frameborder="0" allowfullscreen>
         </iframe>
 
     </section>
 
-    <section class="aurorae--synopsis">
-        <img class="aurorae--synopsis--half_moon" src="./projets/aurorae/background/concept.svg" alt="">
-        <img class="aurorae--synopsis--titre" src="./projets/aurorae/texte_synopsis.svg" alt="">
-        <p class="aurorae--synopsis--description">
+    <section class="projet--synopsis">
+        <img class="projet--synopsis--half_moon" src="./projets/aurorae/background/concept.svg" alt="">
+        <img class="projet--synopsis--titre" src="./projets/aurorae/texte_synopsis.svg" alt="">
+        <p class="projet--synopsis--description">
             Aurorae est un projet de court-métrage immersif qui transporte le spectateur dans
             un tourbillon d’émotions et de réflexions profondes. L’histoire suit un personnage
-            énigmatique et mystique, incarné par Maka Nau, qui traverse une transformation
+            énigmatique et mystique, incarné par Maika Nau, qui traverse une transformation
             psychologique intense et bouleversante. À travers un voyage intérieur complexe,
             le personnage se confronte à ses propres démons, à ses doutes et à ses révélations,
             remettant en question sa perception de la réalité et de son existence. Le film
@@ -50,15 +65,15 @@
             de l’esprit humain, offrant une expérience visuelle et émotionnelle qui invite à
             la réflexion sur les transformations intérieures qui nous façonnent.
         </p>
-        <a class="aurorae--synopsis--lien" href="./projets/aurorae/pptx_aurorae.pdf">
+        <a class="projet--synopsis--lien" href="./projets/aurorae/pptx_aurorae.pdf">
             Document de pre-production
         </a>
     </section>
 
-    <section class="aurorae--role">
-        <img class="aurorae--role--yellow-wave" src="./projets/aurorae/background/yellow_wave.svg" alt="">
-        <img class="aurorae--role--titre" src="./projets/aurorae/texte_role.svg" alt="">
-        <p class="aurorae--role--texte-descriptif">
+    <section class="projet--role">
+        <img class="projet--role--yellow-wave" src="./projets/aurorae/background/yellow_wave.svg" alt="">
+        <img class="projet--role--titre" src="./projets/aurorae/texte_role.svg" alt="">
+        <p class="projet--role--texte-descriptif">
             Le projet a impliqué la conception, la production et le montage vidéo, ainsi que le montage
             sonore réalisé avec Reaper, un logiciel professionnel. Chaque étape de la production a été
             réalisée avec une attention particulière aux détails techniques et créatifs. La vidéo a été
@@ -67,38 +82,39 @@
             émotions et l'atmosphère de chaque scène.
         </p>
 
-        <div class="aurorae--role--page-switch">
-            <img class="aurorae--role--arrow-left" src="./projets/aurorae/arrow_left.svg" alt="">
-            <p class="aurorae--role--texte-left">PRÉCÉDENT</p>
-            <p class="aurorae--role--texte-right">PROCHAIN</p>
-            <img class="aurorae--role--arrow-right" src="./projets/aurorae/arrow_right.svg" alt="">
-
-        </div>
-
-        <img class="aurorae--role--blue-wave" src="./projets/aurorae/background/down_wave.svg" alt="">
+        <img class="projet--role--blue-wave" src="./projets/aurorae/background/down_wave.svg" alt="">
 
 
     </section>
 
-    <section class="aurorae--connect">
-        <div class="aurorae--connect--grid">
-            <h2 class="aurorae--connect--title part1">
+    <section class="projet--connect">
+        <div class="projet--connect--grid">
+            <h2 class="projet--connect--title part1">
                 Soyons créatifs
             </h2>
 
             <br>
 
-            <h2 class="aurorae--connect--title part2">
+            <h2 class="projet--connect--title part2">
                 ensemble !
             </h2>
 
-            <img class="aurorae--connect--icon" src="./projets/aurorae/light.svg" alt="">
+            <img class="projet--connect--icon" src="./projets/aurorae/light.svg" alt="">
         </div>
-        <div class="aurorae--connect--application">
-            <img class="aurorae--connect--application--linkedin"
-                src="./media/img/contacts/apllication/icomoon-free_linkedin.svg" alt="">
-            <img class="aurorae--connect--application--email" src="./media/img/contacts/apllication/mi_email.svg"
-                alt="">
+        <div class="projet--connect--application">
+            <a class="email-link" href="mailto:ysitmonternna@gmail.com" target="_blank">
+                <img class="projet--connect--application--email" src="./media/img/contacts/apllication/mi_email.svg"
+                    alt="">
+            </a>
+
+
+            <a href="https://www.linkedin.com/feed/">
+                <img class="projet--connect--application--linkedin"
+                    src="./media/img/contacts/apllication/icomoon-free_linkedin.svg" alt="">
+            </a>
+
+
+
 
         </div>
     </section>
