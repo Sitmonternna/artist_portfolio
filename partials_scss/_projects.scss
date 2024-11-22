@@ -6,8 +6,9 @@
     flex-direction: column;
     background-color: var(--sunshine);
     position: relative;
-    height: 130vh;
+    height: 150vh;
     width: 100%;
+
 
     .small {
         display: none;
@@ -22,7 +23,7 @@
         margin-left: auto;
         margin-right: auto;
         align-self: flex-start;
-        margin-block: 2% 4%;
+
     }
 
     .swiper {
@@ -88,6 +89,11 @@
         object-fit: cover;
         background-position: center;
         border-radius: 30px;
+
+        /*&.thumbnail{
+            width: 70%;
+            height: 100%;
+        }*/
     }
 
     .swiper-slide:hover::before {
@@ -147,6 +153,10 @@
 @media only screen and (min-width: 475px) and (max-width: 768px) {
 
     .projects {
+
+        .title {
+            margin-block: 7% 3%;
+        }
 
 
         .swiper {
@@ -216,19 +226,16 @@
 }
 
 
-@media only screen and (max-width: 475px) {
-   
+@media only screen and (min-width: 275px) and (max-width: 475px) {
+
 
     .projects {
-        height: 50vh;
+        height: 100vh;
 
         .swiper {
             display: none;
         }
 
-        .title{
-            margin-top: 20%;
-        }
         .small {
             margin-top: 10%;
             margin-inline: 25% auto;
@@ -287,4 +294,83 @@
         }
 
     }
+}
+
+@media only screen and (max-width: 274px) {
+
+
+    .projects {
+        height: 60vh;
+        .swiper {
+            display: none;
+        }
+
+        .small {
+            margin-top: 10%;
+            margin-inline: 25% auto;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            gap: 1em;
+
+            .present {
+                position: relative;
+
+                .thumbnail {
+                    width: 70%;
+                    border-radius: 10px;
+                }
+
+                .plus{
+                    a{
+                        width: 30%;
+                    background-color: aqua;
+                    }
+                    
+                }
+
+                .eye_link {
+                    z-index: 1;
+                    position: absolute;
+                    width: 10%;
+                    bottom: 10%;
+                    right: 35%;
+                }
+
+                .text {
+                    height: 25%;
+                    position: absolute;
+                    top: 8%;
+                    left: 5%;
+                    color: white;
+                    transition: opacity 0.3s ease;
+                    z-index: 1000;
+
+                    /* Above the overlay */
+                    h2 {
+                        font-family: kiwiMaru;
+                        font-size: 8px;
+                        text-transform: uppercase;
+                        margin-top: 0;
+                        margin-bottom: 3%;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        font-size: 6px;
+                        text-align: left;
+                        font-family: kiwiMaru;
+                    }
+
+                }
+
+            }
+
+
+        }
+
+    
+    }
+
 }

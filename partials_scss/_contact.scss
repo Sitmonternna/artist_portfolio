@@ -12,6 +12,7 @@
     }
 
     .contenue {
+        margin-top: auto;
         display: grid;
         align-self: center;
         width: 70%;
@@ -50,7 +51,7 @@
 
 @media only screen and (min-width: 475px) and (max-width: 768px) {
     .contact {
-        height: 80vh;
+        height: 40vh;
         display: flex;
 
         .contenue {
@@ -81,11 +82,12 @@
     .contact {
         background-image: none;
         background-color: var(--cloudyBlue);
-        height: 35vh;
+        height: 20vh;
         display: flex;
 
         .contenue {
-            width: 90%;
+            margin-top: 0;
+            width: 60%;
 
             .text {
                 width: 85%;

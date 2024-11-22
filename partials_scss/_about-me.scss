@@ -21,7 +21,7 @@
 
         p {
             font-family: KiwiMaru;
-            font-size: 16px;
+            font-size: 24px;
             color: var(--lightBeige);
 
         }
@@ -98,17 +98,61 @@
 
 
 }
-
-@media only screen and (min-width: 475px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1275px) {
     .about {
+        height: 170vh;
+       
+
+        &--halfmoon {
+            width: 20%;
+        }
 
         &--content {
             display: flex;
             flex-direction: column;
             align-items: center;
 
-            p {
-                font-size: 12px;
+            p{
+                font-size: 24px;
+            }
+
+            &--picture {
+                height: 60%;
+                margin-block: 5%;
+            }
+
+            &--call{
+                margin-block: 5%;
+            }
+            &--reference {
+                margin-top: 5%;
+                img{
+                    width: 80%;
+                }
+            }
+
+
+            &--titre {
+                font-size: 27px;
+            }
+        }
+
+    }
+}
+@media only screen and (min-width: 475px) and (max-width: 768px) {
+    .about {
+        height: 140vh;
+
+        &--halfmoon {
+            width: 20%;}
+
+        &--content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p{
+                font-size: 18px;
             }
 
             &--picture {
@@ -123,13 +167,13 @@
             &--reference {
                 margin-top: 5%;
                 img{
-                    width: 50%;
+                    width: 80%;
                 }
             }
 
 
             &--titre {
-                font-size: 18px;
+                font-size: 27px;
             }
         }
 
@@ -138,6 +182,7 @@
 
 @media only screen and (max-width: 475px) {
     .about {
+        height: 85vh;
 
         &--content {
             display: flex;
