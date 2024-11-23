@@ -235,6 +235,7 @@
     display: flex;
   }
   .contact .contenue {
+    margin-top: 15%;
     width: 80%;
   }
   .contact .contenue .text {
@@ -1779,29 +1780,30 @@ body {
 }
 
 @media (max-width: 768px) {
+  .go_up {
+    width: 30%;
+    right: 0;
+  }
   .nav--menu {
     display: none;
-    flex-direction: column;
-    gap: 15px;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  .nav--menu.open {
-    display: flex;
-    top: 30px;
-    left: 0px;
-  }
-  .nav--menu.open a {
-    white-space: nowrap;
-    line-height: 1.5em;
-    display: inline;
-    font-size: 12px;
   }
   .nav--burger {
     display: flex;
     position: fixed;
+    left: 15px;
+  }
+}
+@media (max-width: 275px) {
+  .nav--menu {
+    display: none;
+  }
+  .nav--burger {
+    display: flex;
+    position: fixed;
+    left: 15px;
+  }
+  .nav--burger--bar {
+    width: 20px;
+    height: 2px;
   }
 }/*# sourceMappingURL=style.css.map */
